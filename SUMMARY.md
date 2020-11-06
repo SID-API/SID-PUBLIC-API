@@ -1,0 +1,32 @@
+# Summary
+
+* [SID对外开放API](README.md)
+* [发行说明](release-notes.md)
+* 开发指南
+    * [获取access_token](get-access-token.md)
+    * [获取JWT](get-JWT.md)
+* 群组
+    * [开发前须知](group/introduction/README.md)
+    * SID群组操作流程
+        * [定义并发布一个群组](group/procedure/define-group.md)
+        * [建立群组推送任务](group/procedure/create-push-task.md)
+        * [推送群组数据](group/procedure/push-task.md)
+    * 标准对接接口开发
+        * [群组推送安全验证](group/develop/safety-verification.md)
+        * [群组节点管理](group/develop/node-management.md)
+        * [人员管理](group/develop/personnel-management.md)
+    * [FAQ](group/faq/README.md)
+* 人脸
+    * [开发前须知](faceid/introduction/README.md)
+    * 人脸对外API
+        * [人脸对外接口](faceid/public/interface/face-external-api.md)
+        * [FAQ](faceid/public/faq.md)
+    * 厂商和应用对接API
+        * 标准对接接口
+            * [厂商接口](faceid/manufacturer/interface/manufacture.md)
+            * [应用接口](faceid/manufacturer/interface/application.md)
+        * [FAQ](faceid/manufacturer/faq.md)
+* linkid
+    * [密码对外API](linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.md)
+    * [FAQ](linkid/faq/faq.md)
+
