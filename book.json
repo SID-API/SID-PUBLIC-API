@@ -1,7 +1,0 @@
-{
-	"_comment":"配置左侧目录树插件",
-	"plugins":["expandable-chapters"],
-	
-	"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”",
-	"styles": {"website": "styles/website.css"}
-}
