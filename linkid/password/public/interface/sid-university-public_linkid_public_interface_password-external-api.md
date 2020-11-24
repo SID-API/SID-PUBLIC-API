@@ -30,7 +30,7 @@ http://{server}/linkid/api/public/password/change
 | --------- | ------ | ------------------ | ---------------------------- |
 | idCard    | String | 与 xgh 任选一个    | 身份证号 |
 | newPasswd | String | 是                 | 新密码                       |
-| oldPasswd | String | 是                 | 下次登录是否开启强制修改密码 |
+| oldPasswd | String | 是                 | 老密码 |
 | xgh       | String | 与 idCard 任选一个 | 学工号                       |
 
 **返回结果：**
@@ -66,8 +66,8 @@ http://{server}/linkid/api/public/password/reset
 | **参数** | 类型   | **是否必须**       | **说明**                     |
 | -------- | ------ | ------------------ | ---------------------------- |
 | xgh      | string | 与 idCard 任选一个 | 学工号 |
-| idCard   | string | 与 xgh 任选一个    | 新密码                       |
-| passwd   | string | 是                 | 是否重置为初始密码           |
+| idCard   | string | 与 xgh 任选一个    | 身份证号                       |
+| passwd   | string | 是                 | 密码           |
 
 **返回结果：**
 
@@ -104,8 +104,8 @@ http://{server}/linkid/api/public/password/reset
 | **参数** | 类型   | **是否必须**       | **说明**                     |
 | -------- | ------ | ------------------ | ---------------------------- |
 | xgh      | string | 与 idCard 任选一个 | 学工号 |
-| idCard   | string | 与 xgh 任选一个    | 新密码                       |
-| passwd   | string | 是                 | 是否重置为初始密码           |
+| idCard   | string | 与 xgh 任选一个    | 身份证号                       |
+| passwd   | string | 是                 | 用户密码           |
 
 **返回结果：**
 

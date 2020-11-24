@@ -1,6 +1,6 @@
-# 人脸对外api
+# 人脸对外接口
 
-人脸对外api描述SID应向应用提供的标准接口，以便外部应用调用。标准接口如下：
+该部分描述SID应向应用提供的标准接口，以便外部应用调用。标准接口如下：
 
 >[1:1 认证](#1)
 >
@@ -22,9 +22,9 @@
 
 > 应用上传一张照片或特征值与 SID中保存的底库照片或特征值进行比对。
 
-**请求⽅式：**POST（**HTTPS或HTTP**）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/auth/compare/userId
+**请求地址：** http://{server}/faceid/public/auth/compare/userId
 
 **请求参数：**
 
@@ -85,9 +85,9 @@
 
 > 应用上传一张照片，返回与这张照片相似度最高的用户信息，进行1:N 认证。
 
-**请求⽅式：**POST（**HTTPS或HTTP**）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/auth/search
+**请求地址：** http://{server}/faceid/public/auth/search
 
 **请求参数：**
 
@@ -141,9 +141,9 @@
 
 > 应用根据时间戳增量同步特征值接口。
 
-**请求⽅式：**POST（HTTPS或HTTP）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/face/findIncreaseUserFaceImage
+**请求地址：** http://{server}/faceid/public/face/findIncreaseUserFaceImage
 
 **请求参数：**
 
@@ -239,9 +239,9 @@
 
 > 增量同步特征值接口。
 
-**请求⽅式：**POST（HTTPS或HTTP）
+**请求⽅式：**  POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/face/findIncreaseUserFace
+**请求地址：**  http://{server}/faceid/public/face/findIncreaseUserFace
 
 **请求参数：**
 
@@ -319,9 +319,9 @@
 
 > 通过用户id和照片类型查询照片返回照片路径。
 
-**请求⽅式：**POST（HTTPS或HTTP）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/face/searchFaceByUserIdAndType
+**请求地址：** http://{server}/faceid/public/face/searchFaceByUserIdAndType
 
 **请求参数：**
 
@@ -368,9 +368,9 @@
 
 > 通过用户id和照片类型查询照片返回照片的base64。
 
-**请求⽅式：**POST（HTTPS或HTTP）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/face/searchFaceByUserIdAndTypeImage
+**请求地址：** http://{server}/faceid/public/face/searchFaceByUserIdAndTypeImage
 
 **请求参数：**
 
@@ -421,9 +421,9 @@
 
 > 检查照片质量。
 
-**请求⽅式：**POST（HTTPS或HTTP）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/face/quality
+**请求地址：** http://{server}/faceid/public/face/quality
 
 **请求参数：**
 
@@ -501,9 +501,9 @@
 
 > 通过用户id list查询用户照片。当用户（userIds） 长度超过10个时，取前10个用户的学工号返回
 
-**请求⽅式：**POST（HTTPS或HTTP）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/face/findAllImageBase64ByUserIds
+**请求地址：** http://{server}/faceid/public/face/findAllImageBase64ByUserIds
 
 **请求参数：**
 
@@ -565,9 +565,9 @@
 
 > 上传照片（通过类型+用户id）。
 
-**请求⽅式：**POST（HTTPS或HTTP）
+**请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：**http://{server}/faceid/public/face/image
+**请求地址：** http://{server}/faceid/public/face/image
 
 **请求参数：**
 
