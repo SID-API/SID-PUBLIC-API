@@ -22,8 +22,6 @@
 
 （1）回调地址采用地址匹配模式，可匹配该地址的子集地址。
 
-（2）登陆类型选择后端登出(BACK_CHANNEL)。
-
 4.启用配置。
 
 ![image5](general-application-docking.assets/image5.png)

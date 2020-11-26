@@ -18,7 +18,7 @@
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/authorize
+**请求地址：** http://{server}/oauth2.0/authorize
 
 **请求参数：**
 
@@ -54,7 +54,11 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/accessToken
+**请求地址：** http://{server}/oauth2.0/accessToken
+
+**请求头（header）：** 
+
+Content-Type：multipart/form-data
 
 **请求参数：**
 
@@ -98,13 +102,23 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 | expires_in    | 令牌有效期                                                   |
 | refresh_token | 刷新令牌，该参数只有在SID中将下发刷新令牌勾选为“是”时才会返回 |
 
+注：获取refresh_token参数的值需先在SID中选择“下发刷新令牌”，如下图：
+
+![img](oauth-authentication.assets/1887QK5C@L4MC@C3N25ERC.png)
+
 #### 3、获取用户信息
 
 > 使用access_token获取用户信息。
 
 **请求⽅式：** GET/POST（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/profile
+**请求地址：** http://{server}/oauth2.0/profile
+
+**请求头（header）：** 
+
+Content-Type：multipart/form-data
+
+注：使用get请求时，不用添加请求头。
 
 **请求参数：**
 
@@ -124,6 +138,7 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 
 ```java
 {
+    "active": true,
     "attributes": {
         "DQZTM": "在任",
         "DWH": "网络信息与综合服务中心",
@@ -135,7 +150,8 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
         "XM": "xxxx"
         "SFLBMC": "xxx"
         },
-    "id": "20042020"
+    "id": "20042020",
+    "client_id": xxx
 }
 ```
 
@@ -144,6 +160,7 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 | **参数**   | **说明**     |
 | ---------- | ------------ |
 | id         | 用户名       |
+| client_id  | 应用id       |
 | attributes | 用户属性列表 |
 | XM         | 姓名         |
 | XBM        | 性别         |
@@ -166,7 +183,7 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/accessToken
+**请求地址：** http://{server}/oauth2.0/accessToken
 
 **请求参数：**
 
@@ -211,7 +228,13 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&client_id=
 
 **请求⽅式：** GET/POST（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/profile
+**请求地址：** http://{server}/oauth2.0/profile
+
+**请求头（header）：** 
+
+Content-Type：multipart/form-data
+
+注：使用get请求时，不用添加请求头。
 
 **请求参数：**
 
@@ -269,7 +292,13 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&client_id=
 
 **请求⽅式：** GET/POST（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/accessToken
+**请求地址：** http://{server}/oauth2.0/accessToken
+
+**请求头（header）：** 
+
+Content-Type：multipart/form-data
+
+注：使用get请求时，不用添加请求头。
 
 **请求参数：**
 
@@ -319,7 +348,7 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&client_id=
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/accessToken
+**请求地址：** http://{server}/oauth2.0/accessToken
 
 **请求参数：**
 
@@ -343,19 +372,17 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=client_credentials&
 {
     "access_token": "AT-1-IWyhZhU1hKKvWPddAJpdHRN2ECu08Ypo",
     "token_type": "bearer",
-    "expires_in": 28800,
-    "refresh_token": "RT-1-cvHg23sAYRfu-1h8e57U9PSGK1qyL-mW"
+    "expires_in": 28800
 }
 ```
 
 **参数说明：**
 
-| **参数**      | **说明**                                                     |
-| ------------- | ------------------------------------------------------------ |
-| access_token  | 访问令牌                                                     |
-| token_type    | 令牌类型                                                     |
-| expires_in    | 令牌有效期                                                   |
-| refresh_token | 刷新令牌，该参数只有在SID中将下发刷新令牌勾选为“是”时才会返回 |
+| **参数**     | **说明**   |
+| ------------ | ---------- |
+| access_token | 访问令牌   |
+| token_type   | 令牌类型   |
+| expires_in   | 令牌有效期 |
 
 
 
@@ -367,13 +394,13 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=client_credentials&
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
-**请求地址：** http://ljw.sso.rghall.com.cn/oauth2.0/authorize
+**请求地址：** http://{server}/oauth2.0/authorize
 
 **请求参数：**
 
 ```java
 请求示例：
-http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx&redirect_uri=xxx&[openid|unionid]&from=xxx
+http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx&redirect_uri=xxx&openid=xxx&from=xxx
 ```
 
 **参数说明：**
