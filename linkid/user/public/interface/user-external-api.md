@@ -1,3 +1,5 @@
+
+
 # 用户信息对外API
 
 用户信息对外api描述SID向应用提供的标准接口，以便外部应用调用。标准接口如下：
@@ -15,6 +17,8 @@
 >[海大科探在用接口-增量同步用户](#6)
 >
 >[海大再用接口-分页获取标签下的用户](#7)
+>
+>[海大微信解绑接口-解除用户在SID中的微信绑定](#8)
 
 
 
@@ -441,8 +445,8 @@ userId:  学工号
 | --------- | ------ | ------------ | ------------------------------------------------------------ |
 | current   | list   | 是           | 用户属性的名称                                               |
 | value     | string | 是           | 用户属性的值                                                 |
-| startTime | string | 是           | 查询这个时间之后有更新的用户数据,   格式："yyyy-MM-dd hh:mm:ss" |
-| endTime   | string | 否           | 查询这个时间之前有更新的用户数据，格式："yyyy-MM-dd hh:mm:ss" |
+| startTime | string | 是           | 查询这个时间之后有更新的用户数据,   <br>格式："yyyy-MM-dd hh:mm:ss" |
+| endTime   | string | 否           | 查询这个时间之前有更新的用户数据，<br/>格式："yyyy-MM-dd hh:mm:ss" |
 
 **返回结果：**
 
@@ -554,7 +558,7 @@ timestamp， 时间戳， 示例：1605150501700
 
 
 
-#### 七、海大再用接口-分页获取标签下的用户<a id=7></a>
+#### 七、海大再用接口-分页获取标签下的用户解除用户在SID中的微信绑定<a id=7></a>
 
 > 海大获取标签下用户信息
 
@@ -574,7 +578,7 @@ timestamp， 时间戳， 示例：1605150501700
 | -------- | ------ | ------------ | ------------------------------------------------------------ |
 | number   | list   | 是           | 当前请求页                                                   |
 | size     | string | 是           | 每页返回值                                                   |
-| labelId  | string | 否           | 查询这个时间之前有更新的用户数据，格式："yyyy-MM-dd hh:mm:ss" |
+| labelId  | string | 否           | 查询这个时间之前有更新的用户数据，<br/>格式："yyyy-MM-dd hh:mm:ss" |
 
 **返回结果：**
 
@@ -687,3 +691,40 @@ timestamp， 时间戳， 示例：1605150501700
 | szdwAndGwmc   | list       | 用户三元组数据                |
 | LABEL         | list       | 用户身上的标签id列表          |
 | 更多用户属性  |            | 更多用户属性， 请查看标准     |
+
+#### 八、海大微信解绑-解除用户在SID中的微信绑定<a id=8></a>
+
+> 海大解除用户的微信绑定
+
+**请求⽅式：** POST（**HTTPS或HTTP**）
+
+**请求地址：** http://self.xxx.edu.cn/linkid/api/public/wechat/weChatUnbindFromApplets
+
+**参数说明：**
+
+| **参数**   | 类型   | **是否必须** | **说明**   |
+| ---------- | ------ | ------------ | ---------- |
+| userId     | String | 是           | 用户学工号 |
+| unionId    | String | 否           | unionId    |
+| openid     | String | 否           | openid     |
+| fromSource | String | 否           | 来源       |
+
+**备注**：微信解绑的功能需要至少提供```userId, unionId```或者```userId, openid, fromSource```才能完成解绑。
+
+**返回结果：**
+
+```javascript
+{
+    "code": 200,
+    "message": "OK",
+    "data": true
+}
+```
+
+**参数说明：**
+
+| **参数** | 类型    | **说明**                        |
+| -------- | ------- | ------------------------------- |
+| code     | int     | 返回状态code                    |
+| message  | String  | 返回状态消息                    |
+| data     | boolean | 解绑成功返回true，失败返回false |
