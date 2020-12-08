@@ -21,10 +21,12 @@
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findOrganizationsByDate?timestamp={timestamp}
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
- http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findOrganizationsByDate?timestamp=1601000903868
+ http://ljw.sso.rghall.com.cn/linkid/api/aggregate/keTan/public/findOrganizationsByDate?timestamp=1601000903868
 ```
 
 **参数说明：**
@@ -103,11 +105,13 @@
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findPostsByDate?timestamp={timestamp}
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findPostsByDate?timestamp=1601000903868
+http://ljw.sso.rghall.com.cn/linkid/api/aggregate/keTan/public/findPostsByDate?timestamp=1601000903868
 ```
 
 **参数说明：**
@@ -179,10 +183,12 @@ http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findPostsByDate?timesta
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findUsersByDate?timestamp={timestamp}
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
-示例： http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findUsersByDate?timestamp=1601000903868
+示例： http://ljw.sso.rghall.com.cn/linkid/api/aggregate/keTan/public/findUsersByDate?timestamp=1601000903868
 ```
 
 **参数说明：**
@@ -243,10 +249,12 @@ http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findPostsByDate?timesta
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findUserOrganizationPost?timestamp={timestamp}
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
-示例： http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findUserOrganizationPost?timestamp=1601000903868
+示例： http://ljw.sso.rghall.com.cn/linkid/api/aggregate/keTan/public/findUserOrganizationPost?timestamp=1601000903868
 ```
 
 **参数说明：**

@@ -26,6 +26,8 @@
 
 **请求地址：** http://{server}/faceid/public/auth/compare/userId
 
+注：https方式类似。
+
 **请求参数：**
 
 ```
@@ -89,6 +91,8 @@
 
 **请求地址：** http://{server}/faceid/public/auth/search
 
+注：https方式类似。
+
 **请求参数：**
 
 ```
@@ -144,6 +148,8 @@
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/faceid/public/face/findIncreaseUserFaceImage
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -243,6 +249,8 @@
 
 **请求地址：**  http://{server}/faceid/public/face/findIncreaseUserFace
 
+注：https方式类似。
+
 **请求参数：**
 
 ```
@@ -323,6 +331,8 @@
 
 **请求地址：** http://{server}/faceid/public/face/searchFaceByUserIdAndType
 
+注：https方式类似。
+
 **请求参数：**
 
 ```
@@ -371,6 +381,8 @@
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/faceid/public/face/searchFaceByUserIdAndTypeImage
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -424,6 +436,8 @@
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/faceid/public/face/quality
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -505,6 +519,8 @@
 
 **请求地址：** http://{server}/faceid/public/face/findAllImageBase64ByUserIds
 
+注：https方式类似。
+
 **请求参数：**
 
 ```
@@ -568,6 +584,8 @@
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/faceid/public/face/image
+
+注：https方式类似。
 
 **请求参数：**
 

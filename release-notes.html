@@ -12,6 +12,7 @@
         
         
     
+    
     <link rel="stylesheet" href="gitbook/style.css">
 
     
@@ -45,6 +46,10 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -60,6 +65,9 @@
         
         <link rel="stylesheet" href="styles/website.css">
         
+    
+
+
     
 
         
@@ -148,7 +156,7 @@
                 <a href="quick-get-start/general-application-docking.html">
             
                     
-                    统一认证对接
+                    单点对接
             
                 </a>
             
@@ -156,12 +164,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="quick-get-start/face-application-docking.html">
+        <li class="chapter " data-level="1.2.3" data-path="quick-get-start/face-docking.html">
             
-                <a href="quick-get-start/face-application-docking.html">
+                <a href="quick-get-start/face-docking.html">
             
                     
-                    人脸应用对接
+                    人脸对接
             
                 </a>
             
@@ -169,12 +177,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="quick-get-start/face-manufacturer-docking.html">
+        <li class="chapter " data-level="1.2.4" data-path="quick-get-start/group-docking.html">
             
-                <a href="quick-get-start/face-manufacturer-docking.html">
+                <a href="quick-get-start/group-docking.html">
             
                     
-                    人脸厂商对接
+                    群组对接
             
                 </a>
             
@@ -219,7 +227,7 @@
                 <a href="get-access-token.html">
             
                     
-                    获取access_token
+                    获取Token方式一：获取access_token
             
                 </a>
             
@@ -232,7 +240,7 @@
                 <a href="get-JWT.html">
             
                     
-                    获取JWT
+                    获取Token方式二：获取JWT
             
                 </a>
             
@@ -285,20 +293,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.html">
-            
-                <a href="linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.html">
-            
-                    
-                    密码对外接口
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.4" data-path="linkid/user/faq/faq.html">
+        <li class="chapter " data-level="1.4.3" data-path="linkid/user/faq/faq.html">
             
                 <a href="linkid/user/faq/faq.html">
             
@@ -330,16 +325,48 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="linkid/authentication/introduction/">
+        <li class="chapter " data-level="1.5.1" >
             
-                <a href="linkid/authentication/introduction/">
+                <span>
             
                     
                     开发前须知
             
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="linkid/authentication/introduction/cas-README.html">
+            
+                <a href="linkid/authentication/introduction/cas-README.html">
+            
+                    
+                    CAS单点对接
+            
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="linkid/authentication/introduction/oauth-README.html">
+            
+                <a href="linkid/authentication/introduction/oauth-README.html">
+            
+                    
+                    OAuth2.0单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -361,7 +388,7 @@
                 <a href="linkid/authentication/public/interface/oauth-authentication.html">
             
                     
-                    OAuth认证接口
+                    OAuth2.0认证接口
             
                 </a>
             
@@ -711,7 +738,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="faceid/faq/faq.html">
+        <li class="chapter " data-level="1.9.5" data-path="faceid/deployment/deployment.html">
+            
+                <a href="faceid/deployment/deployment.html">
+            
+                    
+                    人脸实施部署文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="faceid/faq/faq.html">
             
                 <a href="faceid/faq/faq.html">
             
@@ -850,7 +890,7 @@
                 <span>
             
                     
-                    海大其他在用API
+                    其他
             
                 </span>
             
@@ -961,7 +1001,7 @@
                 <a href="appendix/faq/faq.html">
             
                     
-                    FQA
+                    FAQ
             
                 </a>
             
@@ -1020,32 +1060,66 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x53D1;&#x884C;&#x8BF4;&#x660E;">&#x53D1;&#x884C;&#x8BF4;&#x660E;</h1>
-<p>SID&#x5BF9;&#x5916;&#x5F00;&#x653E;API&#x5305;&#x542B;&#x4E0D;&#x540C;&#x7684;&#x53D1;&#x884C;&#x7248;&#x672C;&#xFF0C;&#x672C;&#x6587;&#x6863;&#x5C06;&#x8BF4;&#x660E;&#x6BCF;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x65B0;&#x589E;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5E9F;&#x5F03;3&#x90E8;&#x5206;&#xFF0C;&#x7248;&#x672C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>SID&#x5BF9;&#x5916;&#x5F00;&#x653E;API&#x5305;&#x542B;&#x4E0D;&#x540C;&#x7684;&#x53D1;&#x884C;&#x7248;&#x672C;&#xFF0C;&#x672C;&#x6587;&#x6863;&#x5C06;&#x63CF;&#x8FF0;&#x6BCF;&#x4E2A;&#x7248;&#x672C;&#x65B0;&#x589E;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5E9F;&#x5F03;3&#x90E8;&#x5206;&#x6240;&#x5305;&#x542B;&#x7684;&#x63A5;&#x53E3;&#x3002;</p>
 <blockquote>
-<p><a href="#link1">1.7.2&#x7248;&#x672C;</a></p>
-<p><a href="#link2">1.8.0&#x7248;&#x672C;</a></p>
+<p><a href="#172">1.7.2&#x7248;&#x672C;</a></p>
+<ul>
+<li><p><a href="#172-add">&#x65B0;&#x589E;&#x63A5;&#x53E3;</a></p>
+<p><a href="#172-add-group">&#x7FA4;&#x7EC4;&#x5BF9;&#x5916;&#x63A5;&#x53E3;</a></p>
+</li>
+<li><p><a href="#172-update">&#x4FEE;&#x6539;&#x63A5;&#x53E3;</a></p>
+</li>
+<li><p><a href="#172-delete">&#x5E9F;&#x5F03;&#x63A5;&#x53E3;</a></p>
+</li>
+</ul>
+<p><a href="#180">1.8.0&#x7248;&#x672C;</a></p>
+<ul>
+<li><p><a href="#180-add">&#x65B0;&#x589E;&#x63A5;&#x53E3;</a></p>
+<p><a href="#180-add-faceid">&#x4EBA;&#x8138;&#x5BF9;&#x5916;&#x63A5;&#x53E3;</a></p>
+<p><a href="#180-add-faceid-manufacturer">&#x4EBA;&#x8138;&#x5382;&#x5546;&#x6807;&#x51C6;&#x63A5;&#x53E3;</a></p>
+<p><a href="#180-add-faceid-application">&#x4EBA;&#x8138;&#x5E94;&#x7528;&#x6807;&#x51C6;&#x63A5;&#x53E3;</a></p>
+</li>
+<li><p><a href="#180-update">&#x4FEE;&#x6539;&#x63A5;&#x53E3;</a></p>
+</li>
+<li><p><a href="#180-delete">&#x5E9F;&#x5F03;&#x63A5;&#x53E3;</a></p>
+</li>
+</ul>
 </blockquote>
-<h4 id="172&#x7248;&#x672C;">1.7.2&#x7248;&#x672C;<div id="link1"></div></h4>
-<p><strong>&#x65B0;&#x589E;&#x90E8;&#x5206;</strong></p>
+<h4 id="172&#x7248;&#x672C;">1.7.2&#x7248;&#x672C;<div id="172"></div></h4>
+<h5 id="&#x4E00;&#x3001;&#x65B0;&#x589E;&#x63A5;&#x53E3;">&#x4E00;&#x3001;&#x65B0;&#x589E;&#x63A5;&#x53E3;<div id="172-add"></div></h5>
+<p>SourceID 1.7.2&#x4E2D;&#x6DFB;&#x52A0;&#x4E86;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
+<h6 id="1&#x3001;&#x7FA4;&#x7EC4;&#x5BF9;&#x5916;&#x63A5;&#x53E3;">1&#x3001;&#x7FA4;&#x7EC4;&#x5BF9;&#x5916;&#x63A5;&#x53E3;<div id="172-add-group"></div></h6>
 <ul>
-<li>&#x7FA4;&#x7EC4;&#x5BF9;&#x5916;API</li>
-<li>linkid-&#x5BC6;&#x7801;&#x5BF9;&#x5916;API</li>
+<li><p>&#x521B;&#x5EFA;&#x7FA4;&#x7EC4;&#x8282;&#x70B9;&#x3001;&#x66F4;&#x65B0;&#x7FA4;&#x7EC4;&#x8282;&#x70B9;&#x3001;&#x5220;&#x9664;&#x7FA4;&#x7EC4;&#x8282;&#x70B9;&#x3001;&#x67E5;&#x8BE2;&#x67D0;&#x4E2A;&#x7FA4;&#x7EC4;&#x8282;&#x70B9;</p>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x6210;&#x5458;&#x3001;&#x66F4;&#x65B0;&#x6210;&#x5458;&#x3001;&#x5220;&#x9664;&#x6210;&#x5458;&#x3001;&#x67E5;&#x8BE2;&#x6210;&#x5458;&#x3001;&#x83B7;&#x53D6;&#x7FA4;&#x7EC4;&#x8282;&#x70B9;&#x4E0B;&#x6210;&#x5458;</p>
+</li>
 </ul>
-<p><strong>&#x4FEE;&#x6539;&#x90E8;&#x5206;</strong></p>
+<p>&#x5F85;&#x8865;&#x5145;</p>
+<h5 id="&#x4E8C;&#x3001;&#x4FEE;&#x6539;&#x63A5;&#x53E3;"><strong>&#x4E8C;&#x3001;&#x4FEE;&#x6539;&#x63A5;&#x53E3;</strong><div id="172-update"></div></h5>
+<p>SourceID 1.7.2&#x4E2D;&#x66F4;&#x65B0;&#x4E86;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
 <p>&#x65E0;</p>
-<p><strong>&#x5E9F;&#x5F03;&#x90E8;&#x5206;</strong></p>
+<h5 id="&#x4E09;&#x3001;&#x5E9F;&#x5F03;&#x63A5;&#x53E3;"><strong>&#x4E09;&#x3001;&#x5E9F;&#x5F03;&#x63A5;&#x53E3;</strong><div id="172-delete"></div></h5>
+<p>SourceID 1.7.2&#x4E2D;&#x5220;&#x9664;&#x4E86;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
 <p>&#x65E0;</p>
-<h4 id="180&#x7248;&#x672C;">1.8.0&#x7248;&#x672C;<div id="link2"></div></h4>
-<p><strong>&#x65B0;&#x589E;&#x90E8;&#x5206;</strong></p>
-<ul>
-<li>&#x4EBA;&#x8138;&#x5BF9;&#x5916;API</li>
-</ul>
-<p><strong>&#x4FEE;&#x6539;&#x90E8;&#x5206;</strong></p>
+<h4 id="180&#x7248;&#x672C;">1.8.0&#x7248;&#x672C;<div id="180"></div></h4>
+<h5 id="&#x4E00;&#x3001;&#x65B0;&#x589E;&#x63A5;&#x53E3;">&#x4E00;&#x3001;&#x65B0;&#x589E;&#x63A5;&#x53E3;<div id="180-add"></div></h5>
+<p>SourceID 1.8.0&#x4E2D;&#x6DFB;&#x52A0;&#x4E86;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
+<h6 id="1&#x3001;&#x4EBA;&#x8138;&#x5BF9;&#x5916;&#x63A5;&#x53E3;">1&#x3001;&#x4EBA;&#x8138;&#x5BF9;&#x5916;&#x63A5;&#x53E3;<div id="180-add-faceid"></div></h6>
+<p>1:1 &#x8BA4;&#x8BC1;&#x3001;1:N &#x8BA4;&#x8BC1;&#x3001;&#x589E;&#x91CF;&#x540C;&#x6B65;&#x7167;&#x7247;&#x3001;&#x589E;&#x91CF;&#x540C;&#x6B65;&#x7279;&#x5F81;&#x503C;&#x3001;&#x901A;&#x8FC7;&#x7528;&#x6237;id&#x548C;&#x7167;&#x7247;&#x7C7B;&#x578B;&#x67E5;&#x8BE2;&#x7167;&#x7247;&#x3001;&#x68C0;&#x67E5;&#x7167;&#x7247;&#x8D28;&#x91CF;&#x3001;&#x901A;&#x8FC7;&#x7528;&#x6237;id list&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x7167;&#x7247;&#x3001;&#x4E0A;&#x4F20;&#x7167;&#x7247;</p>
+<h6 id="2&#x3001;&#x4EBA;&#x8138;&#x5382;&#x5546;&#x6807;&#x51C6;&#x63A5;&#x53E3;">2&#x3001;&#x4EBA;&#x8138;&#x5382;&#x5546;&#x6807;&#x51C6;&#x63A5;&#x53E3;<div id="180-add-faceid-manufacturer"></div></h6>
+<p>1:1 &#x8BA4;&#x8BC1;&#x3001;1:N &#x8BA4;&#x8BC1;&#x3001;&#x9759;&#x9ED8;&#x6D3B;&#x4F53;&#x68C0;&#x6D4B;&#x3001;&#x7167;&#x7247;&#x5206;&#x6790;&#xFF08;&#x7279;&#x5F81;&#x503C;&#x4E0E;&#x8D28;&#x91CF;&#x5206;&#x6790;&#xFF09;&#x3001;&#x7167;&#x7247;&#x67E5;&#x8BE2;&#x3001;&#x7167;&#x7247;&#x5220;&#x9664;&#x3001;&#x7167;&#x7247;&#x4FEE;&#x6539;&#x3001;&#x7167;&#x7247;&#x589E;&#x52A0;</p>
+<h6 id="3&#x3001;&#x4EBA;&#x8138;&#x5E94;&#x7528;&#x6807;&#x51C6;&#x63A5;&#x53E3;">3&#x3001;&#x4EBA;&#x8138;&#x5E94;&#x7528;&#x6807;&#x51C6;&#x63A5;&#x53E3;<div id="180-add-faceid-application"></div></h6>
+<p>&#x7167;&#x7247;&#x5206;&#x6790;&#xFF08;&#x7279;&#x5F81;&#x503C;&#x4E0E;&#x8D28;&#x91CF;&#x5206;&#x6790;&#xFF09;</p>
+<p>&#x5F85;&#x8865;&#x5145;</p>
+<h5 id="&#x4E8C;&#x3001;&#x4FEE;&#x6539;&#x63A5;&#x53E3;"><strong>&#x4E8C;&#x3001;&#x4FEE;&#x6539;&#x63A5;&#x53E3;</strong><div id="180-update"></div></h5>
+<p>SourceID 1.7.2&#x4E2D;&#x66F4;&#x65B0;&#x4E86;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
 <p>&#x65E0;</p>
-<p><strong>&#x5E9F;&#x5F03;&#x90E8;&#x5206;</strong></p>
+<h5 id="&#x4E09;&#x3001;&#x5E9F;&#x5F03;&#x63A5;&#x53E3;"><strong>&#x4E09;&#x3001;&#x5E9F;&#x5F03;&#x63A5;&#x53E3;</strong><div id="180-delete"></div></h5>
+<p>SourceID 1.7.2&#x4E2D;&#x5220;&#x9664;&#x4E86;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
 <p>&#x65E0; </p>
 <footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-11-06 10:41:04
+2020-12-08 17:27:26
 </span></footer>
                                 
                                 </section>
@@ -1085,12 +1159,13 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"发行说明","level":"1.13","depth":1,"next":{"title":"附录","level":"1.14","depth":1,"ref":"","articles":[{"title":"全局错误码","level":"1.14.1","depth":2,"path":"appendix/global-error-code.md","ref":"appendix/global-error-code.md","articles":[]},{"title":"接口性能","level":"1.14.2","depth":2,"path":"appendix/interface-performance.md","ref":"appendix/interface-performance.md","articles":[]},{"title":"FQA","level":"1.14.3","depth":2,"path":"appendix/faq/faq.md","ref":"appendix/faq/faq.md","articles":[]}]},"previous":{"title":"FAQ","level":"1.12.3","depth":2,"path":"linkid/dlmu/faq/faq.md","ref":"linkid/dlmu/faq/faq.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"release-notes.md","mtime":"2020-11-06T02:41:04.989Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-11-27T10:26:49.167Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"发行说明","level":"1.13","depth":1,"next":{"title":"附录","level":"1.14","depth":1,"ref":"","articles":[{"title":"全局错误码","level":"1.14.1","depth":2,"path":"appendix/global-error-code.md","ref":"appendix/global-error-code.md","articles":[]},{"title":"接口性能","level":"1.14.2","depth":2,"path":"appendix/interface-performance.md","ref":"appendix/interface-performance.md","articles":[]},{"title":"FAQ","level":"1.14.3","depth":2,"path":"appendix/faq/faq.md","ref":"appendix/faq/faq.md","articles":[]}]},"previous":{"title":"FAQ","level":"1.12.3","depth":2,"path":"linkid/dlmu/faq/faq.md","ref":"linkid/dlmu/faq/faq.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"release-notes.md","mtime":"2020-12-08T09:27:26.289Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-08T09:33:40.299Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -1123,6 +1198,10 @@
         
     
         
+        <script src="gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
         <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
@@ -1130,6 +1209,8 @@
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
+    <script src="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

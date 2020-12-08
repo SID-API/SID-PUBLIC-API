@@ -19,6 +19,8 @@
 
 **请求地址：**http://{server}/app/department/get
 
+注：https方式类似。
+
 **请求头:**
 
 header: Signature (通过MD5获取到的签名值)
@@ -89,6 +91,8 @@ header: Timestamp（当前时间戳）
 
 **请求地址：**http://{server}/app/department/create
 
+注：https方式类似。
+
 **请求头:**
 
 header: Signature (通过MD5获取到的签名值)
@@ -146,6 +150,8 @@ header: Timestamp（当前时间戳）
 
 **请求地址：**http://{server}/app/department/update
 
+注：https方式类似。
+
 **请求头:**
 
 header: Signature (通过MD5获取到的签名值)
@@ -199,6 +205,8 @@ header: Timestamp（当前时间戳）
 **请求⽅式：**GET（HTTPS或HTTP）
 
 **请求地址：**http://{server}/app/department/delete/{id}
+
+注：https方式类似。
 
 **请求头:**
 

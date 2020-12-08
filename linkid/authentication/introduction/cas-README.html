@@ -1,0 +1,1331 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CAS单点对接 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="oauth-README.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    快速入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../quick-get-start/explain.html">
+            
+                <a href="../../../quick-get-start/explain.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../quick-get-start/general-application-docking.html">
+            
+                <a href="../../../quick-get-start/general-application-docking.html">
+            
+                    
+                    单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../quick-get-start/face-docking.html">
+            
+                <a href="../../../quick-get-start/face-docking.html">
+            
+                    
+                    人脸对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../quick-get-start/group-docking.html">
+            
+                <a href="../../../quick-get-start/group-docking.html">
+            
+                    
+                    群组对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    开发指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../application-register.html">
+            
+                <a href="../../../application-register.html">
+            
+                    
+                    应用注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../get-access-token.html">
+            
+                <a href="../../../get-access-token.html">
+            
+                    
+                    获取Token方式一：获取access_token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../get-JWT.html">
+            
+                <a href="../../../get-JWT.html">
+            
+                    
+                    获取Token方式二：获取JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    用户
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../user/introduction/">
+            
+                <a href="../../user/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../user/public/interface/user-external-api.html">
+            
+                <a href="../../user/public/interface/user-external-api.html">
+            
+                    
+                    用户信息对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../user/faq/faq.html">
+            
+                <a href="../../user/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    认证
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    开发前须知
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1.1" data-path="cas-README.html">
+            
+                <a href="cas-README.html">
+            
+                    
+                    CAS单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="oauth-README.html">
+            
+                <a href="oauth-README.html">
+            
+                    
+                    OAuth2.0单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../public/interface/cas-authentication.html">
+            
+                <a href="../public/interface/cas-authentication.html">
+            
+                    
+                    CAS认证接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../public/interface/oauth-authentication.html">
+            
+                <a href="../public/interface/oauth-authentication.html">
+            
+                    
+                    OAuth2.0认证接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    组织
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../organization/introduction/">
+            
+                <a href="../../organization/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../organization/public/interface/organization-external-api.html">
+            
+                <a href="../../organization/public/interface/organization-external-api.html">
+            
+                    
+                    组织信息对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../organization/faq/faq.html">
+            
+                <a href="../../organization/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    标签
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../label/introduction/">
+            
+                <a href="../../label/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../label/public/interface/label-external-api.html">
+            
+                <a href="../../label/public/interface/label-external-api.html">
+            
+                    
+                    标签对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../label/faq/faq.html">
+            
+                <a href="../../label/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    群组
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../group/introduction/">
+            
+                <a href="../../../group/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" >
+            
+                <span>
+            
+                    
+                    建立、推送群组数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../../group/procedure/define-group.html">
+            
+                <a href="../../../group/procedure/define-group.html">
+            
+                    
+                    定义并发布一个群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../../../group/procedure/create-push-task.html">
+            
+                <a href="../../../group/procedure/create-push-task.html">
+            
+                    
+                    建立群组推送任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="../../../group/procedure/push-task.html">
+            
+                <a href="../../../group/procedure/push-task.html">
+            
+                    
+                    推送群组数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../../group/develop/safety-verification.html">
+            
+                <a href="../../../group/develop/safety-verification.html">
+            
+                    
+                    群组推送安全验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../../group/develop/node-management.html">
+            
+                <a href="../../../group/develop/node-management.html">
+            
+                    
+                    群组节点管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../../group/develop/personnel-management.html">
+            
+                <a href="../../../group/develop/personnel-management.html">
+            
+                    
+                    人员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../../group/faq/">
+            
+                <a href="../../../group/faq/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    人脸
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../../faceid/introduction/">
+            
+                <a href="../../../faceid/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../../faceid/public/interface/face-external-api.html">
+            
+                <a href="../../../faceid/public/interface/face-external-api.html">
+            
+                    
+                    人脸对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../../faceid/manufacturer/interface/manufacture.html">
+            
+                <a href="../../../faceid/manufacturer/interface/manufacture.html">
+            
+                    
+                    人脸厂商标准接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../../faceid/manufacturer/interface/application.html">
+            
+                <a href="../../../faceid/manufacturer/interface/application.html">
+            
+                    
+                    人脸应用标准接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../../faceid/deployment/deployment.html">
+            
+                <a href="../../../faceid/deployment/deployment.html">
+            
+                    
+                    人脸实施部署文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../../faceid/faq/faq.html">
+            
+                <a href="../../../faceid/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    角色
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../role/introduction/">
+            
+                <a href="../../role/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../role/public/interface/role-external-api.html">
+            
+                <a href="../../role/public/interface/role-external-api.html">
+            
+                    
+                    角色对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../role/faq/faq.html">
+            
+                <a href="../../role/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    三元组
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../userorganizationpost/introduction/">
+            
+                <a href="../../userorganizationpost/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../userorganizationpost/public/interface/userorganizationpost-external-api.html">
+            
+                <a href="../../userorganizationpost/public/interface/userorganizationpost-external-api.html">
+            
+                    
+                    三元组对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../userorganizationpost/faq/faq.html">
+            
+                <a href="../../userorganizationpost/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../dlmu/introduction/">
+            
+                <a href="../../dlmu/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../dlmu/public/interface/dlmu-external-api.html">
+            
+                <a href="../../dlmu/public/interface/dlmu-external-api.html">
+            
+                    
+                    海大其他在用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../dlmu/faq/faq.html">
+            
+                <a href="../../dlmu/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../../release-notes.html">
+            
+                <a href="../../../release-notes.html">
+            
+                    
+                    发行说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    附录
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../../appendix/global-error-code.html">
+            
+                <a href="../../../appendix/global-error-code.html">
+            
+                    
+                    全局错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../../appendix/interface-performance.html">
+            
+                <a href="../../../appendix/interface-performance.html">
+            
+                    
+                    接口性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../../../appendix/faq/faq.html">
+            
+                <a href="../../../appendix/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >CAS单点对接</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cas&#x5355;&#x70B9;&#x5BF9;&#x63A5;">CAS&#x5355;&#x70B9;&#x5BF9;&#x63A5;</h1>
+<blockquote>
+<p><a href="#0">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></p>
+<ul>
+<li><a href="#1">&#x7F51;&#x7EDC;&#x68C0;&#x67E5;</a></li>
+<li><a href="#2">&#x5E94;&#x7528;&#x6CE8;&#x518C;&#x3001;&#x914D;&#x7F6E;</a></li>
+<li><a href="#3">&#x96C6;&#x6210;CAS Client</a></li>
+</ul>
+<p><a href="#4">CAS&#x5355;&#x70B9;&#x5BF9;&#x63A5;</a></p>
+</blockquote>
+<h4 id="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;<a id="0"></a></h4>
+<p>&#x5728;&#x6D4B;&#x8BD5;&#x6216;&#x5BF9;&#x63A5;&#x4E4B;&#x524D;&#xFF0C;&#x5E94;&#x7528;&#x9700;&#x505A;&#x4EE5;&#x4E0B;3&#x70B9;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+<h5 id="1&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x67E5;">1&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x67E5;<a id="1"></a></h5>
+<p><a href="../faq/faq.html#1">&#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x662F;&#x5426;&#x4E92;&#x901A;</a>&#xFF08;&#x5982;DNS&#xFF09;&#xFF0C;&#x4E0D;&#x901A;&#x5219;&#x627E;&#x5B66;&#x6821;&#x4E1A;&#x52A1;&#x8D1F;&#x8D23;&#x4EBA;&#x3002;</p>
+<h5 id="2&#x3001;&#x5E94;&#x7528;&#x6CE8;&#x518C;&#x3001;&#x914D;&#x7F6E;">2&#x3001;&#x5E94;&#x7528;&#x6CE8;&#x518C;&#x3001;&#x914D;&#x7F6E;<a id="2"></a></h5>
+<p>&#xFF08;1&#xFF09;<a href="../../../application-register.html">&#x5E94;&#x7528;&#x6CE8;&#x518C;</a>&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x5355;&#x70B9;&#x767B;&#x5F55;&#x5BF9;&#x63A5;&#x914D;&#x7F6E;-&#x8FDB;&#x5165;&#x914D;&#x7F6E;&#x3002;</p>
+<p><img src="cas-README.assets/image3.png" alt="image3"></p>
+<p>&#xFF08;3&#xFF09;&#x914D;&#x7F6E;CAS&#x5355;&#x70B9;&#x767B;&#x5F55;&#x5BF9;&#x63A5;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;</p>
+<p><img src="cas-README.assets/image4.png" alt="image4"></p>
+<p>&#x6CE8;&#xFF1A;</p>
+<ul>
+<li><p>&#x56DE;&#x8C03;&#x5730;&#x5740;&#x91C7;&#x7528;&#x5730;&#x5740;&#x5339;&#x914D;&#x6A21;&#x5F0F;&#xFF0C;&#x53EF;&#x5339;&#x914D;&#x8BE5;&#x5730;&#x5740;&#x7684;&#x5B50;&#x96C6;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li><p>cas&#x767B;&#x51FA;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<p><strong>&#x524D;&#x7AEF;&#x767B;&#x51FA;(FRONT_CHANNEL)&#xFF1A;</strong>&#x7528;&#x6237;&#x70B9;&#x51FB;logout&#x94FE;&#x63A5;&#xFF08;&#x94FE;&#x63A5;&#x5730;&#x5740;&#x4E3A;cas&#x767B;&#x51FA;&#x5730;&#x5740;&#xFF09;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x8DF3;&#x8F6C;&#x5230;cas&#x767B;&#x51FA;&#x5730;&#x5740;&#xFF0C;cas&#x767B;&#x51FA;&#x9875;&#x9762;&#x7ED9;&#x5BF9;&#x63A5;&#x5E94;&#x7528;&#x53D1;&#x9001;jsonp&#x7684;&#x767B;&#x51FA;&#x8BF7;&#x6C42;&#xFF0C;&#x8FBE;&#x5230;&#x767B;&#x51FA;&#x6548;&#x679C;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x524D;&#x7AEF;&#x767B;&#x51FA;&#x4E0D;&#x652F;&#x6301;cas&#x4F1A;&#x8BDD;&#x8D85;&#x65F6;&#x81EA;&#x52A8;&#x767B;&#x51FA;&#x3002;</p>
+<p><strong>&#x540E;&#x7AEF;&#x767B;&#x51FA;(BACK_CHANNEL)&#xFF1A;</strong>&#x662F;&#x5F53;TGT&#x8D85;&#x65F6;&#x65F6;&#xFF0C;&#x6216;&#x8005;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x94FE;&#x63A5;&#x8BBF;&#x95EE;cas&#x767B;&#x51FA;&#x5730;&#x5740;&#x65F6;&#xFF0C;cas&#x670D;&#x52A1;&#x5668;&#x76F4;&#x63A5;&#x7ED9;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x767B;&#x51FA;&#x8BF7;&#x6C42;&#xFF0C;&#x4EE5;&#x8FBE;&#x5230;&#x767B;&#x51FA;&#x6548;&#x679C;&#x3002;</p>
+</li>
+</ul>
+<p>&#xFF08;4&#xFF09;&#x542F;&#x7528;&#x914D;&#x7F6E;&#x3002;</p>
+<p><img src="cas-README.assets/image5.png" alt="image5"></p>
+<h5 id="3&#x3001;&#x96C6;&#x6210;cas-client">3&#x3001;&#x96C6;&#x6210;CAS Client<a id="3"></a></h5>
+<p>&#xFF08;1&#xFF09;&#x914D;&#x7F6E;maven&#x73AF;&#x5883;&#x4F9D;&#x8D56;&#x3002;</p>
+<pre><code class="lang-Java">&lt;dependency&gt;
+    &lt;groupId&gt;org.jasig.cas.client&lt;/groupId&gt;
+    &lt;artifactId&gt;cas-client-core&lt;/artifactId&gt;
+    &lt;version&gt;3.5.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4ECE;<a href="https://mvnrepository.com/artifact/org.jasig.cas.client/cas-client-core&#x5730;&#x5740;&#x4E0B;&#x8F7D;&#x3002;" target="_blank">https://mvnrepository.com/artifact/org.jasig.cas.client/cas-client-core&#x5730;&#x5740;&#x4E0B;&#x8F7D;&#x3002;</a></p>
+<p>&#xFF08;2&#xFF09;&#x914D;&#x7F6E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x90E8;&#x7F72;&#x63CF;&#x8FF0;&#x6587;&#x4EF6; (web.xml)</p>
+<p><strong>&#x8BF4;&#x660E;&#xFF1A;</strong></p>
+<ul>
+<li>&#x4E0B;&#x6587;&#x5185;{server}&#x8868;&#x793A;sso&#x5730;&#x5740;&#xFF0C;&#x793A;&#x4F8B;&#xFF1A;<a href="http://ljw.sso.rghall.com.cn&#x3002;" target="_blank">http://ljw.sso.rghall.com.cn&#x3002;</a></li>
+<li>sso&#x7684;&#x767B;&#x5F55;&#x5730;&#x5740;&#x3001;ticket&#x9A8C;&#x8BC1;&#x5730;&#x5740;&#x3001;&#x767B;&#x51FA;&#x5730;&#x5740;&#x8BE6;&#x89C1;&#xFF1A;<a href="../public/interface/cas-authentication.html">CAS&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;</a>&#x3002;</li>
+</ul>
+<p>1&#xFF09;&#x5FC5;&#x5907;&#x914D;&#x7F6E;&#x3002;&#x8BBE;&#x7F6E;serverName&#x3001;&#x76D1;&#x542C;&#x7C7B;&#x3002;serverName&#x4E3A;&#x767B;&#x9646;&#x6210;&#x529F;&#x6216;&#x8005;&#x9000;&#x51FA;&#x6210;&#x529F;&#x7684;&#x5E94;&#x7528;&#x56DE;&#x8C03;&#x5730;&#x5740;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">context-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>serverName<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>http://localhost:8080<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">context-param</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">listener</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">listener-class</span>&gt;</span>
+        org.jasig.cas.client.session.SingleSignOutHttpSessionListener
+    <span class="hljs-tag">&lt;/<span class="hljs-name">listener-class</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">listener</span>&gt;</span>
+</code></pre>
+<p>2&#xFF09;&#x914D;&#x7F6E;AuthenticationFilter&#xFF08;&#x9700;&#x8981;&#x914D;&#x7F6E;sso&#x767B;&#x5F55;&#x5730;&#x5740;&#xFF09;&#x3002;</p>
+<blockquote>
+<p>AuthenticationFilter&#x7684;&#x4F5C;&#x7528;&#x662F;&#x7528;&#x4E8E;&#x62E6;&#x622A;SSO&#x767B;&#x9646;&#x8BF7;&#x6C42;&#x7684;&#xFF0C;&#x5F53;&#x4F60;&#x63D0;&#x4EA4;&#x7684;request&#x7B26;&#x5408;SSO&#x767B;&#x9646;&#x89C4;&#x5219;&#xFF0C;CAS client&#x4F1A;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;filter&#x5C06;&#x767B;&#x9646;&#x8BF7;&#x6C42;&#x8F6C;&#x5411;&#x5230;CAS server&#x7684;&#x767B;&#x9646;&#x754C;&#x9762;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x662F;&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x8981;&#x5728;&#x6700;&#x4E0A;&#x9762;&#x3002;</p>
+</blockquote>
+<pre><code>&lt;!--&#x8BE5;&#x8FC7;&#x6EE4;&#x5668;&#x8D1F;&#x8D23;&#x7528;&#x6237;&#x672A;&#x767B;&#x5F55;&#x65F6;&#xFF0C;&#x8DF3;&#x8F6C;&#x5230;&#x8BA4;&#x8BC1;&#x9875;&#x9762;&#x8FDB;&#x884C;&#x767B;&#x5F55;--&gt;
+&lt;filter&gt;
+    &lt;filter-name&gt;CAS Authentication Filter&lt;/filter-name&gt;
+    &lt;filter-class&gt;
+        org.jasig.cas.client.authentication.AuthenticationFilter
+    &lt;/filter-class&gt;
+    &lt;init-param&gt;
+    &lt;!--&#x914D;&#x7F6E;sso&#x767B;&#x5F55;&#x5730;&#x5740;--&gt;
+        &lt;param-name&gt;casServerLoginUrl&lt;/param-name&gt;
+        &lt;param-value&gt;{server}/login&lt;/param-value&gt;
+    &lt;/init-param&gt;
+&lt;/filter&gt;
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;CAS Authentication Filter&lt;/filter-name&gt;
+    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;&lt;!&#x2014;&#x62E6;&#x622A;&#x8DEF;&#x5F84;--&gt;
+&lt;/filter-mapping&gt;
+</code></pre><p>3&#xFF09;&#x914D;&#x7F6E;TicketValidationFilter&#xFF08;&#x9700;&#x8981;&#x914D;&#x7F6E;ticket&#x9A8C;&#x8BC1;&#x5730;&#x5740;&#xFF09;&#x3002;</p>
+<blockquote>
+<p>&#x7528;&#x4E8E;&#x62E6;&#x622A;&#x767B;&#x9646;&#x8FD4;&#x56DE;&#x7684;&#x8DF3;&#x8F6C;&#x8BF7;&#x6C42;&#x7684;&#x3002;&#x5F53;CAS server&#x786E;&#x8BA4;&#x767B;&#x9646;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;&#x540E;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;server ticket&#xFF0C;&#x8FD9;&#x4E2A;ticket&#x4F1A;&#x7531;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;CAS client&#x518D;&#x9001;&#x56DE;CAS server&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x7528;&#x4E8E;&#x9632;&#x6B62;&#x4EFF;&#x5192;&#x653B;&#x51FB;&#x7684;&#x3002;</p>
+</blockquote>
+<pre><code>&lt;!--&#x8BE5;&#x8FC7;&#x6EE4;&#x5668;&#x8D1F;&#x8D23;&#x5BF9;ticket&#x7684;&#x6821;&#x9A8C;&#x5DE5;&#x4F5C;--&gt;
+&lt;filter&gt;
+    &lt;filter-name&gt;CAS Validation Filter&lt;/filter-name&gt;
+    &lt;filter-class&gt;
+        org.jasig.cas.client.validation.Cas30ProxyReceivingTicketValidationFilter
+    &lt;/filter-class&gt;
+    &lt;init-param&gt;
+    &lt;!--&#x914D;&#x7F6E;sso&#x7684;ticket&#x9A8C;&#x8BC1;&#x5730;&#x5740;--&gt;
+        &lt;param-name&gt;casServerUrlPrefix&lt;/param-name&gt;
+        &lt;param-value&gt;{server}/p3&lt;/param-value&gt;
+    &lt;/init-param&gt;
+    &lt;init-param&gt;
+        &lt;!--&#x9A8C;&#x8BC1;&#x540E;&#x662F;&#x5426;&#x91CD;&#x5B9A;&#x5411;--&gt;
+        &lt;param-name&gt;redirectAfterValidation&lt;/param-name&gt;
+        &lt;param-value&gt;true&lt;/param-value&gt;
+    &lt;/init-param&gt;
+    &lt;init-param&gt;
+        &lt;!--&#x670D;&#x52A1;&#x5668;&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BEF;&#x5DEE;&#x65F6;&#x95F4;--&gt;
+        &lt;param-name&gt;tolerance&lt;/param-name&gt;
+        &lt;param-value&gt;5000&lt;/param-value&gt;
+    &lt;/init-param&gt;
+&lt;/filter&gt;
+    &lt;filter-mapping&gt;
+        &lt;filter-name&gt;CAS Validation Filter&lt;/filter-name&gt;
+        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;&lt;!--&#x62E6;&#x622A;&#x8DEF;&#x5F84;--&gt;
+&lt;/filter-mapping&gt;
+</code></pre><p>&#x6CE8;&#xFF1A;</p>
+<p>org.jasig.cas.client.validation.Cas30ProxyReceivingTicketValidationFilter&#x4E3A;CAS3.0&#x534F;&#x8BAE;&#x3002;CAS2.0&#x534F;&#x8BAE;&#x8BF7;&#x914D;&#x7F6E;org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilter&#xFF0C;&#x540C;&#x65F6;&#x914D;&#x7F6E;&#xFF1A;casServerUrlPrefix&#x4E3A;{server}&#xFF0C;&#x4E0D;&#x5E26;&#x201C;/p3&#x201D;&#x3002;</p>
+<p>4&#xFF09;&#x914D;&#x7F6E;HttpServletRequestWrapperFilter&#x3002;</p>
+<blockquote>
+<p>&#x76EE;&#x7684;&#x662F;&#x5C06;CAS server&#x8FD4;&#x56DE;&#x7684;&#x4FE1;&#x606F;&#x5C01;&#x88C5;&#x5230;Http request&#x91CC;&#x9762;&#xFF0C;&#x8FD9;&#x6837;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x53EF;&#x4EE5;&#x7528;request.getRemoteUser()&#x6765;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x540D;&#x7B49;&#x4FE1;&#x606F;&#x4E86;&#x3002;</p>
+</blockquote>
+<pre><code>&lt;filter&gt;
+    &lt;filter-name&gt;
+        CAS HttpServletRequest Wrapper Filter
+    &lt;/filter-name&gt;
+    &lt;filter-class&gt;
+        org.jasig.cas.client.util.HttpServletRequestWrapperFilter
+    &lt;/filter-class&gt;
+&lt;/filter&gt;
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;
+        CAS HttpServletRequest Wrapper Filter
+    &lt;/filter-name&gt;
+    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+</code></pre><p>5&#xFF09;&#x914D;&#x7F6E;AssertionThreadLocalFilter&#x3002;</p>
+<blockquote>
+<p>&#x662F;&#x7528;&#x4E8E;&#x524D;&#x7AEF;&#x7A0B;&#x5E8F;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x524D;&#x7AEF;&#x811A;&#x672C;&#x7A0B;&#x5E8F;&#xFF09;&#x8BBF;&#x95EE;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;request&#x6765;&#x83B7;&#x53D6;&#x4FE1;&#x606F;&#x3002;</p>
+</blockquote>
+<pre><code>&lt;filter&gt;
+    &lt;filter-name&gt;
+        CAS Assertion Thread Local Filter
+    &lt;/filter-name&gt;
+    &lt;filter-class&gt;
+        org.jasig.cas.client.util.AssertionThreadLocalFilter
+    &lt;/filter-class&gt;
+&lt;/filter&gt;
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;
+        CAS Assertion Thread Local Filter
+    &lt;/filter-name&gt;
+    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+</code></pre><p>&#xFF08;6&#xFF09;&#x914D;&#x7F6E;SingleSignOutFilter&#x3002;</p>
+<blockquote>
+<p>&#x7528;&#x4E8E;&#x62E6;&#x622A;&#x767B;&#x51FA;&#x8DEF;&#x5F84;&#xFF0C;&#x6E05;&#x9664;&#x767B;&#x5F55;&#x4FE1;&#x606F;&#x3002;</p>
+</blockquote>
+<pre><code>&lt;filter&gt;
+    &lt;filter-name&gt;
+        CAS Single Sign Out Filter
+    &lt;/filter-name&gt;
+    &lt;filter-class&gt;
+        org.jasig.cas.client.session.SingleSignOutFilter
+    &lt;/filter-class&gt;
+&lt;/filter&gt;
+&lt;filter-mapping&gt;
+    &lt;filter-name&gt;
+        CAS Single Sign Out Filter
+    &lt;/filter-name&gt;
+    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+&lt;/filter-mapping&gt;
+</code></pre><h4 id="cas&#x5355;&#x70B9;&#x5BF9;&#x63A5;">CAS&#x5355;&#x70B9;&#x5BF9;&#x63A5;<a id="4"></a></h4>
+<p>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x6216;&#x5355;&#x70B9;&#x5BF9;&#x63A5;&#x3002;</p>
+<p>&#x5BF9;&#x63A5;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x53EF;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x83B7;&#x53D6;&#x767B;&#x9646;&#x7528;&#x6237;&#x540D;&#x548C;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>//&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;
+AttributePrincipal principal = (AttributePrincipal)request.getUserPrincipal();
+String username = principal.getName();
+
+//&#x83B7;&#x53D6;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;
+Map attributes = principal.getAttributes(); 
+String email=attributes.get(&quot;age&quot;);   //&#x83B7;&#x53D6;&#x9700;&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;key&#x586B;&#x5C5E;&#x6027;&#x540D;&#x5373;&#x53EF;
+</code></pre><footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-12-08 16:55:26
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="oauth-README.html" class="navigation navigation-next navigation-unique" aria-label="Next page: OAuth2.0单点对接">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CAS单点对接","level":"1.5.1.1","depth":3,"next":{"title":"OAuth2.0单点对接","level":"1.5.1.2","depth":3,"path":"linkid/authentication/introduction/oauth-README.md","ref":"linkid/authentication/introduction/oauth-README.md","articles":[]},"previous":{"title":"开发前须知","level":"1.5.1","depth":2,"ref":"","articles":[{"title":"CAS单点对接","level":"1.5.1.1","depth":3,"path":"linkid/authentication/introduction/cas-README.md","ref":"linkid/authentication/introduction/cas-README.md","articles":[]},{"title":"OAuth2.0单点对接","level":"1.5.1.2","depth":3,"path":"linkid/authentication/introduction/oauth-README.md","ref":"linkid/authentication/introduction/oauth-README.md","articles":[]}]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"linkid/authentication/introduction/cas-README.md","mtime":"2020-12-08T08:55:26.789Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-08T09:33:40.299Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -17,6 +17,8 @@
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/organization/public/findAllSonOrganizationIds
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
@@ -61,11 +63,13 @@
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/organization/public/findById/{id}
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-https://self.xxx.edu.cn/linkid/api/organization/public/findById/R5f91237eef72960006ea0d2d
+https://ljw.sso.rghall.com.cn/linkid/api/organization/public/findById/R5f91237eef72960006ea0d2d
 ```
 
 **参数说明：**

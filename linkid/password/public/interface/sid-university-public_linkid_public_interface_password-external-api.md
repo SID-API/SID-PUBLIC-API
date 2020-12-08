@@ -13,6 +13,8 @@
 
 http://{server}/linkid/api/public/password/change
 
+注：https方式类似。
+
 **请求参数：**
 
 ```
@@ -51,6 +53,8 @@ http://{server}/linkid/api/public/password/change
 
 http://{server}/linkid/api/public/password/reset
 
+注：https方式类似。
+
 **请求参数：**
 
 ```
@@ -87,6 +91,8 @@ http://{server}/linkid/api/public/password/reset
 **请求地址：** 
 
 ​	http://{server}/linkid/api/public/password/reset/initial
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -125,6 +131,8 @@ http://{server}/linkid/api/public/password/reset
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/linkid/api/user/third/login
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -184,6 +192,8 @@ http://{server}/linkid/api/public/password/reset
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/linkid/api/user/public/login
+
+注：https方式类似。
 
 **请求参数：**
 

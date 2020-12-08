@@ -4,13 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>获取JWT · GitBook</title>
+        <title>获取Token方式二：获取JWT · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
         
         
         
+    
     
     <link rel="stylesheet" href="gitbook/style.css">
 
@@ -45,6 +46,10 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -60,6 +65,9 @@
         
         <link rel="stylesheet" href="styles/website.css">
         
+    
+
+
     
 
         
@@ -148,7 +156,7 @@
                 <a href="quick-get-start/general-application-docking.html">
             
                     
-                    统一认证对接
+                    单点对接
             
                 </a>
             
@@ -156,12 +164,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="quick-get-start/face-application-docking.html">
+        <li class="chapter " data-level="1.2.3" data-path="quick-get-start/face-docking.html">
             
-                <a href="quick-get-start/face-application-docking.html">
+                <a href="quick-get-start/face-docking.html">
             
                     
-                    人脸应用对接
+                    人脸对接
             
                 </a>
             
@@ -169,12 +177,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="quick-get-start/face-manufacturer-docking.html">
+        <li class="chapter " data-level="1.2.4" data-path="quick-get-start/group-docking.html">
             
-                <a href="quick-get-start/face-manufacturer-docking.html">
+                <a href="quick-get-start/group-docking.html">
             
                     
-                    人脸厂商对接
+                    群组对接
             
                 </a>
             
@@ -219,7 +227,7 @@
                 <a href="get-access-token.html">
             
                     
-                    获取access_token
+                    获取Token方式一：获取access_token
             
                 </a>
             
@@ -232,7 +240,7 @@
                 <a href="get-JWT.html">
             
                     
-                    获取JWT
+                    获取Token方式二：获取JWT
             
                 </a>
             
@@ -285,20 +293,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.html">
-            
-                <a href="linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.html">
-            
-                    
-                    密码对外接口
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.4" data-path="linkid/user/faq/faq.html">
+        <li class="chapter " data-level="1.4.3" data-path="linkid/user/faq/faq.html">
             
                 <a href="linkid/user/faq/faq.html">
             
@@ -330,16 +325,48 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="linkid/authentication/introduction/">
+        <li class="chapter " data-level="1.5.1" >
             
-                <a href="linkid/authentication/introduction/">
+                <span>
             
                     
                     开发前须知
             
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="linkid/authentication/introduction/cas-README.html">
+            
+                <a href="linkid/authentication/introduction/cas-README.html">
+            
+                    
+                    CAS单点对接
+            
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="linkid/authentication/introduction/oauth-README.html">
+            
+                <a href="linkid/authentication/introduction/oauth-README.html">
+            
+                    
+                    OAuth2.0单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -361,7 +388,7 @@
                 <a href="linkid/authentication/public/interface/oauth-authentication.html">
             
                     
-                    OAuth认证接口
+                    OAuth2.0认证接口
             
                 </a>
             
@@ -711,7 +738,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="faceid/faq/faq.html">
+        <li class="chapter " data-level="1.9.5" data-path="faceid/deployment/deployment.html">
+            
+                <a href="faceid/deployment/deployment.html">
+            
+                    
+                    人脸实施部署文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="faceid/faq/faq.html">
             
                 <a href="faceid/faq/faq.html">
             
@@ -850,7 +890,7 @@
                 <span>
             
                     
-                    海大其他在用API
+                    其他
             
                 </span>
             
@@ -961,7 +1001,7 @@
                 <a href="appendix/faq/faq.html">
             
                     
-                    FQA
+                    FAQ
             
                 </a>
             
@@ -1004,7 +1044,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >获取JWT</a>
+        <a href="." >获取Token方式二：获取JWT</a>
     </h1>
 </div>
 
@@ -1024,7 +1064,8 @@
 <p>&#x83B7;&#x53D6;Json web token&#xFF08;JWT&#xFF09;&#x548C;access_token&#x7C7B;&#x4F3C;&#xFF0C;&#x662F;&#x83B7;&#x53D6;&#x51ED;&#x8BC1;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x3002;&#x662F;&#x8C03;&#x7528;SourceID&#x4E1A;&#x52A1;&#x63A5;&#x53E3;&#x7684;&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x767B;&#x5F55;&#x51ED;&#x8BC1;&#xFF0C;&#x76F8;&#x5173;&#x4E1A;&#x52A1;API&#x63A5;&#x53E3;&#x90FD;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;JWT&#x6765;&#x9274;&#x6743;&#x8C03;&#x7528;&#x8005;&#x8EAB;&#x4EFD;&#x3002;&#x56E0;&#x6B64;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x4E1A;&#x52A1;&#x63A5;&#x53E3;&#x524D;&#xFF0C;&#x8981;&#x660E;&#x786E;JWT&#x7684;&#x9881;&#x53D1;&#x6765;&#x6E90;&#xFF0C;&#x4F7F;&#x7528;&#x6B63;&#x786E;&#x7684;JWT&#x3002;</p>
 <h2 id="&#x83B7;&#x53D6;token">&#x83B7;&#x53D6;token</h2>
 <p>  <strong>&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#xFF1A;</strong> POST&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>)</p>
-<p>  <strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong>{domain}/oauth2.0/jwt</p>
+<p>  <strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/jwt" target="_blank">http://{server}/oauth2.0/jwt</a></p>
+<p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
 <p>  <strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x5305;&#xFF1A;</strong></p>
 <pre><code>{
     &quot;username&quot;:xxx,
@@ -1043,12 +1084,12 @@
 <tr>
 <td>username</td>
 <td>&#x662F;</td>
-<td>&#x5E94;&#x7528;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x5BF9;&#x5E94;appid</td>
+<td>&#x5E94;&#x7528;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x5BF9;&#x5E94;&#x5E94;&#x7528;ID</td>
 </tr>
 <tr>
 <td>password</td>
 <td>&#x662F;</td>
-<td>&#x5E94;&#x7528;&#x79D8;&#x94A5;&#xFF0C;&#x5BF9;&#x5E94;security</td>
+<td>&#x5E94;&#x7528;&#x79D8;&#x94A5;</td>
 </tr>
 </tbody>
 </table>
@@ -1078,7 +1119,7 @@
 </tbody>
 </table>
 <footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-10-29 17:43:42
+2020-12-07 19:40:37
 </span></footer>
                                 
                                 </section>
@@ -1106,7 +1147,7 @@
 
             
                 
-                <a href="get-access-token.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 获取access_token">
+                <a href="get-access-token.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 获取Token方式一：获取access_token">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1118,12 +1159,13 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"获取JWT","level":"1.3.3","depth":2,"next":{"title":"用户","level":"1.4","depth":1,"ref":"","articles":[{"title":"开发前须知","level":"1.4.1","depth":2,"path":"linkid/user/introduction/README.md","ref":"linkid/user/introduction/README.md","articles":[]},{"title":"用户信息对外接口","level":"1.4.2","depth":2,"path":"linkid/user/public/interface/user-external-api.md","ref":"linkid/user/public/interface/user-external-api.md","articles":[]},{"title":"密码对外接口","level":"1.4.3","depth":2,"path":"linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.md","ref":"linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.md","articles":[]},{"title":"FAQ","level":"1.4.4","depth":2,"path":"linkid/user/faq/faq.md","ref":"linkid/user/faq/faq.md","articles":[]}]},"previous":{"title":"获取access_token","level":"1.3.2","depth":2,"path":"get-access-token.md","ref":"get-access-token.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"get-JWT.md","mtime":"2020-10-29T09:43:42.178Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-11-27T10:26:49.167Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"获取Token方式二：获取JWT","level":"1.3.3","depth":2,"next":{"title":"用户","level":"1.4","depth":1,"ref":"","articles":[{"title":"开发前须知","level":"1.4.1","depth":2,"path":"linkid/user/introduction/README.md","ref":"linkid/user/introduction/README.md","articles":[]},{"title":"用户信息对外接口","level":"1.4.2","depth":2,"path":"linkid/user/public/interface/user-external-api.md","ref":"linkid/user/public/interface/user-external-api.md","articles":[]},{"title":"FAQ","level":"1.4.3","depth":2,"path":"linkid/user/faq/faq.md","ref":"linkid/user/faq/faq.md","articles":[]}]},"previous":{"title":"获取Token方式一：获取access_token","level":"1.3.2","depth":2,"path":"get-access-token.md","ref":"get-access-token.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"get-JWT.md","mtime":"2020-12-07T11:40:37.221Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-08T09:33:40.299Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -1156,6 +1198,10 @@
         
     
         
+        <script src="gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
         <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
@@ -1163,6 +1209,8 @@
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
+    <script src="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

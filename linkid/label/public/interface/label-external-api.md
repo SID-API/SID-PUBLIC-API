@@ -12,12 +12,14 @@
 
 #### 一、查询所有标签分类<a id=1></a>
 
-> 当业务系统要同步身份平台的标签信息是， 需要先获取所有的标签分类， 然后根据分类id去获取所有标签
+> 当业务系统要同步身份平台的标签信息时， 需要先获取所有的标签分类， 然后根据分类id去获取所有标签
 >
 
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/label/public/find/label/type
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -32,7 +34,7 @@
 
 | **参数**          | 类型    | **是否必须** | **说明**                                                     |
 | ----------------- | ------- | ------------ | ------------------------------------------------------------ |
-| isAcquiredParents | boolean | 是           | 表示当前接⼝是标签分类获取上级分类，当前该功能要求只展示第⼀层分类，且 第⼀个元素⽂案展示为-，如果不是就展示所有有权限看到的分类树 |
+| isAcquiredParents | boolean | 是           | 表示当前接⼝是标签分类获取上级分类，当前该功能要求只展示第⼀层分类，<br/>且第⼀个元素⽂案展示为-，如果不是就展示所有有权限看到的分类树 |
 | hasDefaultNode    | boolean | 是           | 表示是否在节点树最后加上默认分类节点                         |
 
 **返回结果：**
@@ -77,17 +79,19 @@
 
 #### 二、通过身份标签分类查询身份标签列表<a id=2></a>
 
-> 当业务系统要同步身份平台的标签信息是， 需要先获取所有的标签分类， 然后根据分类id去获取所有标签
+> 当业务系统要同步身份平台的标签信息时， 需要先获取所有的标签分类， 然后根据分类id去获取所有标签
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
-**请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/label/public/find/by/typeId/{标 签分类id}
+**请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/label/public/find/by/typeId/{标签分类id}
+
+注：https方式类似。
 
 **请求参数：**
 
 ```javascript
 请求示例：
-https://self.xxx.edu.cn/linkid/api/aggregate/label/public/find/by/typeId/5f91237eef72960006ea0d2d
+https://ljw.sso.rghall.com.cn/linkid/api/aggregate/label/public/find/by/typeId/5f91237eef72960006ea0d2d
 ```
 
 **参数说明：**
@@ -150,6 +154,8 @@ https://self.xxx.edu.cn/linkid/api/aggregate/label/public/find/by/typeId/5f91237
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/user/public/pageQueryUsersByLabelId
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
@@ -158,11 +164,11 @@ https://self.xxx.edu.cn/linkid/api/aggregate/label/public/find/by/typeId/5f91237
 
 **参数说明：**
 
-| **参数** | 类型   | **是否必须** | **说明**                                                     |
-| -------- | ------ | ------------ | ------------------------------------------------------------ |
-| number   | list   | 是           | 当前请求页                                                   |
-| size     | string | 是           | 每页返回值                                                   |
-| labelId  | string | 否           | 查询这个时间之前有更新的用户数据，格式："yyyy-MM-dd hh:mm:ss" |
+| **参数** | 类型   | **是否必须** | **说明**   |
+| -------- | ------ | ------------ | ---------- |
+| number   | list   | 是           | 当前请求页 |
+| size     | string | 是           | 每页返回值 |
+| labelId  | string | 否           | 标签id     |
 
 **返回结果：**
 
