@@ -6,22 +6,22 @@
 > [cas登出](#3)
 
 
-#### 一、用户认证
+#### 一、用户认证<a id=1></a>
 
 > 应用向SID认证服务器请求认证，SID返回认证页面。
 >
-
-#### 一、用户认证<a id=1></a>
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/login
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-http://ljw.sso.rghall.com.cn/login?service=xxx
+http://ljw.sso.rghall.com.cn/login?service=http://192.168.54.63:8080/user/index
 ```
 
 **参数说明：**
@@ -32,7 +32,10 @@ http://ljw.sso.rghall.com.cn/login?service=xxx
 
 **返回结果：**
 
-无
+```
+返回ticket，示例为：
+http://192.168.54.63:8080/user/index?ticket=ST-368-gChqIqVuq9j83YCG9dw4sh1KDaMrg-sso-fddcfb8db-z9ng2
+```
 
 **参数说明：**
 
@@ -52,11 +55,13 @@ http://ljw.sso.rghall.com.cn/login?service=xxx
 
 **请求地址：** http://{server}/p3/serviceValidate
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-http://ljw.sso.rghall.com.cn/p3/serviceValidate?ticket=xxx&service=xxx
+http://ljw.sso.rghall.com.cn/p3/serviceValidate?ticket=ST-368-gChqIqVuq9j83YCG9dw4sh1KDaMrg-sso-fddcfb8db-z9ng2&service=http://192.168.54.63:8080/user/index
 ```
 
 **参数说明：**
@@ -84,11 +89,13 @@ SID返回xml格式的用户信息，如下图：
 
 **请求地址：** http://{server}/serviceValidate
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-http://ljw.sso.rghall.com.cn/serviceValidate?ticket=xxx&service=xxx
+http://ljw.sso.rghall.com.cn/serviceValidate?ticket=ST-368-gChqIqVuq9j83YCG9dw4sh1KDaMrg-sso-fddcfb8db-z9ng2&service=http://192.168.54.63:8080/user/index
 ```
 
 **参数说明：**
@@ -110,8 +117,6 @@ SID返回xml格式的用户信息，如下图：
 | -------- | ------------------------------------------------------------ |
 | 用户信息 | 用户信息为xml格式，包括用户登录名。返回的用户属性可在SID中配置。 |
 
-
-
 #### 三、cas登出<a id=3></a>
 
 > CAS登出。
@@ -120,8 +125,4 @@ SID返回xml格式的用户信息，如下图：
 
 **请求地址：** http://{server}/logout
 
-cas登出方式有两种方式：前端登出(FRONT_CHANNEL)和后端登出(BACK_CHANNEL)。
-
-**前端登出：**是在用户点击logout链接（链接地址为cas登出地址）时，浏览器跳转到cas登出地址，cas登出页面给对接应用发送jsonp的登出请求，达到登出效果。注意：前端登出不支持cas会话超时自动登出。
-
-**后端登出：**是当TGT超时时，或者用户通过链接访问cas登出地址时，cas服务器直接给应用服务器发送登出请求，以达到登出效果。
+注：https方式类似。

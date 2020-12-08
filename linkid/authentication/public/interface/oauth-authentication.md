@@ -12,6 +12,14 @@
 
 ## 一、授权码模式<a id=1></a>
 
+该模式的授权流程为：
+
+1、跳转到认证中心认证用户。
+
+2、使用code获取access_token。
+
+3、获取用户信息。
+
 #### 1、用户认证
 
 > 跳转到SID认证中心认证用户。
@@ -20,11 +28,13 @@
 
 **请求地址：** http://{server}/oauth2.0/authorize
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx&redirect_uri=xxx
+http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=test2&redirect_uri=http://192.168.54.63:8080/Oauth2/token
 ```
 
 **参数说明：**
@@ -39,7 +49,8 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 **返回结果：**
 
 ```
-返回code
+返回code示例：
+http://192.168.54.63:8080/Oauth2/token?code=OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtGJT
 ```
 
 **参数说明：**
@@ -56,6 +67,8 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 
 **请求地址：** http://{server}/oauth2.0/accessToken
 
+注：https方式类似。
+
 **请求头（header）：** 
 
 Content-Type：multipart/form-data
@@ -64,11 +77,11 @@ Content-Type：multipart/form-data
 
 ```javascript
 {
-    "grant_type":authorization_code,
-    "client_id":xxx,
-    "client_secret":xxx,
-    "redirect_uri":xxx,
-    "code":xxx
+    "grant_type":"authorization_code",
+    "client_id":"test2",
+    "client_secret":"HDRWcOTg56mMty6GNsjF2OZXjwWrfI0Glz8sVJKSacl6QZMX5fX9gFQjkO2z-orn",
+    "redirect_uri":"http://192.168.54.63:8080/user/index",
+    "code":"OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtGJT"
 }
 ```
 
@@ -86,21 +99,21 @@ Content-Type：multipart/form-data
 
 ```java
 {
-    "access_token":xxx,
-    "token_type":xxx,
-    "expires_in":xxx,
-    "refresh_token":xxx
+    "access_token":"AT-98-kkxRFRAp7JP4HvKcooOlTjqEslglCNoU",
+    "token_type":"bearer",
+    "expires_in":28800,
+    "refresh_token":"RT-7-XuigbD-eb4qSN0LwHBSixvpmv4zCzw21"
 }
 ```
 
 **参数说明：**
 
-| **参数**      | **说明**                                                     |
-| ------------- | ------------------------------------------------------------ |
-| access_token  | 访问令牌                                                     |
-| token_type    | 令牌类型                                                     |
-| expires_in    | 令牌有效期                                                   |
-| refresh_token | 刷新令牌，该参数只有在SID中将下发刷新令牌勾选为“是”时才会返回 |
+| **参数**      | 是否必须 | **说明**                                                     |
+| ------------- | -------- | ------------------------------------------------------------ |
+| access_token  | 是       | 访问令牌                                                     |
+| token_type    | 是       | 令牌类型                                                     |
+| expires_in    | 是       | 令牌有效期                                                   |
+| refresh_token | 否       | 刷新令牌，该参数只有在SID中将下发刷新令牌勾选为“是”时才会返回 |
 
 注：获取refresh_token参数的值需先在SID中选择“下发刷新令牌”，如下图：
 
@@ -114,6 +127,8 @@ Content-Type：multipart/form-data
 
 **请求地址：** http://{server}/oauth2.0/profile
 
+注：https方式类似。
+
 **请求头（header）：** 
 
 Content-Type：multipart/form-data
@@ -124,7 +139,7 @@ Content-Type：multipart/form-data
 
 ```javascript
 {
-    "access_token":xxx
+    "access_token":"AT-98-kkxRFRAp7JP4HvKcooOlTjqEslglCNoU"
 }
 ```
 
@@ -177,6 +192,14 @@ Content-Type：multipart/form-data
 
 ## 二、密码模式<a id=2></a>
 
+该模式的授权流程为：
+
+1、获取access_token。
+
+2、获取用户信息。
+
+3、使用刷新令牌获取access_token（该步骤可选）。
+
 #### 1、获取access_token
 
 > 获取access_token。
@@ -185,11 +208,13 @@ Content-Type：multipart/form-data
 
 **请求地址：** http://{server}/oauth2.0/accessToken
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&client_id=xxx&username=xxx&password=xxx
+http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&client_id=test2&username=R1118&password=12345a
 ```
 
 **参数说明：**
@@ -215,12 +240,12 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&client_id=
 
 **参数说明：**
 
-| **参数**      | **说明**                                                     |
-| ------------- | ------------------------------------------------------------ |
-| access_token  | 访问令牌                                                     |
-| token_type    | 令牌类型                                                     |
-| expires_in    | 令牌有效期                                                   |
-| refresh_token | 刷新令牌，该参数只有在SID中将下发刷新令牌勾选为“是”时才会返回 |
+| **参数**      | 是否必须 | **说明**                                                     |
+| ------------- | -------- | ------------------------------------------------------------ |
+| access_token  | 是       | 访问令牌                                                     |
+| token_type    | 是       | 令牌类型                                                     |
+| expires_in    | 是       | 令牌有效期                                                   |
+| refresh_token | 否       | 刷新令牌，该参数只有在SID中将下发刷新令牌勾选为“是”时才会返回 |
 
 #### 2、获取用户信息
 
@@ -229,6 +254,8 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&client_id=
 **请求⽅式：** GET/POST（**HTTPS或HTTP**）
 
 **请求地址：** http://{server}/oauth2.0/profile
+
+注：https方式类似。
 
 **请求头（header）：** 
 
@@ -240,7 +267,7 @@ Content-Type：multipart/form-data
 
 ```javascript
 {
-    "access_token":xxx
+    "access_token":"AT-1-IWyhZhU1hKKvWPddAJpdHRN2ECu08Ypo"
 }
 ```
 
@@ -294,6 +321,8 @@ Content-Type：multipart/form-data
 
 **请求地址：** http://{server}/oauth2.0/accessToken
 
+注：https方式类似。
+
 **请求头（header）：** 
 
 Content-Type：multipart/form-data
@@ -304,10 +333,10 @@ Content-Type：multipart/form-data
 
 ```javascript
 {
-    "grant_type":refresh_token,
-    "client_id":xxx,
-    "client_secret":xxx,
-    "refresh_token":xxx
+    "grant_type":"refresh_token",
+    "client_id":"test2",
+    "client_secret":"JXuRHUGzt5TEoKZGof4Dxg-cOPFotpWhu--cujis8JO0Y7qqN4EUhr4kybc7nDPB",
+    "refresh_token":"RT-7-XuigbD-eb4qSN0LwHBSixvpmv4zCzw21"
 }
 ```
 
@@ -342,6 +371,10 @@ Content-Type：multipart/form-data
 
 ## 三、客户端模式<a id=3></a>
 
+该模式的授权流程为：
+
+1、获取access_token。
+
 #### 1、获取access_token
 
 > 获取access_token。
@@ -350,11 +383,13 @@ Content-Type：multipart/form-data
 
 **请求地址：** http://{server}/oauth2.0/accessToken
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=client_credentials&client_id=xxx&client_secret=xxx
+http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=client_credentials&client_id=test2&client_secret=JXuRHUGzt5TEoKZGof4Dxg-cOPFotpWhu--cujis8JO0Y7qqN4EUhr4kybc7nDPB
 ```
 
 **参数说明：**
@@ -396,11 +431,13 @@ http://ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=client_credentials&
 
 **请求地址：** http://{server}/oauth2.0/authorize
 
+注：https方式类似。
+
 **请求参数：**
 
 ```java
 请求示例：
-http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx&redirect_uri=xxx&openid=xxx&from=xxx
+http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=test2&redirect_uri=xxx&openid=xxx&from=xxx
 ```
 
 **参数说明：**
@@ -412,7 +449,7 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 | redirect_uri  | 是           | 应用回调地址                                   |
 | openid        | 否           | 用户的微信openid, openid和unionid只需传一个    |
 | unionid       | 否           | 用户的微信unionid, openid和unionid只需要传一个 |
-| from          | 是           | openid/unionid来源，这里填APPID                |
+| from          | 是           | 认证来源， 默认为应用的appid                   |
 | scope         | 否           | 权限列表，以空格分隔                           |
 
 **返回结果：**
@@ -433,8 +470,16 @@ http://ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&client_id=xxx
 
 ## 五、单点登出<a id=5></a>
 
-目前可以使用下面两种方式登出：
+>登出地址为/logout。
 
-1、如果使用href引用登出地址的方式登出，登出后浏览器跳转到统一认证页面。这种方式要求应用的协议与cas的传输协议一致（由于目前cas是https协议，则应用也必须是https）。此方式只支持**前端登出**(FRONT_CHANNEL)，故达不到cas会话超时自动登出的效果。
+**请求⽅式：** GET（**HTTPS或HTTP**）
 
-2、如果使用jsonp的方式发送登出请求，则不会跳转。此种方式只能达到对接的cas应用登出和发起登出请求的OAuth应用登出效果， 对于其他OAuth应用则达不到登出效果。
+**请求地址：** http://{server}/logout
+
+注：https方式类似。
+
+```
+请求示例：
+http://ljw.sso.rghall.com.cn/logout
+```
+

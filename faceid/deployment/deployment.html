@@ -1,0 +1,1626 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>人脸实施部署文档 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../faq/faq.html" />
+    
+    
+    <link rel="prev" href="../manufacturer/interface/application.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    快速入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../quick-get-start/explain.html">
+            
+                <a href="../../quick-get-start/explain.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../quick-get-start/general-application-docking.html">
+            
+                <a href="../../quick-get-start/general-application-docking.html">
+            
+                    
+                    单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../quick-get-start/face-docking.html">
+            
+                <a href="../../quick-get-start/face-docking.html">
+            
+                    
+                    人脸对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../quick-get-start/group-docking.html">
+            
+                <a href="../../quick-get-start/group-docking.html">
+            
+                    
+                    群组对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    开发指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../application-register.html">
+            
+                <a href="../../application-register.html">
+            
+                    
+                    应用注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../get-access-token.html">
+            
+                <a href="../../get-access-token.html">
+            
+                    
+                    获取Token方式一：获取access_token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../get-JWT.html">
+            
+                <a href="../../get-JWT.html">
+            
+                    
+                    获取Token方式二：获取JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    用户
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../linkid/user/introduction/">
+            
+                <a href="../../linkid/user/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../linkid/user/public/interface/user-external-api.html">
+            
+                <a href="../../linkid/user/public/interface/user-external-api.html">
+            
+                    
+                    用户信息对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../linkid/user/faq/faq.html">
+            
+                <a href="../../linkid/user/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    认证
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    开发前须知
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../linkid/authentication/introduction/cas-README.html">
+            
+                <a href="../../linkid/authentication/introduction/cas-README.html">
+            
+                    
+                    CAS单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../../linkid/authentication/introduction/oauth-README.html">
+            
+                <a href="../../linkid/authentication/introduction/oauth-README.html">
+            
+                    
+                    OAuth2.0单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../linkid/authentication/public/interface/cas-authentication.html">
+            
+                <a href="../../linkid/authentication/public/interface/cas-authentication.html">
+            
+                    
+                    CAS认证接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../linkid/authentication/public/interface/oauth-authentication.html">
+            
+                <a href="../../linkid/authentication/public/interface/oauth-authentication.html">
+            
+                    
+                    OAuth2.0认证接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../linkid/authentication/faq/faq.html">
+            
+                <a href="../../linkid/authentication/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    组织
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../linkid/organization/introduction/">
+            
+                <a href="../../linkid/organization/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../linkid/organization/public/interface/organization-external-api.html">
+            
+                <a href="../../linkid/organization/public/interface/organization-external-api.html">
+            
+                    
+                    组织信息对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../linkid/organization/faq/faq.html">
+            
+                <a href="../../linkid/organization/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    标签
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../linkid/label/introduction/">
+            
+                <a href="../../linkid/label/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../linkid/label/public/interface/label-external-api.html">
+            
+                <a href="../../linkid/label/public/interface/label-external-api.html">
+            
+                    
+                    标签对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../linkid/label/faq/faq.html">
+            
+                <a href="../../linkid/label/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    群组
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../group/introduction/">
+            
+                <a href="../../group/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" >
+            
+                <span>
+            
+                    
+                    建立、推送群组数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../group/procedure/define-group.html">
+            
+                <a href="../../group/procedure/define-group.html">
+            
+                    
+                    定义并发布一个群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../../group/procedure/create-push-task.html">
+            
+                <a href="../../group/procedure/create-push-task.html">
+            
+                    
+                    建立群组推送任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="../../group/procedure/push-task.html">
+            
+                <a href="../../group/procedure/push-task.html">
+            
+                    
+                    推送群组数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../group/develop/safety-verification.html">
+            
+                <a href="../../group/develop/safety-verification.html">
+            
+                    
+                    群组推送安全验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../group/develop/node-management.html">
+            
+                <a href="../../group/develop/node-management.html">
+            
+                    
+                    群组节点管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../group/develop/personnel-management.html">
+            
+                <a href="../../group/develop/personnel-management.html">
+            
+                    
+                    人员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../group/faq/">
+            
+                <a href="../../group/faq/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    人脸
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../introduction/">
+            
+                <a href="../introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../public/interface/face-external-api.html">
+            
+                <a href="../public/interface/face-external-api.html">
+            
+                    
+                    人脸对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../manufacturer/interface/manufacture.html">
+            
+                <a href="../manufacturer/interface/manufacture.html">
+            
+                    
+                    人脸厂商标准接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../manufacturer/interface/application.html">
+            
+                <a href="../manufacturer/interface/application.html">
+            
+                    
+                    人脸应用标准接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.5" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    人脸实施部署文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    角色
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../linkid/role/introduction/">
+            
+                <a href="../../linkid/role/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../linkid/role/public/interface/role-external-api.html">
+            
+                <a href="../../linkid/role/public/interface/role-external-api.html">
+            
+                    
+                    角色对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../linkid/role/faq/faq.html">
+            
+                <a href="../../linkid/role/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    三元组
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../linkid/userorganizationpost/introduction/">
+            
+                <a href="../../linkid/userorganizationpost/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../linkid/userorganizationpost/public/interface/userorganizationpost-external-api.html">
+            
+                <a href="../../linkid/userorganizationpost/public/interface/userorganizationpost-external-api.html">
+            
+                    
+                    三元组对外接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../linkid/userorganizationpost/faq/faq.html">
+            
+                <a href="../../linkid/userorganizationpost/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../linkid/dlmu/introduction/">
+            
+                <a href="../../linkid/dlmu/introduction/">
+            
+                    
+                    开发前须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../linkid/dlmu/public/interface/dlmu-external-api.html">
+            
+                <a href="../../linkid/dlmu/public/interface/dlmu-external-api.html">
+            
+                    
+                    海大其他在用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../linkid/dlmu/faq/faq.html">
+            
+                <a href="../../linkid/dlmu/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../release-notes.html">
+            
+                <a href="../../release-notes.html">
+            
+                    
+                    发行说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    附录
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../appendix/global-error-code.html">
+            
+                <a href="../../appendix/global-error-code.html">
+            
+                    
+                    全局错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../../appendix/interface-performance.html">
+            
+                <a href="../../appendix/interface-performance.html">
+            
+                    
+                    接口性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../../appendix/faq/faq.html">
+            
+                <a href="../../appendix/faq/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >人脸实施部署文档</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sourceid&#x4EBA;&#x8138;&#x73AF;&#x5883;&#x90E8;&#x7F72;"><strong>SourceID</strong>&#x4EBA;&#x8138;&#x73AF;&#x5883;&#x90E8;&#x7F72;</h1>
+<h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2>
+<h3 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h3>
+<p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x4E66;&#x5199;SourceID&#x4EA7;&#x54C1;&#x4EBA;&#x8138;&#x90E8;&#x5206;&#x53CA;&#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x5728;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x90E8;&#x7F72;&#xFF0C;&#x5C06;&#x76F8;&#x5173;&#x7684;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#x63CF;&#x8FF0;&#x8BF4;&#x660E;&#x3002;</p>
+<p>SourceID&#x4EA7;&#x54C1;&#x5177;&#x4F53;&#x5B89;&#x88C5;&#x8BE6;&#x89C1;&#xFF1A;svn://192.168.54.191/ykt/RG_LinkID&#x9879;&#x76EE;&#x7BA1;&#x7406;/SID&#x4E1A;&#x52A1;&#x5B66;&#x4E60;&#x6587;&#x6863;/&#x90E8;&#x7F72;&#x5B9E;&#x65BD;/&#x9AD8;&#x6559;&#x65B9;&#x6848;/BS-00-SourceId1.6.4&#x7248;&#x672C;&#x5B89;&#x88C5;&#x90E8;&#x7F72;&#x624B;&#x518C;.docx&#x3002;</p>
+<h3 id="&#x4FEE;&#x8BA2;&#x8BB0;&#x5F55;">&#x4FEE;&#x8BA2;&#x8BB0;&#x5F55;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x65E5;&#x671F;</strong></th>
+<th><strong>&#x7248;&#x672C;</strong></th>
+<th><strong>&#x4FEE;&#x8BA2;&#x8BF4;&#x660E;</strong></th>
+<th><strong>&#x4F5C;&#x8005;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020&#x5E74;04&#x6708;26&#x65E5;</td>
+<td>V1.0</td>
+<td>&#x7B2C;&#x4E00;&#x6B21;&#x53D1;&#x5E03;</td>
+<td>&#x9646;&#x52C7;&#x601D;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><br></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>&#x6CE8;&#xFF1A;&#x96C6;&#x7FA4;&#x90E8;&#x7F72;&#x6A21;&#x5F0F;&#x4E2D;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x5747;&#x5728;Master&#x4E3B;&#x8282;&#x70B9;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6267;&#x884C;&#xFF0C;&#x5355;&#x673A;&#x90E8;&#x7F72;&#x5C31;&#x76F4;&#x63A5;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6267;&#x884C;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x767B;&#x5F55;&#x8D26;&#x53F7;&#x53EA;&#x80FD;&#x7528;root&#x8D26;&#x53F7;&#x64CD;&#x4F5C;&#xFF0C;&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;&#x4E0B;master&#x4E3B;&#x8282;&#x70B9;&#x4E0E;node&#x8282;&#x70B9;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x7801;&#x8981;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</strong></p>
+</blockquote>
+<h2 id="&#x4E00;&#x3001;--&#x8D44;&#x6E90;&#x51C6;&#x5907;">&#x4E00;&#x3001;  &#x8D44;&#x6E90;&#x51C6;&#x5907;</h2>
+<h3 id="1&#x3001;-&#x786C;&#x4EF6;&#x8D44;&#x6E90;&#xFF1A;">1&#x3001; &#x786C;&#x4EF6;&#x8D44;&#x6E90;&#xFF1A;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x670D;&#x52A1;&#x5668;&#x8282;&#x70B9;</th>
+<th>&#x670D;&#x52A1;&#x5668;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</th>
+<th>&#x7F51;&#x7EDC;</th>
+<th>CPU&#x6838;&#x6570;</th>
+<th>&#x5185;&#x5B58;&#x5BB9;&#x91CF;</th>
+<th>&#x786C;&#x76D8;&#x78C1;&#x76D8;&#x5BB9;&#x91CF;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x670D;&#x52A1;&#x5668;A</td>
+<td>CentOS  7.6.1810</td>
+<td>&#x4E0E;C&#x4E92;&#x901A;</td>
+<td>16&#x6838;</td>
+<td>32G</td>
+<td>&#x7CFB;&#x7EDF;&#x76D8;50G&#xFF0C;&#x6570;&#x636E;&#x76D8;500G</td>
+<td>&#x5FC5;&#x987B;&#x5B89;&#x88C5;&#x6709;&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#xFF0C;&#x7528;&#x4E8E;&#x5B89;&#x88C5;&#x4EBA;&#x8138;&#x5382;&#x5546;&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+<tr>
+<td>&#x670D;&#x52A1;&#x5668;B</td>
+<td>CentOS  7.6.1810</td>
+<td>&#x4E0E;C&#x4E92;&#x901A;</td>
+<td>16&#x6838;</td>
+<td>32G</td>
+<td>&#x7CFB;&#x7EDF;&#x76D8;50G&#xFF0C;&#x6570;&#x636E;&#x76D8;500G</td>
+<td>&#x4F5C;&#x4E3A;FastDFS&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+<tr>
+<td>&#x670D;&#x52A1;&#x5668;C</td>
+<td>CentOS  7.6.1810</td>
+<td>&#x4E0E;B&#x4E92;&#x901A;</td>
+<td>16&#x6838;</td>
+<td>32G</td>
+<td>&#x7CFB;&#x7EDF;&#x76D8;50G&#xFF0C;&#x6570;&#x636E;&#x76D8;500G</td>
+<td>&#x4E00;&#x5230;&#x591A;&#x53F0;&#xFF0C;&#x90E8;&#x7F72;SourceID&#x4EE5;&#x53CA;&#x4EBA;&#x8138;&#x7EC4;&#x4EF6;&#xFF0C;&#x6839;&#x636E;&#x65F6;&#x95F4;&#x9700;&#x8981;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2&#x3001;-&#x8F6F;&#x4EF6;&#x8D44;&#x6E90;&#xFF1A;">2&#x3001; &#x8F6F;&#x4EF6;&#x8D44;&#x6E90;&#xFF1A;</h3>
+<ul>
+<li><p>Centos7&#x7CFB;&#x7EDF;&#x3001;&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#x9A71;&#x52A8;&#x3001;&#x4E91;&#x4ECE;&#x670D;&#x52A1;&#x7AEF;&#x8F6F;&#x4EF6;&#x3001;KAD&#x90E8;&#x7F72;&#x5305;&#x3001;FaceId-Task&#x955C;&#x50CF;&#x3002;</p>
+</li>
+<li><p>SecureCRT&#x6216;Xshell&#x3001;winscp&#x7B49;&#x8FDC;&#x7A0B;&#x5DE5;&#x5177;&#x3002;</p>
+</li>
+</ul>
+<h3 id="3&#x3001;-&#x5916;&#x90E8;&#x8D44;&#x6E90;&#xFF1A;">3&#x3001; &#x5916;&#x90E8;&#x8D44;&#x6E90;&#xFF1A;</h3>
+<p>&#x4E91;&#x4ECE;license&#x3002;</p>
+<h2 id="&#x4E8C;&#x3001;--&#x603B;&#x4F53;&#x987A;&#x5E8F;">&#x4E8C;&#x3001;  &#x603B;&#x4F53;&#x987A;&#x5E8F;</h2>
+<p>1&#x3001; &#x4E91;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x5B89;&#x88C5;&#x7CFB;&#x7EDF;&#x4EE5;&#x53CA;&#x663E;&#x5361;&#x9A71;&#x52A8;&#xFF0C;&#x6536;&#x96C6;&#x673A;&#x5668;&#x7801;&#x3002;</p>
+<p>2&#x3001; &#x4E91;&#x4ECE;&#x5B98;&#x7F51;&#x7533;&#x8BF7;license&#x3002;</p>
+<p>3&#x3001; &#x670D;&#x52A1;&#x5668;&#x5B89;&#x88C5;license&#xFF0C;&#x542F;&#x52A8;&#x4E91;&#x4ECE;&#x670D;&#x52A1;&#x7AEF;&#x3002;</p>
+<p>4&#x3001; &#x4F5C;&#x4E3A;FastDFS&#x7684;&#x670D;&#x52A1;&#x5668;&#x5B89;&#x88C5;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x901A;&#x8FC7;KAD&#x90E8;&#x7F72;FastDFS&#x7EC4;&#x4EF6;&#x3002;</p>
+<p>5&#x3001; &#x7528;&#x4E8E;&#x90E8;&#x7F72;SourceID&#x7684;&#x670D;&#x52A1;&#x5668;&#x5B89;&#x88C5;&#x597D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x540E;&#xFF0C;&#x901A;&#x8FC7;KAD&#x90E8;&#x7F72;SourceID&#x670D;&#x52A1;&#x3002;</p>
+<p>6&#x3001; &#x90E8;&#x7F72;FaceId-Task&#x7EC4;&#x4EF6;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;--&#x90E8;&#x7F72;cloudcorefaceengine&#x670D;&#x52A1;&#xFF08;&#x4E91;&#x4ECE;&#xFF09;">&#x4E09;&#x3001;  &#x90E8;&#x7F72;CloudCore_FaceEngine&#x670D;&#x52A1;&#xFF08;&#x4E91;&#x4ECE;&#xFF09;</h2>
+<h3 id="1&#x3001;-&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;">1&#x3001; &#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;</h3>
+<p>&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x6709;&#x82F1;&#x4F1F;&#x8FBE;&#x663E;&#x5361;&#xFF0C;&#x9002;&#x7528;&#x7CFB;&#x7EDF;&#xFF1A; centos7.2&#x3001;centos7.3&#x3002;</p>
+<h3 id="2&#x3001;-&#x5B89;&#x88C5;&#x663E;&#x5361;&#x9A71;&#x52A8;">2&#x3001; &#x5B89;&#x88C5;&#x663E;&#x5361;&#x9A71;&#x52A8;</h3>
+<h4 id="21&#x3001;&#x6309;&#x7167;&#x6B65;&#x9AA4;">2.1&#x3001;&#x6309;&#x7167;&#x6B65;&#x9AA4;</h4>
+<h5 id="211&#x3001;-&#x68C0;&#x67E5;bios&#x4E2D;&#x7684;secure-boot&#x8BBE;&#x7F6E;&#xFF0C;&#x5C06;&#x8BE5;&#x503C;&#x8BBE;&#x7F6E;&#x6210;disable">2.1.1&#x3001; &#x68C0;&#x67E5;BIOS&#x4E2D;&#x7684;Secure Boot&#x8BBE;&#x7F6E;&#xFF0C;&#x5C06;&#x8BE5;&#x503C;&#x8BBE;&#x7F6E;&#x6210;disable</h5>
+<h5 id="212&#x3001;-&#x67E5;&#x770B;&#x663E;&#x5361;&#x578B;&#x53F7;">2.1.2&#x3001; &#x67E5;&#x770B;&#x663E;&#x5361;&#x578B;&#x53F7;</h5>
+<pre><code class="lang-shell">lspci | grep -i vga
+lspci -v -s 83:00.0
+</code></pre>
+<p> <img src="deployment.assets/image-20201130154147917.png" alt="image-20201130154147917"></p>
+<h5 id="213&#x3001;-&#x5B98;&#x7F51;&#x4E0A;&#x641C;&#x7D22;&#x5E76;&#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x9A71;&#x52A8;httpswwwgeforcecndrivers">2.1.3&#x3001; &#x5B98;&#x7F51;&#x4E0A;&#x641C;&#x7D22;&#x5E76;&#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x9A71;&#x52A8;<a href="https://www.geforce.cn/drivers" target="_blank">https://www.geforce.cn/drivers</a></h5>
+<p> <img src="deployment.assets/image-20201130154406324.png" alt="image-20201130154406324"></p>
+<h5 id="214&#x3001;-&#x5C06;&#x4E0B;&#x8F7D;&#x7684;&#x9A71;&#x52A8;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;">2.1.4&#x3001; &#x5C06;&#x4E0B;&#x8F7D;&#x7684;&#x9A71;&#x52A8;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;</h5>
+<pre><code class="lang-shell">## &#x901A;&#x8FC7;winscp&#x7B49;&#x5DE5;&#x5177;&#x6216;&#x8005;lrzsz&#x547D;&#x4EE4;
+mkdir /opt/cloudCore
+cd /opt/cloudCore
+yum install lrzsz
+rz
+## &#x7136;&#x540E;&#x9009;&#x62E9;&#x6587;&#x4EF6;
+</code></pre>
+<h5 id="215&#x3001;-&#x5B89;&#x88C5;gcc">2.1.5&#x3001; &#x5B89;&#x88C5;gcc</h5>
+<pre><code class="lang-shell">yum -y install gcc
+</code></pre>
+<h5 id="216&#x3001;-&#x5B89;&#x88C5;kernel-devel">2.1.6&#x3001; &#x5B89;&#x88C5;kernel-devel</h5>
+<pre><code class="lang-shell">##&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5185;&#x6838;&#x7248;&#x672C;&#x53F7;
+uname -r 
+
+## &#x8BBF;&#x95EE;http://rpm.pbone.net/index.php3&#xFF0C;&#x67E5;&#x627E;&#x5185;&#x6838;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x7684;kernel-devel&#x5305;
+wget ftp://ftp.pbone.net/mirror/dl.central.org/dl/linuxdev/centos7/x86_64/kernel-devel-3.10.0-957.el7.x86_64.rpm
+
+## &#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;perl&#x5DE5;&#x5177;
+yum install perl
+rpm -ivh kernel-devel-2.6.32-431.el6.x86_64.rpm
+</code></pre>
+<p><img src="deployment.assets/image-20201130170142721.png" alt="image-20201130170142721"></p>
+<h5 id="217&#x3001;-&#x5B89;&#x88C5;dkms">2.1.7&#x3001; &#x5B89;&#x88C5;dkms</h5>
+<pre><code class="lang-shell">yum -y install dkms
+
+## &#x5982;&#x679C;&#x8FD9;&#x4E00;&#x6B65;&#x63D0;&#x793A;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x5B89;&#x88C5;&#xFF1A;
+
+yum install perl*
+
+perl -v
+
+yum install epel-release
+
+yum --enablerepo=epel install dkms
+</code></pre>
+<h5 id="218&#x3001;-&#x5173;&#x95ED;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x5E76;&#x91CD;&#x542F;">2.1.8&#x3001; &#x5173;&#x95ED;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x5E76;&#x91CD;&#x542F;</h5>
+<pre><code class="lang-shell">sudo service lightdm stop
+## &#x91CD;&#x542F;&#xFF1A;
+reboot
+</code></pre>
+<h5 id="219&#x3001;-&#x5B89;&#x88C5;&#x9A71;&#x52A8;">2.1.9&#x3001; &#x5B89;&#x88C5;&#x9A71;&#x52A8;</h5>
+<pre><code class="lang-shell">## &#x8FDB;&#x5165;&#x5230;&#x9A71;&#x52A8;&#x5B58;&#x653E;&#x7684;&#x8DEF;&#x5F84;
+./NVIDIA-Linux-x86_64-440.64.run --kernel-source-path=/usr/src/kernels/3.10.0-1062.18.1.el7.x86_64 -k $(uname -r) -dkms
+
+## /usr/src/kernels/3.10.0-1062.18.1.el7.x86_64&#x4E3A;kernel&#x5B89;&#x88C5;&#x540E;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x7248;&#x672C;&#x786E;&#x5B9A;
+## &#x9009;&#x9879;&#x57FA;&#x672C;&#x9009;&#x62E9;&#x9ED8;&#x8BA4;&#xFF0C;&#x5176;&#x4E2D;&#x8986;&#x76D6;&#x5B89;&#x88C5;&#x9009;&#x62E9;&#x8986;&#x76D6;
+</code></pre>
+<h5 id="2110&#x3001;-----&#x91CD;&#x542F;&#x56FE;&#x5F62;&#x754C;&#x9762;&#xFF08;&#x53EF;&#x9009;&#xFF09;">2.1.10&#x3001;     &#x91CD;&#x542F;&#x56FE;&#x5F62;&#x754C;&#x9762;&#xFF08;&#x53EF;&#x9009;&#xFF09;</h5>
+<pre><code class="lang-shell">sudo service lightdm start
+
+## &#x91CD;&#x542F;
+reboot
+</code></pre>
+<h5 id="2111&#x3001;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x540E;&#x51FA;&#x73B0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x8BF4;&#x660E;&#x5B89;&#x88C5;&#x5B8C;&#x6210;">2.1.11&#x3001;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x540E;&#x51FA;&#x73B0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x8BF4;&#x660E;&#x5B89;&#x88C5;&#x5B8C;&#x6210;</h5>
+<pre><code class="lang-shell">nvidia-smi
+</code></pre>
+<p>  <img src="deployment.assets/image-20201130170813673.png" alt="image-20201130170813673"></p>
+<h4 id="22-&#x5E38;&#x89C1;&#x95EE;&#x9898;&#xFF1A;">2.2 &#x5E38;&#x89C1;&#x95EE;&#x9898;&#xFF1A;</h4>
+<h5 id="221&#x3001;-unable-to-load-the-nvidia-drm-kernel-module">2.2.1&#x3001; Unable to load the &apos;nvidia-drm&apos; kernel module</h5>
+<p>&#x672A;&#x5B89;&#x88C5;dkms&#xFF0C;&#x6267;&#x884C;&#x4E0A;&#x65B9;&#x6B65;&#x9AA4;6</p>
+<p>&#x68C0;&#x67E5;BIOS&#x4E2D;&#x7684;Secure Boot&#x8BBE;&#x7F6E;&#xFF0C;&#x8BE5;&#x503C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x6210;disable</p>
+<h5 id="222&#x3001;-kernel&#x7248;&#x672C;&#x548C;&#x5185;&#x6838;&#x7248;&#x672C;&#x4E0D;&#x4E00;&#x81F4;&#x5BFC;&#x81F4;">2.2.2&#x3001; kernel&#x7248;&#x672C;&#x548C;&#x5185;&#x6838;&#x7248;&#x672C;&#x4E0D;&#x4E00;&#x81F4;&#x5BFC;&#x81F4;</h5>
+<pre><code class="lang-shell">Failed to run `/usr/sbin/dkms build -m nvidia -v 440.64 -k 3.10.0-957.el7.x86_64`: Error! Echo Your kernel headers for kernel 3.10.0-957.el7.x86_64 cannot be found at /lib/modules/3.10.0-957.el7.x86_64/build or /lib/modules/3.10.0-957.el7.x86_64/source. You can use the --kernelsourcedir option to tell DKMS where it&apos;s located.
+</code></pre>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<pre><code class="lang-shell">yum install &#x201C;kernel-devel-uname-r == $(uname -r)&#x201D;
+
+## &#x5B89;&#x88C5;kernel&#x65F6;&#x4F7F;&#x7528;&#x4E0A;&#x65B9;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5F53;yum&#x6E90;&#x4E2D;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x7248;&#x672C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x5B89;&#x88C5;&#x7684;&#x7248;&#x672C;&#x4E0D;&#x5339;&#x914D;&#xFF0C;&#x6B64;&#x65F6;&#x53EF;&#x4EE5;&#x5148;&#x5378;&#x8F7D;&#xFF0C;&#x518D;&#x53C2;&#x7167;&#x4E0A;&#x65B9;&#x6B65;&#x9AA4;5&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#xFF0C;&#x5378;&#x8F7D;&#x547D;&#x4EE4;&#xFF1A;
+
+yum remove kernel-devel-&#x7248;&#x672C;&#x53F7;
+</code></pre>
+<h3 id="3&#x3001;-&#x6536;&#x96C6;&#x673A;&#x5668;&#x7801;&#xFF0C;&#x7533;&#x8BF7;license">3&#x3001; &#x6536;&#x96C6;&#x673A;&#x5668;&#x7801;&#xFF0C;&#x7533;&#x8BF7;license</h3>
+<h4 id="31&#x3001;-&#x6536;&#x96C6;&#x673A;&#x5668;&#x7801;">3.1&#x3001; &#x6536;&#x96C6;&#x673A;&#x5668;&#x7801;</h4>
+<pre><code class="lang-shell">cd /opt/cloudCore
+
+## &#x9009;&#x62E9;&#x6587;&#x4EF6;
+rz 
+
+## &#x89E3;&#x538B;Linux&#x6FC0;&#x6D3B;&#x5DE5;&#x5177;
+tar xzvf User_UkeyLinux_v1.8.tar.gz
+
+## &#x8FDB;&#x5165;&#x76EE;&#x5F55;
+cd UkeyLinux
+
+## &#x6267;&#x884C;./activator&#xFF0C;&#x8F93;&#x5165;2&#xFF0C;&#x6536;&#x96C6;&#x673A;&#x5668;&#x7801;&#x3002;
+./activator
+</code></pre>
+<p><img src="deployment.assets/clip_image002.png" alt="img"> <a href="deployment.assets/User_UkeyLinux_v1.8.tar.gz">&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;</a></p>
+<p> <img src="deployment.assets/image-20201130171706409.png" alt="image-20201130171706409"></p>
+<h4 id="32&#x3001;&#x751F;&#x6210;v2c&#x6587;&#x4EF6;">3.2&#x3001;&#x751F;&#x6210;v2c&#x6587;&#x4EF6;</h4>
+<p>&#x767B;&#x9646;&#x6388;&#x6743;&#x5B98;&#x7F51;&#xFF1A;<a href="https://ai.cloudwalk.cn" target="_blank">https://ai.cloudwalk.cn</a></p>
+<p>fingerprint.c2v&#x6587;&#x4EF6;&#x6837;&#x4F8B;&#xFF1A;</p>
+<p> <img src="deployment.assets/image-20201130173220927.png" alt="image-20201130173220927"></p>
+<p>&#x5C06;fingerprint.c2v&#x6587;&#x4EF6;&#x5185;&#x7684;&#x5168;&#x90E8;&#x5185;&#x5BB9;&#x590D;&#x5236;&#xFF0C;&#x7C98;&#x8D34;&#x81F3;&#x201C;&#x8BF7;&#x8F93;&#x5165;&#x8BBE;&#x5907;ID&#x53F7;&#x201D;&#x5904;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x201C;&#x786E;&#x8BA4;&#x201D;&#xFF0C;&#x5E73;&#x53F0;&#x4F1A;&#x751F;&#x6210;v2c.txt&#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="deployment.assets/image-20201130173257975.png" alt="image-20201130173257975"></p>
+<p>  <img src="deployment.assets/image-20201130173329699.png" alt="image-20201130173329699"></p>
+<h4 id="33&#x3001;-&#x6FC0;&#x6D3B;&#x6388;&#x6743;">3.3&#x3001; &#x6FC0;&#x6D3B;&#x6388;&#x6743;</h4>
+<pre><code class="lang-shell">cd /opt/cloudCore/UkeyLinux
+
+rz   ##&#x9009;&#x62E9;&#x6587;&#x4EF6;
+
+./activator
+</code></pre>
+<p>&#x4E0B;&#x8F7D;v2c&#x6587;&#x4EF6;&#xFF0C;&#x5F97;&#x5230;v2c.txt&#x6587;&#x4EF6;&#xFF0C;&#x4E0A;&#x4F20;&#x81F3;&#x4E91;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p><img src="deployment.assets/image-20201130173440605.png" alt="image-20201130173440605"></p>
+<p>&#x4E91;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E3B;&#x673A;&#xFF0C;&#x6267;&#x884C;./activator&#xFF0C;&#x8F93;&#x5165;4&#xFF0C;&#x8F93;&#x5165;v2c.txt&#xFF0C;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x6388;&#x6743;&#x6FC0;&#x6D3B;&#x3002;</p>
+<p><img src="deployment.assets/image-20201130173505283.png" alt="image-20201130173505283"> </p>
+<h4 id="34&#x3001;&#x68C0;&#x67E5;&#x6388;&#x6743;&#x72B6;&#x6001;">3.4&#x3001;&#x68C0;&#x67E5;&#x6388;&#x6743;&#x72B6;&#x6001;</h4>
+<p>&#x6267;&#x884C;./UkeyCheck&#xFF0C;&#x68C0;&#x67E5;&#x6388;&#x6743;&#x72B6;&#x6001;&#xFF0C;&#x6838;&#x5BF9;&#x7533;&#x8BF7;&#x7684;&#x6388;&#x6743;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;</p>
+<p> <img src="deployment.assets/image-20201130173541254.png" alt="image-20201130173541254"></p>
+<h3 id="4&#x3001;-&#x542F;&#x52A8;&#x4E91;&#x4ECE;&#x670D;&#x52A1;&#x7AEF;">4&#x3001; &#x542F;&#x52A8;&#x4E91;&#x4ECE;&#x670D;&#x52A1;&#x7AEF;</h3>
+<p>&#xFF08;1&#xFF09;&#x5173;&#x95ED;&#x9632;&#x706B;&#x5899;</p>
+<pre><code class="lang-shell">##&#x670D;&#x52A1;&#x8FD0;&#x884C;&#x9700;&#x8981;&#x5C06;&#x9632;&#x706B;&#x5899;&#x5173;&#x95ED;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x6C38;&#x4E45;&#x5173;&#x95ED;&#x53EF;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#xFF0C;&#x6267;&#x884C;&#x4FE1;&#x606F;&#x3002;
+
+systemctl stop firewalld ##&#x4E34;&#x65F6;&#x5173;&#x95ED;&#x9632;&#x706B; &#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x9ED8;&#x8BA4; 
+
+systemctl disable firewalld ##&#x6C38;&#x4E45;&#x5173;&#x95ED;&#x9632;&#x706B;&#x5899;
+</code></pre>
+<p><img src="deployment.assets/image-20201130173905375.png" alt="image-20201130173905375"></p>
+<p>&#xFF08;2&#xFF09;&#x5B89;&#x88C5;&#x5305;&#x51C6;&#x5907;</p>
+<p>&#x5C06; CloudCore_FaceEngine &#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x62F7;&#x8D1D;&#x81F3;/home/&#xFF08;&#x7528;&#x6237;&#xFF09;&#x76EE;&#x5F55;&#xFF0C;&#x76EE;&#x5F55;&#x53EF;&#x4EFB;&#x610F;&#x6307;&#x5B9A;&#x3002;</p>
+<p>&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668;&#x5E76;cd&#x8FDB;&#x5165;&#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x89E3;&#x538B; CloudCore_FaceEngine.tar.gz &#x5F15;&#x64CE;&#x5B89;&#x88C5;&#x5305;&#x3002; </p>
+<p>&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;tar xzvf FaceGo.tar.gz&#x3002;</p>
+<p>&#x89E3;&#x538B;&#x540E;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;&#xFF1A;chmod 777 *&#x3002;</p>
+<p>&#xFF08;3&#xFF09;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x4FEE;&#x6539;&#xFF1A;</p>
+<p>/{filepath}/FaceGo/AlgorithmRecog/config/extra_conf_gpu.txt</p>
+<p>GpuID&#xFF1A;GPU&#x4E2A;&#x6570;-1&#xFF0C;&#x4E00;&#x4E2A;GPU&#x914D;0&#xFF0C;&#x4E24;&#x4E2A;GPU&#x914D;1&#x3002;</p>
+<p>nDetectThread=3&#xFF1A; #&#x4EBA;&#x8138;&#x68C0;&#x6D4B;&#x7EBF;&#x7A0B;&#x6570;&#xFF0C;GPU&#x4E2A;&#x6570;*3&#x3002;</p>
+<p>nFeatureThread=1&#xFF1A; #&#x7279;&#x5F81;&#x63D0;&#x53D6;&#x7EBF;&#x7A0B;&#x6570;&#xFF0C;GPU&#x4E2A;&#x6570;*1&#x3002;</p>
+<p><img src="deployment.assets/image-20201130174105773.png" alt="image-20201130174105773"></p>
+<p>Tip&#xFF1A;&#x53EA;&#x9700;&#x8981;&#x4FEE;&#x6539;extra_conf_gpu.txt&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#xFF08;4&#xFF09;&#x542F;&#x52A8;</p>
+<p>&#x5728;&#x4E3B;&#x7A0B;&#x5E8F;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;./start.sh&#xFF0C;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x6807;&#x8BC6;&#x8BF4;&#x660E;&#x542F;&#x52A8;&#x6210;&#x529F;&#x3002;</p>
+<p><img src="deployment.assets/image-20201130174146565.png" alt="image-20201130174146565"></p>
+<p>&#xFF08;5&#xFF09;&#x767B;&#x5F55;&#x9875;&#x9762;</p>
+<p>&#x5730;&#x5740;&#xFF1A;ip:7100/page&#xFF1B;&#x7528;&#x6237;&#x540D;/&#x5BC6;&#x7801;&#xFF1A;admin/admin&#x3002;&#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#x914D;&#x7F6E;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x4EBA;&#x8138;&#x5E93;&#xFF0C;&#x6B64;&#x4EBA;&#x8138;&#x5E93;&#x540D;&#x79F0;&#x4F1A;&#x5728;&#x540E;&#x9762;&#x4EBA;&#x8138;&#x7EC4;&#x4EF6;&#x4E0A;&#x5BF9;&#x5E94;&#x914D;&#x7F6E;&#x3002;</p>
+<p><img src="deployment.assets/image-20201130174202732.png" alt="image-20201130174202732"> </p>
+<h2 id="&#x56DB;&#x3001;--kad&#x90E8;&#x7F72;fastdfs">&#x56DB;&#x3001;  KAD&#x90E8;&#x7F72;FastDFS</h2>
+<h3 id="1&#x3001;-kad&#x5DE5;&#x5177;&#x5B89;&#x88C5;">1&#x3001; KAD&#x5DE5;&#x5177;&#x5B89;&#x88C5;</h3>
+<p>&#xFF08;1&#xFF09;&#x5728;&#x7EBF;&#x5B89;&#x88C5;</p>
+<pre><code class="lang-shell">yum install -y http://172.17.8.20:8081/repository/files/ruijie/kad/release/kad-1.6.0-1.x86_64.rpm
+
+## &#x5177;&#x4F53;&#x7248;&#x672C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x786E;&#x5B9A;
+</code></pre>
+<p>&#xFF08;2&#xFF09;&#x79BB;&#x7EBF;&#x5B89;&#x88C5;</p>
+<pre><code class="lang-shell">##&#x5C06;KAD&#x5B89;&#x88C5;&#x5305;&#x590D;&#x5236;&#x5230;/opt&#x76EE;&#x5F55;&#x4E0B;
+
+cd /opt
+
+tar xzvf sourceid-kad-r1.6.4.tar.gz -C /opt/kad
+</code></pre>
+<h3 id="2&#x3001;-&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">2&#x3001; &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>/opt/kad/workspace/k8s/conf/all.yml&#x4E2D;&#x7684;FastDFS&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x65B0;&#x589E;&#xFF1A;FDFS_USE_TRUNK_FILE: &quot;false&quot;&#xFF0C;&#x9632;&#x6B62;&#x51FA;&#x73B0;&#x56FE;&#x7247;&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p><img src="deployment.assets/image-20201130174323490.png" alt="image-20201130174323490"></p>
+<h3 id="3&#x3001;-&#x6267;&#x884C;&#x90E8;&#x7F72;">3&#x3001; &#x6267;&#x884C;&#x90E8;&#x7F72;</h3>
+<pre><code class="lang-shell">kad-play playbooks/fdfs/setup.yml
+</code></pre>
+<h3 id="4&#x3001;-&#x67E5;&#x770B;&#x90E8;&#x7F72;&#x72B6;&#x6001;">4&#x3001; &#x67E5;&#x770B;&#x90E8;&#x7F72;&#x72B6;&#x6001;</h3>
+<pre><code class="lang-shell">ps -aux |grep fdfs_storaged
+
+ps -aux |grep fdfs_trackerd
+
+
+## &#x67E5;&#x770B;fdfs_storaged&#xFF0C;fdfs_trackerd&#x4E24;&#x4E2A;&#x670D;&#x52A1;&#x72B6;&#x6001;
+
+systemctl status fdfs_storaged
+
+systemctl status fdfs_trackerd
+</code></pre>
+<h3 id="5&#x3001;-&#x5378;&#x8F7D;&#xFF08;&#x53EF;&#x9009;&#xFF09;">5&#x3001; &#x5378;&#x8F7D;&#xFF08;&#x53EF;&#x9009;&#xFF09;</h3>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5378;&#x8F7D;&#xFF0C;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x3002;</p>
+<p>kad-play playbooks/fdfs/clean.yml</p>
+<p>&#x5982;&#x679C;kad&#x5DE5;&#x5177;&#x65E0;&#x6CD5;&#x5378;&#x8F7D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7F51;&#x4E0A;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5378;&#x8F7D;&#x3002;</p>
+<p>&#x94FE;&#x63A5;&#x5730;&#x5740;&#xFF1A;<a href="https://blog.csdn.net/weixin_37380784/article/details/94732272" target="_blank">https://blog.csdn.net/weixin_37380784/article/details/94732272</a></p>
+<h2 id="&#x4E94;&#x3001;--kad&#x90E8;&#x7F72;sourceid">&#x4E94;&#x3001;  KAD&#x90E8;&#x7F72;SourceID</h2>
+<h3 id="1&#x3001;-kad&#x5DE5;&#x5177;&#x5B89;&#x88C5;">1&#x3001; KAD&#x5DE5;&#x5177;&#x5B89;&#x88C5;</h3>
+<pre><code class="lang-shell">yum install -y http://172.17.8.20:8081/repository/files/ruijie/kad/release/kad-1.6.0-1.x86_64.rpm
+
+#### &#x5177;&#x4F53;&#x7248;&#x672C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x786E;&#x5B9A;
+</code></pre>
+<h3 id="2&#x3001;-&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">2&#x3001; &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#xFF08;1&#xFF09;&#x5728;/opt/kad/workspace/ruijie-sourceid/conf/all.yml&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x4EBA;&#x8138;&#x7EC4;&#x4EF6;&#xFF1A;</p>
+<p>SOURCEID_FACEID_ENABLED: &quot;yes&quot;</p>
+<p>&#x914D;&#x7F6E;&#x57DF;&#x540D;</p>
+<p><img src="deployment.assets/image-20201130174542786.png" alt="image-20201130174542786"> </p>
+<p>&#xFF08;2&#xFF09;kad.yml&#x6DFB;&#x52A0;&#x4EBA;&#x8138;&#x7EC4;&#x4EF6;&#x53CA;&#x7248;&#x672C;&#x53F7;&#xFF1A;</p>
+<p>&#x7248;&#x672C;&#x53F7;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;</p>
+<p>/opt/kad/down/sourceid-kad-r1.6.4/kad.yml</p>
+<p>faceid: {name: &quot;sourceid/faceid&quot;, version: &quot;1.8.0R1&quot;},</p>
+<p>faceid-display: {name: &quot;sourceid/faceid-display&quot;, version: &quot;sid0.1&quot;},</p>
+<p><img src="deployment.assets/image-20201130174607038.png" alt="image-20201130174607038"> </p>
+<h3 id="3&#x3001;-&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">3&#x3001; &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x4EBA;&#x8138;&#x7EC4;&#x4EF6;&#x7248;&#x672C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#xFF0C;&#x800C;kad&#x5DE5;&#x5177;&#x6253;&#x5305;&#x65F6;&#x53EA;&#x6253;&#x5305;&#x4E86;&#x5F53;&#x65F6;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x548C;&#x6570;&#x636E;&#x5E93;&#x811A;&#x672C;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</p>
+<p>/opt/kad/workspace/ruijie-sourceid/conf/sourceid/faceid/application-pro.yml</p>
+<p>&#x4FEE;&#x6539;&#x8BE5;&#x6587;&#x4EF6;&#x7684;ycface&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x4E91;&#x4ECE;&#x5730;&#x5740;&#x4EE5;&#x53CA;&#x4E91;&#x4ECE;&#x4E0A;&#x914D;&#x7F6E;&#x7684;&#x4EBA;&#x8138;&#x5E93;groupIds</p>
+<h3 id="4&#x3001;-&#x90E8;&#x7F72;sourceid">4&#x3001; &#x90E8;&#x7F72;SourceID</h3>
+<pre><code class="lang-shell">kad-play playbooks/sourceid/prepare.yml
+
+kad-play playbooks/sourceid/setup.yml
+</code></pre>
+<h3 id="5&#x3001;-&#x68C0;&#x6D4B;&#x72B6;&#x6001;">5&#x3001; &#x68C0;&#x6D4B;&#x72B6;&#x6001;</h3>
+<pre><code class="lang-shell">kubectl -n ruijie-sourceid get pod
+</code></pre>
+<p><img src="deployment.assets/image-20201130174700745.png" alt="image-20201130174700745"></p>
+<h2 id="&#x516D;&#x3001;--&#x624B;&#x5DE5;&#x90E8;&#x7F72;faceid-task&#x548C;wsoauth">&#x516D;&#x3001;  &#x624B;&#x5DE5;&#x90E8;&#x7F72;faceId-task&#x548C;wsoauth</h2>
+<h3 id="1&#x3001;-&#x51C6;&#x5907;yml&#x6587;&#x4EF6;">1&#x3001; &#x51C6;&#x5907;yml&#x6587;&#x4EF6;</h3>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x60C5;&#x51B5;&#x5408;&#x7406;&#x5206;&#x914D;cpu&#x5185;&#x5B58;&#x7B49;&#xFF0C;faceid-task&#x9879;&#x76EE;&#x53EA;&#x80FD;&#x5355;pod&#x90E8;&#x7F72;</p>
+</blockquote>
+<p><strong>wsoauth.yml</strong>    <a href="deployment.assets/wsoauth.yml">&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;</a></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> extensions/v1beta1
+<span class="hljs-attr">kind:</span> Deployment
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> rg-wsoauth
+<span class="hljs-attr">  namespace:</span> ruijie-sourceid
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  replicas:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">  template:</span>
+<span class="hljs-attr">    metadata:</span>
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        service:</span> rg-wsoauth
+<span class="hljs-attr">    spec:</span>
+<span class="hljs-attr">      containers:</span>
+<span class="hljs-attr">      - name:</span> rg-wsoauth
+<span class="hljs-attr">        image:</span> id.ruijie.com.cn:<span class="hljs-number">25082</span>/sourceid/wsoauth:<span class="hljs-number">1.8</span><span class="hljs-number">.0</span>p10
+<span class="hljs-attr">        imagePullPolicy:</span> IfNotPresent
+<span class="hljs-attr">        env:</span>
+<span class="hljs-attr">        - name:</span> JAVA_OPT_EXT
+<span class="hljs-attr">          value:</span> <span class="hljs-string">&quot;-Xms1024m -Xmx1024m&quot;</span>
+<span class="hljs-attr">        resources:</span>
+<span class="hljs-attr">          limits:</span>
+<span class="hljs-attr">           cpu:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">           memory:</span> <span class="hljs-number">1</span>Gi
+<span class="hljs-attr">          requests:</span>
+<span class="hljs-attr">           cpu:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">           memory:</span> <span class="hljs-number">1</span>Gi
+
+<span class="hljs-attr">        ports:</span>
+<span class="hljs-attr">        - containerPort:</span> <span class="hljs-number">8580</span>
+<span class="hljs-attr">        volumeMounts:</span>
+<span class="hljs-attr">        - mountPath:</span> /ruijie/sourceid/wsoauth/conf
+<span class="hljs-attr">          name:</span> conf
+<span class="hljs-attr">      imagePullSecrets:</span>
+<span class="hljs-attr">      - name:</span> regsecret
+<span class="hljs-attr">      volumes:</span>
+<span class="hljs-attr">        - name:</span> conf
+<span class="hljs-attr">          hostPath:</span>
+<span class="hljs-attr">            path:</span> /home/ruijie/ruijie-sourceid/sourceid/wsoauth/conf
+
+<span class="hljs-meta">---</span>
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Service
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> rg-wsoauth
+<span class="hljs-attr">  namespace:</span> ruijie-sourceid
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  selector:</span>
+<span class="hljs-attr">    service:</span> rg-wsoauth
+<span class="hljs-attr">  ports:</span>
+<span class="hljs-attr">  - port:</span> <span class="hljs-number">80</span>
+<span class="hljs-attr">    targetPort:</span> <span class="hljs-number">8580</span>
+
+<span class="hljs-meta">---</span>
+<span class="hljs-attr">apiVersion:</span> extensions/v1beta1
+<span class="hljs-attr">kind:</span> Ingress
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> rg-wsoath-ingress
+<span class="hljs-attr">  namespace:</span> ruijie-sourceid
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  rules:</span>
+<span class="hljs-attr">  - host:</span> self.wzu.edu.cn
+<span class="hljs-attr">    http:</span>
+<span class="hljs-attr">      paths:</span>
+<span class="hljs-attr">      - path:</span> /wsoauth
+<span class="hljs-attr">        backend:</span>
+<span class="hljs-attr">          serviceName:</span> rg-wsoauth
+<span class="hljs-attr">          servicePort:</span> <span class="hljs-number">80</span>
+</code></pre>
+<p><strong>faceid-task.yml </strong><a href="deployment.assets/faceid-task.yml">&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;</a></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> extensions/v1beta1
+<span class="hljs-attr">kind:</span> Deployment
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> rg-faceid-task
+<span class="hljs-attr">  namespace:</span> ruijie-sourceid
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  replicas:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">  template:</span>
+<span class="hljs-attr">    metadata:</span>
+<span class="hljs-attr">      labels:</span>
+<span class="hljs-attr">        service:</span> rg-faceid-task
+<span class="hljs-attr">    spec:</span>
+<span class="hljs-attr">      containers:</span>
+<span class="hljs-attr">      - name:</span> rg-faceid-task
+<span class="hljs-attr">        image:</span> id.ruijie.com.cn:<span class="hljs-number">25082</span>/sourceid/faceid-task:<span class="hljs-number">1.8</span><span class="hljs-number">.0</span>
+<span class="hljs-attr">        imagePullPolicy:</span> IfNotPresent
+<span class="hljs-attr">        env:</span>
+<span class="hljs-attr">        - name:</span> JAVA_OPT_EXT
+<span class="hljs-attr">          value:</span> <span class="hljs-string">&quot;-Xms512m -Xmx2048m&quot;</span>
+<span class="hljs-attr">        resources:</span>
+<span class="hljs-attr">          limits:</span>
+<span class="hljs-attr">           cpu:</span> <span class="hljs-number">2</span>
+<span class="hljs-attr">           memory:</span> <span class="hljs-number">3</span>Gi
+<span class="hljs-attr">          requests:</span>
+<span class="hljs-attr">           cpu:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">           memory:</span> <span class="hljs-number">2</span>Gi
+
+<span class="hljs-attr">        ports:</span>
+<span class="hljs-attr">        - containerPort:</span> <span class="hljs-number">8903</span>
+<span class="hljs-attr">        volumeMounts:</span>
+<span class="hljs-attr">        - mountPath:</span> /ruijie/sourceid/faceid-task/conf
+<span class="hljs-attr">          name:</span> conf
+<span class="hljs-attr">      imagePullSecrets:</span>
+<span class="hljs-attr">      - name:</span> regsecret
+<span class="hljs-attr">      volumes:</span>
+<span class="hljs-attr">        - name:</span> conf
+<span class="hljs-attr">          hostPath:</span>
+<span class="hljs-attr">            path:</span> /home/ruijie/ruijie-sourceid/sourceid/faceid-task/conf
+
+<span class="hljs-meta">---</span>
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Service
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> rg-faceid-task
+<span class="hljs-attr">  namespace:</span> ruijie-sourceid
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  selector:</span>
+<span class="hljs-attr">    service:</span> rg-faceid-task
+<span class="hljs-attr">  ports:</span>
+<span class="hljs-attr">  - port:</span> <span class="hljs-number">80</span>
+<span class="hljs-attr">    targetPort:</span> <span class="hljs-number">8903</span>
+</code></pre>
+<h3 id="2&#x3001;-&#x65B0;&#x589E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">2&#x3001; &#x65B0;&#x589E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x76EE;&#x524D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x653E;&#x5728;/home/ruijie/ruijie-sourceid/sourceid &#x8DEF;&#x5F84;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x955C;&#x50CF;&#x542F;&#x52A8;&#x65F6;&#x4F1A;&#x5F02;&#x5E38;&#x3002;</p>
+<p>Tip&#xFF1A;&#x5982;&#x679C;k8s&#x96C6;&#x7FA4;&#x6709;&#x591A;&#x53F0;&#xFF0C;&#x5219;&#x6BCF;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x90FD;&#x9700;&#x8981;&#x914D;&#x7F6E;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#x7B49;&#x914D;&#x7F6E;&#x3002;</p>
+<p><img src="deployment.assets/clip_image003.png" alt="img"><a href="deployment.assets/faceid-task.rar">&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;</a></p>
+<p><img src="deployment.assets/image-20201130180144601.png" alt="image-20201130180144601"> </p>
+<h3 id="3&#x3001;-&#x4FEE;&#x6539;&#x914D;&#x7F6E;">3&#x3001; &#x4FEE;&#x6539;&#x914D;&#x7F6E;</h3>
+<p>rg.sync.image&#xFF1A;&#x4EFB;&#x52A1;&#x8FD0;&#x884C;&#x95F4;&#x9694;&#x65F6;&#x95F4;</p>
+<p>identity.user-id&#xFF1A;&#x4ECE;linkid&#x83B7;&#x53D6;&#x7684;&#x7528;&#x6237;id&#x7684;key</p>
+<p>identity.client-id&#xFF1A;&#x652F;&#x6301;&#x4EBA;&#x8138;&#x540C;&#x6B65;&#x7684;client</p>
+<p>identity.get-users&#xFF1A;&#x83B7;&#x53D6;&#x7528;&#x6237;id&#x7684;&#x63A5;&#x53E3;</p>
+<p><img src="deployment.assets/image-20201130180316502.png" alt="image-20201130180316502"> </p>
+<h3 id="4&#x3001;-&#x90E8;&#x7F72;&#x5E94;&#x7528;">4&#x3001; &#x90E8;&#x7F72;&#x5E94;&#x7528;</h3>
+<pre><code class="lang-shell">## &#x901A;&#x8FC7;yml&#x6587;&#x4EF6;&#x521B;&#x5EFA;pod
+
+kubectl create -f /opt/kad/workspace/ruijie-sourceid/yaml/faceid-task/faceid-task.yml
+
+kubectl create -f /opt/kad/workspace/ruijie-sourceid/yaml/wsoauth/wsoauth.yml
+</code></pre>
+<h3 id="5&#x3001;-&#x68C0;&#x6D4B;&#x72B6;&#x6001;">5&#x3001; &#x68C0;&#x6D4B;&#x72B6;&#x6001;</h3>
+<pre><code class="lang-shell">kubectl -n ruijie-sourceid get pod
+</code></pre>
+<p><img src="deployment.assets/image-20201130180353500.png" alt="image-20201130180353500"> </p>
+<footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-12-08 17:20:53
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../manufacturer/interface/application.html" class="navigation navigation-prev " aria-label="Previous page: 人脸应用标准接口">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../faq/faq.html" class="navigation navigation-next " aria-label="Next page: FAQ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"人脸实施部署文档","level":"1.9.5","depth":2,"next":{"title":"FAQ","level":"1.9.6","depth":2,"path":"faceid/faq/faq.md","ref":"faceid/faq/faq.md","articles":[]},"previous":{"title":"人脸应用标准接口","level":"1.9.4","depth":2,"path":"faceid/manufacturer/interface/application.md","ref":"faceid/manufacturer/interface/application.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"faceid/deployment/deployment.md","mtime":"2020-12-08T09:20:53.771Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-08T09:33:40.299Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

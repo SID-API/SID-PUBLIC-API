@@ -1,11 +1,44 @@
 # 开发前须知
+### 人脸实施对接步骤
+
+
+
+```mermaid
+graph TD
+classDef alink text-decoration: none;
+start(( 开始 )) --> sub1[ <a>人脸组件的服务器准备和部署</a> ]
+sub1 --> cond{人脸厂商or应用对接}
+cond -->|厂商对接| sub2( <a>人脸厂商对接接口</a> )
+cond -->|应用对接| sub3( <a>人脸应用对接接口</a> )
+sub2 --> sub4( 人脸对外接口应用对接-本文档 )
+sub3 --> sub4( 人脸对外接口应用对接-本文档 )
+sub4 --> e(( 结束 ))
+click sub1 "../deployment/deployment.html"
+click sub2 "../manufacturer/interface/manufacture.html"
+click sub3 "../manufacturer/interface/application.html"
+```
+
+上图中整体流程为：
+
+1. 锐捷实施人员准备和部署人脸组件服务器。
+
+2. 人脸对接。
+
+   人脸厂商对接：厂商方开发由SID制定的【人脸厂商标准接口】，开发完成后，SID调用相关接口实现对接。
+
+   人脸应用对接：应用方开发由SID制定的【人脸应用标准接口】，开发完成后，SID调用相关接口实现对接。
+
+   人脸对外服务：应用调用SID提供的【人脸对外接口】，进行人脸对接。
+
+#### 人脸组件的服务器准备和部署
+
+具体部署步骤详见：[SID人脸环境部署](/faceid/deployment/deployment.html)。
+
 #### 人脸厂商、人脸应用对接
 
-人脸厂商、人脸应用对接主要是SID对接多家厂商或应用（厂商或应用提供SID需要的API，SID进行调用），实现照片分析、认证等功能。
+人脸厂商对接需开发的接口详见：[人脸厂商标准接口](/faceid/manufacturer/interface/manufacture.html)。
 
-人脸厂商对接，请参考：[人脸厂商标准接口](/faceid/manufacturer/interface/manufacture.html)
-
-人脸应用对接，请参考：[人脸应用标准接口](/faceid/manufacturer/interface/application.html)
+人脸应用对接需开发的接口详见：[人脸应用标准接口](/faceid/manufacturer/interface/application.html)。
 
 #### 人脸对外接口应用对接步骤
 

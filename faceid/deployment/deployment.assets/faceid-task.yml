@@ -1,0 +1,51 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rg-faceid-task
+  namespace: ruijie-sourceid
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        service: rg-faceid-task
+    spec:
+      containers:
+      - name: rg-faceid-task
+        image: id.ruijie.com.cn:25082/sourceid/faceid-task:1.8.0
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: JAVA_OPT_EXT
+          value: "-Xms512m -Xmx2048m"
+        resources:
+          limits:
+           cpu: 2
+           memory: 3Gi
+          requests:
+           cpu: 1
+           memory: 2Gi
+
+        ports:
+        - containerPort: 8903
+        volumeMounts:
+        - mountPath: /ruijie/sourceid/faceid-task/conf
+          name: conf
+      imagePullSecrets:
+      - name: regsecret
+      volumes:
+        - name: conf
+          hostPath:
+            path: /home/ruijie/ruijie-sourceid/sourceid/faceid-task/conf
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rg-faceid-task
+  namespace: ruijie-sourceid
+spec:
+  selector:
+    service: rg-faceid-task
+  ports:
+  - port: 80
+    targetPort: 8903

@@ -12,6 +12,7 @@
         
         
     
+    
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
@@ -45,6 +46,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -60,6 +65,9 @@
         
         <link rel="stylesheet" href="../styles/website.css">
         
+    
+
+
     
 
         
@@ -148,7 +156,7 @@
                 <a href="general-application-docking.html">
             
                     
-                    统一认证对接
+                    单点对接
             
                 </a>
             
@@ -156,12 +164,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="face-application-docking.html">
+        <li class="chapter " data-level="1.2.3" data-path="face-docking.html">
             
-                <a href="face-application-docking.html">
+                <a href="face-docking.html">
             
                     
-                    人脸应用对接
+                    人脸对接
             
                 </a>
             
@@ -169,12 +177,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="face-manufacturer-docking.html">
+        <li class="chapter " data-level="1.2.4" data-path="group-docking.html">
             
-                <a href="face-manufacturer-docking.html">
+                <a href="group-docking.html">
             
                     
-                    人脸厂商对接
+                    群组对接
             
                 </a>
             
@@ -219,7 +227,7 @@
                 <a href="../get-access-token.html">
             
                     
-                    获取access_token
+                    获取Token方式一：获取access_token
             
                 </a>
             
@@ -232,7 +240,7 @@
                 <a href="../get-JWT.html">
             
                     
-                    获取JWT
+                    获取Token方式二：获取JWT
             
                 </a>
             
@@ -285,20 +293,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.html">
-            
-                <a href="../linkid/password/public/interface/sid-university-public_linkid_public_interface_password-external-api.html">
-            
-                    
-                    密码对外接口
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.4" data-path="../linkid/user/faq/faq.html">
+        <li class="chapter " data-level="1.4.3" data-path="../linkid/user/faq/faq.html">
             
                 <a href="../linkid/user/faq/faq.html">
             
@@ -330,16 +325,48 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../linkid/authentication/introduction/">
+        <li class="chapter " data-level="1.5.1" >
             
-                <a href="../linkid/authentication/introduction/">
+                <span>
             
                     
                     开发前须知
             
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../linkid/authentication/introduction/cas-README.html">
+            
+                <a href="../linkid/authentication/introduction/cas-README.html">
+            
+                    
+                    CAS单点对接
+            
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../linkid/authentication/introduction/oauth-README.html">
+            
+                <a href="../linkid/authentication/introduction/oauth-README.html">
+            
+                    
+                    OAuth2.0单点对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -361,7 +388,7 @@
                 <a href="../linkid/authentication/public/interface/oauth-authentication.html">
             
                     
-                    OAuth认证接口
+                    OAuth2.0认证接口
             
                 </a>
             
@@ -711,7 +738,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.5" data-path="../faceid/faq/faq.html">
+        <li class="chapter " data-level="1.9.5" data-path="../faceid/deployment/deployment.html">
+            
+                <a href="../faceid/deployment/deployment.html">
+            
+                    
+                    人脸实施部署文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../faceid/faq/faq.html">
             
                 <a href="../faceid/faq/faq.html">
             
@@ -850,7 +890,7 @@
                 <span>
             
                     
-                    海大其他在用API
+                    其他
             
                 </span>
             
@@ -961,7 +1001,7 @@
                 <a href="../appendix/faq/faq.html">
             
                     
-                    FQA
+                    FAQ
             
                 </a>
             
@@ -1029,6 +1069,18 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align:left">&#x7EC4;&#x7EC7;</td>
+<td style="text-align:left">&#x5E26;&#x6709;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;&#x7684;&#x7528;&#x6237;&#x7EC4;&#x3002;&#x7EC4;&#x7EC7;&#x901A;&#x8FC7;&#x90E8;&#x95E8;&#x5B9A;&#x4E49;&#x7528;&#x6237;&#x6240;&#x5728;&#x8282;&#x70B9;&#x7684;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x7FA4;&#x7EC4;</td>
+<td style="text-align:left">&#x5E26;&#x6709;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;&#x7684;&#x7528;&#x6237;&#x7EC4;&#xFF0C;&#x5176;&#x4E2D;&#x201D;&#x7528;&#x6237;&#x7EC4;&#x201D;&#x662F;&#x6307;&#x201C;&#x5177;&#x6709;&#x76F8;&#x4F3C;&#x7279;&#x6027;&#x6216;&#x76F8;&#x4F3C;&#x6743;&#x5229;&#x7684;&#x7528;&#x6237;&#x7684;&#x96C6;&#x5408;&#x201D;&#x3002;<br>&#x201C;&#x7FA4;&#x7EC4;&#x201D;&#x4E0E;&#x201C;&#x7EC4;&#x7EC7;&#x201D;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x201C;&#x7EC4;&#x7EC7;&#x201D;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x90E8;&#x95E8;&#x5B9A;&#x4E49;&#x7528;&#x6237;&#x6240;&#x5728;&#x8282;&#x70B9;&#x7684;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;&#xFF0C;&#x201C;&#x7FA4;&#x7EC4;&#x201D;&#x53EF;&#x4EE5;&#x5C06;&#x201C;&#x8EAB;&#x4EFD;&#x6807;&#x7B7E;&#x201D;&#x3001;&#x201C;&#x8EAB;&#x4EFD;&#x7C7B;&#x578B;&#x201D;&#x4E0E;&#x201C;&#x7EC4;&#x7EC7;&#x201D;&#x7ED3;&#x5408;&#xFF0C;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x5730;&#x7EC4;&#x5408;&#x5B9A;&#x4E49;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4E09;&#x5143;&#x7EC4;</td>
+<td style="text-align:left">&#x7EC4;&#x7EC7;&#x3001;&#x5C97;&#x4F4D;&#xFF08;&#x5305;&#x542B;&#x6B63;&#x5F0F;&#x5C97;&#x4F4D;&#x3001;&#x865A;&#x62DF;&#x5C97;&#x4F4D;&#x7B49;&#xFF09;&#x3001;&#x7528;&#x6237;&#x95F4;&#x7684;&#x5173;&#x7CFB;</td>
+</tr>
+<tr>
 <td style="text-align:left">client_id</td>
 <td style="text-align:left">&#x5E94;&#x7528;id</td>
 </tr>
@@ -1038,7 +1090,7 @@
 </tr>
 <tr>
 <td style="text-align:left">access_token</td>
-<td style="text-align:left">&#x8BBF;&#x95EE;&#x4EE4;&#x724C;&#xFF0C;&#x7531;SID&#x9881;&#x53D1;</td>
+<td style="text-align:left">&#x8BBF;&#x95EE;&#x4EE4;&#x724C;&#xFF0C;&#x7531;SourceID&#x9881;&#x53D1;</td>
 </tr>
 <tr>
 <td style="text-align:left">JWT</td>
@@ -1075,7 +1127,7 @@
 </tbody>
 </table>
 <footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-11-23 17:58:35
+2020-12-08 14:48:39
 </span></footer>
                                 
                                 </section>
@@ -1104,7 +1156,7 @@
             
                 
                 
-                <a href="general-application-docking.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 统一认证对接">
+                <a href="general-application-docking.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 单点对接">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1115,12 +1167,13 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"名词解释","level":"1.2.1","depth":2,"next":{"title":"统一认证对接","level":"1.2.2","depth":2,"path":"quick-get-start/general-application-docking.md","ref":"quick-get-start/general-application-docking.md","articles":[]},"previous":{"title":"快速入门","level":"1.2","depth":1,"ref":"","articles":[{"title":"名词解释","level":"1.2.1","depth":2,"path":"quick-get-start/explain.md","ref":"quick-get-start/explain.md","articles":[]},{"title":"统一认证对接","level":"1.2.2","depth":2,"path":"quick-get-start/general-application-docking.md","ref":"quick-get-start/general-application-docking.md","articles":[]},{"title":"人脸应用对接","level":"1.2.3","depth":2,"path":"quick-get-start/face-application-docking.md","ref":"quick-get-start/face-application-docking.md","articles":[]},{"title":"人脸厂商对接","level":"1.2.4","depth":2,"path":"quick-get-start/face-manufacturer-docking.md","ref":"quick-get-start/face-manufacturer-docking.md","articles":[]}]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"quick-get-start/explain.md","mtime":"2020-11-23T09:58:35.742Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-11-27T10:26:49.167Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"名词解释","level":"1.2.1","depth":2,"next":{"title":"单点对接","level":"1.2.2","depth":2,"path":"quick-get-start/general-application-docking.md","ref":"quick-get-start/general-application-docking.md","articles":[]},"previous":{"title":"快速入门","level":"1.2","depth":1,"ref":"","articles":[{"title":"名词解释","level":"1.2.1","depth":2,"path":"quick-get-start/explain.md","ref":"quick-get-start/explain.md","articles":[]},{"title":"单点对接","level":"1.2.2","depth":2,"path":"quick-get-start/general-application-docking.md","ref":"quick-get-start/general-application-docking.md","articles":[]},{"title":"人脸对接","level":"1.2.3","depth":2,"path":"quick-get-start/face-docking.md","ref":"quick-get-start/face-docking.md","articles":[]},{"title":"群组对接","level":"1.2.4","depth":2,"path":"quick-get-start/group-docking.md","ref":"quick-get-start/group-docking.md","articles":[]}]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"quick-get-start/explain.md","mtime":"2020-12-08T06:48:39.622Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-08T09:33:40.299Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1153,6 +1206,10 @@
         
     
         
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
@@ -1160,6 +1217,8 @@
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

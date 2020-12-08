@@ -18,7 +18,7 @@
 
 #### 组织接口调用授权：<div id=link2></div>
 
-* [获取accessToken](../../../get-access-token.md)
+* [获取accessToken](/get-access-token.html)
 * 设置请求头 Authorization: Bearer {access_token}
 
 ![image-20201111115147462.png](README.assets/image-20201111115147462.png)

@@ -1,0 +1,67 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rg-wsoauth
+  namespace: ruijie-sourceid
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        service: rg-wsoauth
+    spec:
+      containers:
+      - name: rg-wsoauth
+        image: id.ruijie.com.cn:25082/sourceid/wsoauth:1.8.0p10
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: JAVA_OPT_EXT
+          value: "-Xms1024m -Xmx1024m"
+        resources:
+          limits:
+           cpu: 1
+           memory: 1Gi
+          requests:
+           cpu: 1
+           memory: 1Gi
+
+        ports:
+        - containerPort: 8580
+        volumeMounts:
+        - mountPath: /ruijie/sourceid/wsoauth/conf
+          name: conf
+      imagePullSecrets:
+      - name: regsecret
+      volumes:
+        - name: conf
+          hostPath:
+            path: /home/ruijie/ruijie-sourceid/sourceid/wsoauth/conf
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rg-wsoauth
+  namespace: ruijie-sourceid
+spec:
+  selector:
+    service: rg-wsoauth
+  ports:
+  - port: 80
+    targetPort: 8580
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: rg-wsoath-ingress
+  namespace: ruijie-sourceid
+spec:
+  rules:
+  - host: self.wzu.edu.cn
+    http:
+      paths:
+      - path: /wsoauth
+        backend:
+          serviceName: rg-wsoauth
+          servicePort: 80

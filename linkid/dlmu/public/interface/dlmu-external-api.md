@@ -5,8 +5,6 @@
 >[查询所有对接的应用](#1)
 >
 >[查询用户的入口授权](#2)
->
->[重置用户密码](#3)
 
 
 
@@ -19,11 +17,13 @@
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/app/public/find/clientId/name/all
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-https://self.xxx.edu.cn/linkid/api/aggregate/app/public/find/clientId/name/all
+https://ljw.sso.rghall.com.cn/linkid/api/aggregate/app/public/find/clientId/name/all
 ```
 
 **返回结果：**
@@ -74,11 +74,13 @@ https://self.xxx.edu.cn/linkid/api/aggregate/app/public/find/clientId/name/all
 
 **请求地址：** http://self.xxx.edu.cn/linkid/remote/permission/entrance/public/find/entancePermissions/{userId}
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
 请求示例：
-https://self.xxx.edu.cn/linkid/linkid/remote/permission/entrance/public/find/entancePermissions/admin
+https://ljw.sso.rghall.com.cn/linkid/linkid/remote/permission/entrance/public/find/entancePermissions/admin
 ```
 
 **返回结果：**
@@ -119,59 +121,3 @@ https://self.xxx.edu.cn/linkid/linkid/remote/permission/entrance/public/find/ent
 | url       | string     | 应用url        |
 | describe  | string     | 应用描述       |
 | isDeleted | null       | 无用字段       |
-
-
-
-#### 三、重置用户密码<a id=3></a>
-
-> 查询用户在某个应用匹配的应用角色
-
-**请求⽅式：** POST（**HTTPS或HTTP**）
-
-**请求地址：** http://self.xxx.edu.cn/linkid/public/api/user/password/reset
-
-**请求参数：**
-
-```javascript
-{
-    "propertyNames":[
-        "XH",
-        "GH"
-    ],
-    "value":"admin",
-    "newPassword":"111111",
-    "forceChangePasswordNextLogin":true,
-    "source":"a"
-}
-```
-
-**参数说明：**
-
-| **参数**                     | 类型    | **是否必须** | **说明**                 |
-| ---------------------------- | ------- | ------------ | ------------------------ |
-| propertyNames                | list    | 是           | 用户名标准对应的字段     |
-| value                        | string  | 是           | 用户名                   |
-| newPassword                  | string  | 是           | 新密码                   |
-| forceChangePasswordNextLogin | boolean | 是           | 是否强制下次登录修改密码 |
-| source                       | string  | 是           | 修改密码调用来源         |
-
-**返回结果：**
-
-```javascript
-{
-  "code": 200,
-  "message": "OK",
-  "data": true
-}
-
-```
-
-**参数说明：**
-
-| **参数** | 类型    | **说明**     |
-| -------- | ------- | ------------ |
-| code     | int     | 返回状态code |
-| message  | String  | 返回状态消息 |
-| data     | boolean | 重置密码结果 |
-
-#### 

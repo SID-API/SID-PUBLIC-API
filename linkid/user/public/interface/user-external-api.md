@@ -16,7 +16,7 @@
 >
 >[海大科探在用接口-增量同步用户](#6)
 >
->[海大再用接口-分页获取标签下的用户](#7)
+>[海大在用接口-分页获取标签下的用户](#7)
 >
 >[海大微信解绑接口-解除用户在SID中的微信绑定](#8)
 
@@ -29,6 +29,8 @@
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/user/public/userInfo/{userId}
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -93,6 +95,8 @@ userId:  学工号
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/user/public/pageQueryUsers
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -170,6 +174,8 @@ userId:  学工号
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://self.xxx.edu.cn/linkid/service/user/applicationconfig/userinfo
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -279,6 +285,8 @@ userId:  学工号
 **请求⽅式：** POST（**HTTPS或HTTP**）
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/user/public/userinfo/bypropertynames
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -428,6 +436,8 @@ userId:  学工号
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/user/dataSource/public/pageQuery/time
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
@@ -443,8 +453,8 @@ userId:  学工号
 
 | **参数**  | 类型   | **是否必须** | **说明**                                                     |
 | --------- | ------ | ------------ | ------------------------------------------------------------ |
-| current   | list   | 是           | 用户属性的名称                                               |
-| value     | string | 是           | 用户属性的值                                                 |
+| current   | list   | 是           | 当前页                                                       |
+| size      | string | 是           | 每页返回数据量                                               |
 | startTime | string | 是           | 查询这个时间之后有更新的用户数据,   <br>格式："yyyy-MM-dd hh:mm:ss" |
 | endTime   | string | 否           | 查询这个时间之前有更新的用户数据，<br/>格式："yyyy-MM-dd hh:mm:ss" |
 
@@ -506,7 +516,9 @@ userId:  学工号
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
-**请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findUsersByDate?timestamp=1605150501700
+**请求地址：** http://self.xxx.edu.cn/linkid/api/aggregate/keTan/public/findUsersByDate?timestamp=xxx
+
+注：https方式类似。
 
 **请求参数：**
 
@@ -558,7 +570,7 @@ timestamp， 时间戳， 示例：1605150501700
 
 
 
-#### 七、海大再用接口-分页获取标签下的用户解除用户在SID中的微信绑定<a id=7></a>
+#### 七、海大在用接口-分页获取标签下的用户解除用户在SID中的微信绑定<a id=7></a>
 
 > 海大获取标签下用户信息
 
@@ -566,19 +578,22 @@ timestamp， 时间戳， 示例：1605150501700
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/user/public/pageQueryUsersByLabelId
 
+注：https方式类似。
+
 **请求参数：**
 
 ```javascript
-示例：https://idself26.rghall.com.cn/linkid/api/user/public/pageQueryUsersByLabelId?number=1&size=10&labelId=5f57697b437baa0006942c68
+示例：
+https://idself26.rghall.com.cn/linkid/api/user/public/pageQueryUsersByLabelId?number=1&size=10&labelId=5f57697b437baa0006942c68
 ```
 
 **参数说明：**
 
-| **参数** | 类型   | **是否必须** | **说明**                                                     |
-| -------- | ------ | ------------ | ------------------------------------------------------------ |
-| number   | list   | 是           | 当前请求页                                                   |
-| size     | string | 是           | 每页返回值                                                   |
-| labelId  | string | 否           | 查询这个时间之前有更新的用户数据，<br/>格式："yyyy-MM-dd hh:mm:ss" |
+| **参数** | 类型   | **是否必须** | **说明**   |
+| -------- | ------ | ------------ | ---------- |
+| number   | list   | 是           | 当前请求页 |
+| size     | string | 是           | 每页返回值 |
+| labelId  | string | 否           | 标签id     |
 
 **返回结果：**
 
@@ -700,14 +715,16 @@ timestamp， 时间戳， 示例：1605150501700
 
 **请求地址：** http://self.xxx.edu.cn/linkid/api/public/wechat/weChatUnbindFromApplets
 
+注：https方式类似。
+
 **参数说明：**
 
-| **参数**   | 类型   | **是否必须** | **说明**   |
-| ---------- | ------ | ------------ | ---------- |
-| userId     | String | 是           | 用户学工号 |
-| unionId    | String | 否           | unionId    |
-| openid     | String | 否           | openid     |
-| fromSource | String | 否           | 来源       |
+| **参数**   | 类型   | **是否必须** | **说明**                                                     |
+| ---------- | ------ | ------------ | ------------------------------------------------------------ |
+| userId     | String | 是           | 用户学工号                                                   |
+| unionId    | String | 否           | 用户统一标识。<br>针对一个微信开放平台帐号下的应用，同一用户的 unionid 唯一 |
+| openid     | String | 否           | 普通用户标识，对该公众帐号唯一                               |
+| fromSource | String | 否           | 认证来源， 默认为应用的clientid                              |
 
 **备注**：微信解绑的功能需要至少提供```userId, unionId```或者```userId, openid, fromSource```才能完成解绑。
 
