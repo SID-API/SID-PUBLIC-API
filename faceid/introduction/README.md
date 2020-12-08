@@ -3,20 +3,7 @@
 
 
 
-```mermaid
-graph TD
-classDef alink text-decoration: none;
-start(( 开始 )) --> sub1[ <a>人脸组件的服务器准备和部署</a> ]
-sub1 --> cond{人脸厂商or应用对接}
-cond -->|厂商对接| sub2( <a>人脸厂商对接接口</a> )
-cond -->|应用对接| sub3( <a>人脸应用对接接口</a> )
-sub2 --> sub4( 人脸对外接口应用对接-本文档 )
-sub3 --> sub4( 人脸对外接口应用对接-本文档 )
-sub4 --> e(( 结束 ))
-click sub1 "../deployment/deployment.html"
-click sub2 "../manufacturer/interface/manufacture.html"
-click sub3 "../manufacturer/interface/application.html"
-```
+![image-20201208175107134](README.assets/image-20201208175107134.png)
 
 上图中整体流程为：
 
