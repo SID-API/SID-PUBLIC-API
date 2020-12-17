@@ -77,7 +77,7 @@
 
 ```javascript
 请求示例：
-https://ljw.sso.rghall.com.cn/linkid/api/aggregate/app/remote/role/find
+https://ljw.sso.rghall.com.cn/linkid/public/api/aggregate/app/remote/role/find
 ```
 
 **返回结果：**
@@ -119,14 +119,14 @@ https://ljw.sso.rghall.com.cn/linkid/api/aggregate/app/remote/role/find
 
 **请求⽅式：** GET（**HTTPS或HTTP**）
 
-**请求地址：** http://self.xxx.edu.cn/linkid/api/public/aggregate/app/remote/role/find/user/{userId}
+**请求地址：** http://self.xxx.edu.cn/linkid/public/api/aggregate/app/remote/role/find/user/{userId}
 
 注：https方式类似。
 
 **请求参数：**
 
 ```javascript
-示例：http://ljw.sso.rghall.com.cn/linkid/api/aggregate/app/remote/role/find/user/12345
+示例：http://ljw.sso.rghall.com.cn/linkid/public/api/aggregate/app/remote/role/find/user/12345
 ```
 
 **参数说明：**
