@@ -78,7 +78,7 @@ https://ljw.sso.rghall.com.cn/linkid/api/aggregate/app/public/find/clientId/name
 
 ```javascript
 请求示例：
-https://ljw.sso.rghall.com.cn/linkid/linkid/remote/permission/entrance/public/find/entancePermissions/admin
+https://ljw.sso.rghall.com.cn/linkid/remote/permission/entrance/public/find/entancePermissions/admin
 ```
 
 **返回结果：**
