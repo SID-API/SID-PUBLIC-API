@@ -46,7 +46,8 @@ header: Timestamp（当前时间戳）
         "xb": "1",
         "tel": "18732990023",
         "sflbdm":"01",
-        "departments":["xxxx1","xxxx2"]
+        "departments":["xxxx1","xxxx2"],
+        "department":["xxxx1","xxxx2"]
     }
 }
 ```
@@ -64,7 +65,7 @@ header: Timestamp（当前时间戳）
 | tel         | 否       | ⽤户绑定手机号              |
 | sflbdm      | 是       | ⽤户身份类别代码            |
 | departments | 是       | ⽤户所属部⻔ID列表          |
-
+| department | 是       | ⽤户所属部⻔Code列表          |
 
 
 #### 创建成员<div id=link2></div>
@@ -92,7 +93,8 @@ header: Timestamp（当前时间戳）
     "xb": "1",
     "tel": "18732990023",
     "sflbdm":"01",
-    "departments":["xxxx1","xxxx2"]
+    "departments":["xxxx1","xxxx2"],
+     "department":["xxxx1","xxxx2"]
 }
 ```
 
@@ -106,7 +108,7 @@ header: Timestamp（当前时间戳）
 | tel         | 否       | ⽤户绑定手机号              |
 | sflbdm      | 是       | ⽤户身份类别代码            |
 | departments | 是       | ⽤户所属部⻔ID列表          |
-
+| department | 是       | ⽤户所属部⻔Code列表          |
 **返回结果：**
 
 ```
@@ -150,7 +152,8 @@ header: Timestamp（当前时间戳）
     "xb": "1",
     "tel": "18732990023",
     "sflbdm":"01",
-    "departments":["xxxx1","xxxx2"]
+    "departments":["xxxx1","xxxx2"],
+    "department":["xxxx1","xxxx2"],
 }
 ```
 
@@ -164,7 +167,7 @@ header: Timestamp（当前时间戳）
 | tel         | 否       | ⽤户绑定手机号              |
 | sflbdm      | 是       | ⽤户身份类别代码            |
 | departments | 是       | ⽤户所属部⻔ID列表          |
-
+| department | 是       | ⽤户所属部⻔Code列表          |
 **返回结果：**
 
 ```
@@ -258,7 +261,8 @@ header: Timestamp（当前时间戳）
             "xb": "1",
             "tel": "18732990023",
             "sflbdm":"01",
-            "departments":["xxxx1","xxxx2"]
+            "departments":["xxxx1","xxxx2"],
+            "department":["xxxx1","xxxx2"]
         }
      ]
 }
@@ -277,4 +281,5 @@ header: Timestamp（当前时间戳）
 | tel         | 否       | ⽤户绑定手机号              |
 | sflbdm      | 是       | ⽤户身份类别代码            |
 | departments | 是       | ⽤户所属部⻔ID列表          |
+| department | 是       | ⽤户所属部⻔Code列表          |
 

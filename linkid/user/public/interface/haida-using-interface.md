@@ -97,7 +97,7 @@ https://idself26.rghall.com.cn/linkid/api/user/public/pageQueryUsersByLabelId?nu
 | -------- | ------ | ------------ | ---------- |
 | number   | list   | 是           | 当前请求页 |
 | size     | string | 是           | 每页返回值 |
-| labelId  | string | 否           | 标签id     |
+| labelId  | string | 否           | 标签Id     |
 
 **返回结果：**
 
@@ -221,6 +221,17 @@ https://idself26.rghall.com.cn/linkid/api/user/public/pageQueryUsersByLabelId?nu
 
 注：https方式类似。
 
+**请求参数：**
+
+```java
+{
+    "userId":"admin",
+    "unionId":"test",
+    "openid":"test",
+    "fromSource":"test"
+}
+```
+
 **参数说明：**
 
 | **参数**   | 类型   | **是否必须** | **说明**                                                     |
@@ -259,6 +270,17 @@ https://idself26.rghall.com.cn/linkid/api/user/public/pageQueryUsersByLabelId?nu
 **请求地址：** http://self.xxx.edu.cn/linkid/api/public/wechat/weChatUnbindFromApplets
 
 注：https方式类似。
+
+**请求参数：**
+
+```java
+{
+    "userId":"admin",
+    "unionId":"test",
+    "openid":"test",
+    "fromSource":"test"
+}
+```
 
 **参数说明：**
 
