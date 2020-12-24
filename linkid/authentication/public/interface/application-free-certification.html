@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>OAuth2.0认证接口 · GitBook</title>
+        <title>APP内应用免认证接口 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -81,10 +81,10 @@
     <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="application-free-certification.html" />
+    <link rel="next" href="../../faq/faq.html" />
     
     
-    <link rel="prev" href="cas-authentication.html" />
+    <link rel="prev" href="oauth-authentication.html" />
     
 
     </head>
@@ -398,7 +398,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.3" data-path="oauth-authentication.html">
+        <li class="chapter " data-level="1.5.3" data-path="oauth-authentication.html">
             
                 <a href="oauth-authentication.html">
             
@@ -411,7 +411,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="application-free-certification.html">
+        <li class="chapter active" data-level="1.5.4" data-path="application-free-certification.html">
             
                 <a href="application-free-certification.html">
             
@@ -1072,7 +1072,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../../.." >OAuth2.0认证接口</a>
+        <a href="../../../.." >APP内应用免认证接口</a>
     </h1>
 </div>
 
@@ -1087,29 +1087,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="oauth&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;">OAuth&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;</h1>
+                                <h1 id="app&#x5185;&#x5E94;&#x7528;&#x514D;&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;">APP&#x5185;&#x5E94;&#x7528;&#x514D;&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;</h1>
+<h1 id="oauth20&#x6807;&#x51C6;&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;">OAuth2.0&#x6807;&#x51C6;&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;</h1>
 <blockquote>
-<p><a href="#1">&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;</a></p>
-<p><a href="#2">&#x5BC6;&#x7801;&#x6A21;&#x5F0F;</a></p>
-<p><a href="#3">&#x5BA2;&#x6237;&#x7AEF;&#x6A21;&#x5F0F;</a></p>
-<p><a href="#4">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x5BF9;&#x63A5;</a></p>
-<p><a href="#5">&#x5355;&#x70B9;&#x767B;&#x51FA;</a></p>
+<p><a href="#1">&#x83B7;&#x53D6;code</a></p>
+<p><a href="#2">&#x901A;&#x8FC7;code&#x6362;&#x53D6;token</a></p>
+<p><a href="#3">&#x901A;&#x8FC7;token&#x6362;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;</a></p>
 </blockquote>
-<h2 id="&#x4E00;&#x3001;&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;">&#x4E00;&#x3001;&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;<a id="1"></a></h2>
-<p>&#x8BE5;&#x6A21;&#x5F0F;&#x7684;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#x4E3A;&#xFF1A;</p>
-<p>1&#x3001;&#x8DF3;&#x8F6C;&#x5230;&#x8BA4;&#x8BC1;&#x4E2D;&#x5FC3;&#x8BA4;&#x8BC1;&#x7528;&#x6237;&#x3002;</p>
-<p>2&#x3001;&#x4F7F;&#x7528;code&#x83B7;&#x53D6;access_token&#x3002;</p>
-<p>3&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
-<h4 id="1&#x3001;&#x7528;&#x6237;&#x8BA4;&#x8BC1;">1&#x3001;&#x7528;&#x6237;&#x8BA4;&#x8BC1;</h4>
+<h4 id="&#x4E00;&#x3001;&#x83B7;&#x53D6;code">&#x4E00;&#x3001;&#x83B7;&#x53D6;code<a id="1"></a></h4>
 <blockquote>
-<p>&#x8DF3;&#x8F6C;&#x5230;SID&#x8BA4;&#x8BC1;&#x4E2D;&#x5FC3;&#x8BA4;&#x8BC1;&#x7528;&#x6237;&#x3002;</p>
+<p>Sid&#x8BF7;&#x6C42;APP&#x83B7;&#x53D6;code&#x7684;&#x63A5;&#x53E3;</p>
 </blockquote>
 <p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/authorize" target="_blank">http://{server}/oauth2.0/authorize</a></p>
+<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="https://xxx.com.cn/oauth/authorize" target="_blank">https://xxx.com.cn/oauth/authorize</a></p>
 <p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
 <p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
 <pre><code class="lang-javascript">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;&#xFF1A;
-http:<span class="hljs-comment">//ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&amp;client_id=test2&amp;redirect_uri=http://192.168.54.63:8080/Oauth2/token</span>
+ https:<span class="hljs-comment">//xxx.com.cn/oauth/authorize?client_id=[AppKey]&amp;redirect_uri=[urlEncode(&#x5E94;&#x7528;&#x56DE;&#x8C03;&#x5730;&#x5740;)]&amp;response_type=code&amp;scope=base_api&amp;state=xxx</span>
 </code></pre>
 <p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
 <table>
@@ -1122,31 +1116,38 @@ http:<span class="hljs-comment">//ljw.sso.rghall.com.cn/oauth2.0/authorize?respo
 </thead>
 <tbody>
 <tr>
-<td>response_type</td>
-<td>&#x662F;</td>
-<td>&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x91CC;&#x56FA;&#x5B9A;&#x4E3A;code</td>
-</tr>
-<tr>
 <td>client_id</td>
 <td>&#x662F;</td>
-<td>&#x5E94;&#x7528;id</td>
+<td>&#x5E94;&#x7528;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x5373;&#x5E94;&#x7528;&#x6CE8;&#x518C;&#x65F6;&#x83B7;&#x5F97;&#x7684; App Key</td>
 </tr>
 <tr>
 <td>redirect_uri</td>
 <td>&#x662F;</td>
-<td>&#x5E94;&#x7528;&#x56DE;&#x8C03;&#x5730;&#x5740;</td>
+<td>&#x6388;&#x6743;&#x540E;&#x91CD;&#x5B9A;&#x5411;&#x7684;&#x56DE;&#x8C03;&#x94FE;&#x63A5;&#x5730;&#x5740;&#xFF0C;&#x6CE8;&#x610F;&#x9700;&#x4F7F;&#x7528; urlEncode &#x5BF9;&#x94FE;&#x63A5;&#x8FDB;&#x884C;&#x5904;&#x7406;</td>
+</tr>
+<tr>
+<td>response_type</td>
+<td>&#x662F;</td>
+<td>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF0C;&#x8BF7;&#x586B;&#x5199; code &#x3002;</td>
 </tr>
 <tr>
 <td>scope</td>
-<td>&#x5426;</td>
-<td>&#x6743;&#x9650;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x3002;</td>
+<td>&#x662F;</td>
+<td>&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4E0E;&#x6CE8;&#x518C;&#x65F6;&#x5339;&#x914D;&#x3002; base_api &#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x57FA;&#x7840;API&#x4E14;&#x652F;&#x6301;&#x9759;&#x9ED8;&#x6A21;&#x5F0F;&#x4E0D;&#x5F39;&#x51FA;&#x6388;&#x6743;&#x63D0;&#x9192;&#xFF1B; all &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6240;&#x6709;&#x9AD8;&#x7EA7;API&#x3002;&#x901A;&#x8FC7;&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x521B;&#x5EFA;&#x7684;&#x5E94;&#x7528;&#x9ED8;&#x8BA4;&#x6388;&#x4E88; base_api &#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x53EF;&#x7533;&#x8BF7; all &#x6743;&#x9650;&#xFF1B;&#x5728;&#x5FAE;&#x54E8;&#x7BA1;&#x7406;&#x5E73;&#x53F0;&#x521B;&#x5EFA;&#x7684;&#x5E94;&#x7528;&#x540C;&#x65F6;&#x6388;&#x4E88; base_api &#x548C; all &#x6743;&#x9650;&#x3002;</td>
+</tr>
+<tr>
+<td>state</td>
+<td>&#x662F;</td>
+<td>&#x91CD;&#x5B9A;&#x5411;&#x540E;&#x4F1A;&#x5E26;&#x4E0A; state &#x53C2;&#x6570;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x7528;&#x6B64;&#x53C2;&#x6570;&#x9A8C;&#x8BC1;&#x8BF7;&#x6C42;&#x6709;&#x6548;&#x6027;&#xFF0C;&#x6216;&#x8BB0;&#x5F55;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x6388;&#x6743;&#x9875;&#x524D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x540C;&#x65F6;&#x6B64;&#x53C2;&#x6570;&#x53EF;&#x7528;&#x4E8E;&#x9632;&#x6B62;&#x8DE8;&#x7AD9;&#x8BF7;&#x6C42;&#x4F2A;&#x9020;&#xFF08;CSRF&#xFF09;&#x653B;&#x51FB;</td>
 </tr>
 </tbody>
 </table>
-<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
-<pre><code>&#x8FD4;&#x56DE;code&#x793A;&#x4F8B;&#xFF1A;
-http://192.168.54.63:8080/Oauth2/token?code=OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtGJT
-</code></pre><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
+<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong>
+&#x56E0;&#x4E3A;&#x5E94;&#x7528;&#x5D4C;&#x5165;&#x5728;APP&#x5185;&#x90E8;&#xFF0C;&#x6B64;&#x65F6;APP&#x5E94;&#x8BE5;&#x662F;&#x767B;&#x5F55;&#x72B6;&#x6001;&#xFF0C;&#x5728;&#x4E00;&#x7CFB;&#x5217;&#x6821;&#x9A8C;&#x597D;&#xFF0C;&#x4F1A;&#x91CD;&#x5B9A;&#x5411;&#x5230;redirect_uri&#x5E76;&#x4E14;&#x5E26;&#x7740;code&#x548C;state</p>
+<pre><code class="lang-javascript">&#x793A;&#x4F8B;&#xFF1A;
+ https:<span class="hljs-comment">//redirect_uri?code=xxxxx&amp;state=xxx</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
 <table>
 <thead>
 <tr>
@@ -1157,27 +1158,21 @@ http://192.168.54.63:8080/Oauth2/token?code=OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtG
 <tbody>
 <tr>
 <td>code</td>
-<td>SID&#x8DF3;&#x8F6C;&#x5230;redirect_uri&#x65F6;&#xFF0C;code&#x53C2;&#x6570;&#x4F1A;&#x9644;&#x5E26;&#x5728;&#x8BE5;&#x5730;&#x5740;&#x4E2D;</td>
+<td>&#x4E0B;&#x53D1;&#x7684;code</td>
+</tr>
+<tr>
+<td>code</td>
+<td>&#x8BF7;&#x6C42;code&#x65F6;&#x5E26;&#x7684;&#x53C2;&#x6570;</td>
 </tr>
 </tbody>
 </table>
-<h4 id="2&#x3001;&#x7528;code&#x83B7;&#x53D6;accesstoken">2&#x3001;&#x7528;code&#x83B7;&#x53D6;access_token</h4>
-<blockquote>
-<p>&#x4F7F;&#x7528;code&#x83B7;&#x53D6;access_token&#x3002;</p>
-</blockquote>
+<h4 id="&#x4E8C;&#x3001;&#x901A;&#x8FC7;-code-&#x6362;&#x53D6;&#x7F51;&#x9875;&#x6388;&#x6743;-accesstoken">&#x4E8C;&#x3001;&#x901A;&#x8FC7; code &#x6362;&#x53D6;&#x7F51;&#x9875;&#x6388;&#x6743; AccessToken<a id="2"></a></h4>
 <p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> POST&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/accessToken" target="_blank">http://{server}/oauth2.0/accessToken</a></p>
+<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth/token" target="_blank">http://{server}/oauth/token</a></p>
 <p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5934;&#xFF08;header&#xFF09;&#xFF1A;</strong> </p>
-<p>Content-Type&#xFF1A;multipart/form-data</p>
 <p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">{
-    <span class="hljs-string">&quot;grant_type&quot;</span>:<span class="hljs-string">&quot;authorization_code&quot;</span>,
-    <span class="hljs-string">&quot;client_id&quot;</span>:<span class="hljs-string">&quot;test2&quot;</span>,
-    <span class="hljs-string">&quot;client_secret&quot;</span>:<span class="hljs-string">&quot;HDRWcOTg56mMty6GNsjF2OZXjwWrfI0Glz8sVJKSacl6QZMX5fX9gFQjkO2z-orn&quot;</span>,
-    <span class="hljs-string">&quot;redirect_uri&quot;</span>:<span class="hljs-string">&quot;http://192.168.54.63:8080/user/index&quot;</span>,
-    <span class="hljs-string">&quot;code&quot;</span>:<span class="hljs-string">&quot;OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtGJT&quot;</span>
-}
+<pre><code class="lang-javascript">&#x793A;&#x4F8B;&#xFF1A;
+grant_type=authorization_code&amp;client_id=[AppKey]&amp;client_secret=[AppSecret]&amp;code=[code]&amp;redirect_uri=[urlEncode(&#x5E94;&#x7528;&#x56DE;&#x8C03;&#x5730;&#x5740;)]
 </code></pre>
 <p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
 <table>
@@ -1192,36 +1187,37 @@ http://192.168.54.63:8080/Oauth2/token?code=OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtG
 <tr>
 <td>grant_type</td>
 <td>&#x662F;</td>
-<td>&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x91CC;&#x56FA;&#x5B9A;&#x4E3A;authorization_code</td>
+<td>&#x56FA;&#x5B9A;&#x503C; authorization_code&#x3002;</td>
 </tr>
 <tr>
 <td>client_id</td>
 <td>&#x662F;</td>
-<td>&#x5E94;&#x7528;id</td>
+<td>&#x5E94;&#x7528;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x5373;&#x5E94;&#x7528;&#x6CE8;&#x518C;&#x65F6;&#x83B7;&#x5F97;&#x7684; App Key&#x3002;</td>
 </tr>
 <tr>
 <td>client_secret</td>
 <td>&#x662F;</td>
-<td>&#x5E94;&#x7528;&#x79D8;&#x94A5;</td>
+<td>&#x5E94;&#x7528;&#x5BC6;&#x94A5;&#xFF0C;&#x5373;&#x5E94;&#x7528;&#x6CE8;&#x518C;&#x65F6;&#x83B7;&#x5F97;&#x7684; App Secret&#x3002;</td>
+</tr>
+<tr>
+<td>code</td>
+<td>&#x662F;</td>
+<td>&#x6388;&#x6743;&#x7968;&#x636E;&#xFF0C;&#x5373;&#x7B2C;&#x4E00;&#x6B65;&#x5E94;&#x7528;&#x56DE;&#x8C03;&#x5730;&#x5740;&#x83B7;&#x5F97;&#x7684; code &#x53C2;&#x6570;&#x503C;</td>
 </tr>
 <tr>
 <td>redirect_uri</td>
 <td>&#x662F;</td>
 <td>&#x5E94;&#x7528;&#x56DE;&#x8C03;&#x5730;&#x5740;</td>
 </tr>
-<tr>
-<td>code</td>
-<td>&#x662F;</td>
-<td>&#x6388;&#x6743;&#x7801;</td>
-</tr>
 </tbody>
 </table>
 <p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
-<pre><code class="lang-java">{
-    <span class="hljs-string">&quot;access_token&quot;</span>:<span class="hljs-string">&quot;AT-98-kkxRFRAp7JP4HvKcooOlTjqEslglCNoU&quot;</span>,
-    <span class="hljs-string">&quot;token_type&quot;</span>:<span class="hljs-string">&quot;bearer&quot;</span>,
-    <span class="hljs-string">&quot;expires_in&quot;</span>:<span class="hljs-number">28800</span>,
-    <span class="hljs-string">&quot;refresh_token&quot;</span>:<span class="hljs-string">&quot;RT-7-XuigbD-eb4qSN0LwHBSixvpmv4zCzw21&quot;</span>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;access_token&quot;</span>: <span class="hljs-string">&quot;fDanz0ydkCqVsgSoze7mrCnwJIsN0dL&quot;</span>,
+  <span class="hljs-string">&quot;expires_in&quot;</span>: <span class="hljs-string">&quot;1209600&quot;</span>,
+  <span class="hljs-string">&quot;scope&quot;</span>: <span class="hljs-string">&quot;base_api&quot;</span>,
+  <span class="hljs-string">&quot;refresh_token&quot;</span>: <span class="hljs-string">&quot;HhbiRKzjVnKdvGfmuGjvh3Clm4AIMqV8&quot;</span>,
+  <span class="hljs-string">&quot;token_type&quot;</span>: <span class="hljs-string">&quot;Bearer&quot;</span>
 }
 </code></pre>
 <p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
@@ -1229,83 +1225,35 @@ http://192.168.54.63:8080/Oauth2/token?code=OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtG
 <thead>
 <tr>
 <th><strong>&#x53C2;&#x6570;</strong></th>
-<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
 <th><strong>&#x8BF4;&#x660E;</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>access_token</td>
-<td>&#x662F;</td>
-<td>&#x8BBF;&#x95EE;&#x4EE4;&#x724C;</td>
-</tr>
-<tr>
-<td>token_type</td>
-<td>&#x662F;</td>
-<td>&#x4EE4;&#x724C;&#x7C7B;&#x578B;</td>
+<td>&#x4E0B;&#x53D1;&#x7684;token</td>
 </tr>
 <tr>
 <td>expires_in</td>
-<td>&#x662F;</td>
-<td>&#x4EE4;&#x724C;&#x6709;&#x6548;&#x671F;</td>
+<td>&#x6709;&#x6548;&#x671F;</td>
 </tr>
 <tr>
-<td>refresh_token</td>
-<td>&#x5426;</td>
-<td>&#x5237;&#x65B0;&#x4EE4;&#x724C;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x53EA;&#x6709;&#x5728;SID&#x4E2D;&#x5C06;&#x4E0B;&#x53D1;&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x52FE;&#x9009;&#x4E3A;&#x201C;&#x662F;&#x201D;&#x65F6;&#x624D;&#x4F1A;&#x8FD4;&#x56DE;</td>
+<td>scope</td>
+<td>&#x4F5C;&#x7528;&#x57DF;</td>
 </tr>
 </tbody>
 </table>
-<p>&#x6CE8;&#xFF1A;&#x83B7;&#x53D6;refresh_token&#x53C2;&#x6570;&#x7684;&#x503C;&#x9700;&#x5148;&#x5728;SID&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x4E0B;&#x53D1;&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x201D;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
-<p><img src="oauth-authentication.assets/1887QK5C@L4MC@C3N25ERC.png" alt="img"></p>
-<h4 id="3&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;">3&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;</h4>
+<h4 id="&#x4E09;&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;">&#x4E09;&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;<a id="3"></a></h4>
 <blockquote>
-<p>&#x4F7F;&#x7528;access_token&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
 </blockquote>
-<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET/POST&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/profile" target="_blank">http://{server}/oauth2.0/profile</a></p>
+<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
+<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/profile?access_token=[AccessToken" target="_blank">http://{server}/profile?access_token=[AccessToken</a>]</p>
 <p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5934;&#xFF08;header&#xFF09;&#xFF1A;</strong> </p>
-<p>Content-Type&#xFF1A;multipart/form-data</p>
-<p>&#x6CE8;&#xFF1A;&#x4F7F;&#x7528;get&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x4E0D;&#x7528;&#x6DFB;&#x52A0;&#x8BF7;&#x6C42;&#x5934;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">{
-    <span class="hljs-string">&quot;access_token&quot;</span>:<span class="hljs-string">&quot;AT-98-kkxRFRAp7JP4HvKcooOlTjqEslglCNoU&quot;</span>
-}
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x662F;&#x5426;&#x5FC5;&#x987B;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>access_token</td>
-<td>&#x662F;</td>
-<td>&#x8BBF;&#x95EE;&#x4EE4;&#x724C;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF08;&#x8001;&#x5E08;&#xFF09;&#xFF1A;</strong></p>
-<pre><code class="lang-java">{
-    <span class="hljs-string">&quot;active&quot;</span>: <span class="hljs-keyword">true</span>,
-    <span class="hljs-string">&quot;attributes&quot;</span>: {
-        <span class="hljs-string">&quot;DQZTM&quot;</span>: <span class="hljs-string">&quot;&#x5728;&#x4EFB;&quot;</span>,
-        <span class="hljs-string">&quot;DWH&quot;</span>: <span class="hljs-string">&quot;&#x7F51;&#x7EDC;&#x4FE1;&#x606F;&#x4E0E;&#x7EFC;&#x5408;&#x670D;&#x52A1;&#x4E2D;&#x5FC3;&quot;</span>,
-        <span class="hljs-string">&quot;DWM&quot;</span>: <span class="hljs-string">&quot;306000&quot;</span>,
-        <span class="hljs-string">&quot;GH&quot;</span>: <span class="hljs-string">&quot;20042020&quot;</span>,
-        <span class="hljs-string">&quot;PRZWMC&quot;</span>: <span class="hljs-string">&quot;&#x5DE5;&#x7A0B;&#x5E08;&quot;</span>,
-        <span class="hljs-string">&quot;SFLBDM&quot;</span>: <span class="hljs-string">&quot;01&quot;</span>,
-        <span class="hljs-string">&quot;XBM&quot;</span>: <span class="hljs-string">&quot;&#x7537;&#x6027;&quot;</span>,
-        <span class="hljs-string">&quot;XM&quot;</span>: <span class="hljs-string">&quot;xxxx&quot;</span>
-        <span class="hljs-string">&quot;SFLBMC&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>
-        },
-    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;20042020&quot;</span>,
-    <span class="hljs-string">&quot;client_id&quot;</span>: xxx
+<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5F20;&#x4E09;&quot;</span>,
+  <span class="hljs-string">&quot;student_number&quot;</span>: <span class="hljs-string">&quot;zhangsan&quot;</span>
 }
 </code></pre>
 <p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
@@ -1318,503 +1266,17 @@ http://192.168.54.63:8080/Oauth2/token?code=OC-51--uDJ5NrI-8OB5wyn2NPXpgfIRLyCtG
 </thead>
 <tbody>
 <tr>
-<td>id</td>
-<td>&#x7528;&#x6237;&#x540D;</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>&#x5E94;&#x7528;id</td>
-</tr>
-<tr>
-<td>attributes</td>
-<td>&#x7528;&#x6237;&#x5C5E;&#x6027;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td>XM</td>
+<td>name</td>
 <td>&#x59D3;&#x540D;</td>
 </tr>
 <tr>
-<td>XBM</td>
-<td>&#x6027;&#x522B;</td>
-</tr>
-<tr>
-<td>SFLBDM</td>
-<td>&#x8EAB;&#x4EFD;&#x7C7B;&#x522B;&#x4EE3;&#x7801;</td>
-</tr>
-<tr>
-<td>GH</td>
-<td>&#x5DE5;&#x53F7;</td>
-</tr>
-<tr>
-<td>PRZWMC</td>
-<td>&#x804C;&#x4F4D;&#x540D;&#x79F0;</td>
-</tr>
-<tr>
-<td>DWM</td>
-<td>&#x5355;&#x4F4D;&#x540D;</td>
-</tr>
-<tr>
-<td>DWH</td>
-<td>&#x5355;&#x4F4D;&#x53F7;</td>
-</tr>
-<tr>
-<td>DQZTM</td>
-<td>&#x5F53;&#x524D;&#x72B6;&#x6001;</td>
-</tr>
-<tr>
-<td>ZWJBMC</td>
-<td>&#x804C;&#x52A1;&#x7EA7;&#x522B;&#x540D;&#x79F0;</td>
-</tr>
-<tr>
-<td>SFLBMC</td>
-<td>&#x8EAB;&#x4EFD;&#x7C7B;&#x522B;&#x540D;&#x79F0;</td>
+<td>student_number</td>
+<td>&#x5B66;&#x5DE5;&#x53F7;</td>
 </tr>
 </tbody>
 </table>
-<h2 id="&#x4E8C;&#x3001;&#x5BC6;&#x7801;&#x6A21;&#x5F0F;">&#x4E8C;&#x3001;&#x5BC6;&#x7801;&#x6A21;&#x5F0F;<a id="2"></a></h2>
-<p>&#x8BE5;&#x6A21;&#x5F0F;&#x7684;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#x4E3A;&#xFF1A;</p>
-<p>1&#x3001;&#x83B7;&#x53D6;access_token&#x3002;</p>
-<p>2&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
-<p>3&#x3001;&#x4F7F;&#x7528;&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x83B7;&#x53D6;access_token&#xFF08;&#x8BE5;&#x6B65;&#x9AA4;&#x53EF;&#x9009;&#xFF09;&#x3002;</p>
-<h4 id="1&#x3001;&#x83B7;&#x53D6;accesstoken">1&#x3001;&#x83B7;&#x53D6;access_token</h4>
-<blockquote>
-<p>&#x83B7;&#x53D6;access_token&#x3002;</p>
-</blockquote>
-<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/accessToken" target="_blank">http://{server}/oauth2.0/accessToken</a></p>
-<p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;&#xFF1A;
-http:<span class="hljs-comment">//ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=password&amp;client_id=test2&amp;username=R1118&amp;password=12345a</span>
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x662F;&#x5426;&#x5FC5;&#x987B;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>grant_type</td>
-<td>&#x662F;</td>
-<td>&#x5BC6;&#x7801;&#x6A21;&#x5F0F;&#x4E3A;password</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>&#x662F;</td>
-<td>&#x5E94;&#x7528;id</td>
-</tr>
-<tr>
-<td>username</td>
-<td>&#x662F;</td>
-<td>&#x7528;&#x6237;&#x540D;</td>
-</tr>
-<tr>
-<td>password</td>
-<td>&#x662F;</td>
-<td>&#x5BC6;&#x7801;</td>
-</tr>
-<tr>
-<td>scope</td>
-<td>&#x5426;</td>
-<td>&#x6743;&#x9650;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x7A7A;&#x683C;&#x5206;&#x9694;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
-<pre><code class="lang-java">{
-    <span class="hljs-string">&quot;access_token&quot;</span>: <span class="hljs-string">&quot;AT-1-IWyhZhU1hKKvWPddAJpdHRN2ECu08Ypo&quot;</span>,
-    <span class="hljs-string">&quot;token_type&quot;</span>: <span class="hljs-string">&quot;bearer&quot;</span>,
-    <span class="hljs-string">&quot;expires_in&quot;</span>: <span class="hljs-number">28800</span>,
-    <span class="hljs-string">&quot;refresh_token&quot;</span>: <span class="hljs-string">&quot;RT-1-cvHg23sAYRfu-1h8e57U9PSGK1qyL-mW&quot;</span>
-}
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>access_token</td>
-<td>&#x662F;</td>
-<td>&#x8BBF;&#x95EE;&#x4EE4;&#x724C;</td>
-</tr>
-<tr>
-<td>token_type</td>
-<td>&#x662F;</td>
-<td>&#x4EE4;&#x724C;&#x7C7B;&#x578B;</td>
-</tr>
-<tr>
-<td>expires_in</td>
-<td>&#x662F;</td>
-<td>&#x4EE4;&#x724C;&#x6709;&#x6548;&#x671F;</td>
-</tr>
-<tr>
-<td>refresh_token</td>
-<td>&#x5426;</td>
-<td>&#x5237;&#x65B0;&#x4EE4;&#x724C;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x53EA;&#x6709;&#x5728;SID&#x4E2D;&#x5C06;&#x4E0B;&#x53D1;&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x52FE;&#x9009;&#x4E3A;&#x201C;&#x662F;&#x201D;&#x65F6;&#x624D;&#x4F1A;&#x8FD4;&#x56DE;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="2&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;">2&#x3001;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;</h4>
-<blockquote>
-<p>&#x4F7F;&#x7528;access_token&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
-</blockquote>
-<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET/POST&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/profile" target="_blank">http://{server}/oauth2.0/profile</a></p>
-<p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5934;&#xFF08;header&#xFF09;&#xFF1A;</strong> </p>
-<p>Content-Type&#xFF1A;multipart/form-data</p>
-<p>&#x6CE8;&#xFF1A;&#x4F7F;&#x7528;get&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x4E0D;&#x7528;&#x6DFB;&#x52A0;&#x8BF7;&#x6C42;&#x5934;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">{
-    <span class="hljs-string">&quot;access_token&quot;</span>:<span class="hljs-string">&quot;AT-1-IWyhZhU1hKKvWPddAJpdHRN2ECu08Ypo&quot;</span>
-}
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x662F;&#x5426;&#x5FC5;&#x987B;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>access_token</td>
-<td>&#x662F;</td>
-<td>&#x8BBF;&#x95EE;&#x4EE4;&#x724C;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF08;&#x8001;&#x5E08;&#x4E3A;&#x4F8B;&#xFF09;&#xFF1A;</strong></p>
-<pre><code class="lang-java">{
-    <span class="hljs-string">&quot;attributes&quot;</span>: {
-        <span class="hljs-string">&quot;DQZTM&quot;</span>: <span class="hljs-string">&quot;&#x5728;&#x4EFB;&quot;</span>,
-        <span class="hljs-string">&quot;DWH&quot;</span>: <span class="hljs-string">&quot;&#x7F51;&#x7EDC;&#x4FE1;&#x606F;&#x4E0E;&#x7EFC;&#x5408;&#x670D;&#x52A1;&#x4E2D;&#x5FC3;&quot;</span>,
-        <span class="hljs-string">&quot;DWM&quot;</span>: <span class="hljs-string">&quot;306000&quot;</span>,
-        <span class="hljs-string">&quot;GH&quot;</span>: <span class="hljs-string">&quot;20042020&quot;</span>,
-        <span class="hljs-string">&quot;PRZWMC&quot;</span>: <span class="hljs-string">&quot;&#x5DE5;&#x7A0B;&#x5E08;&quot;</span>,
-        <span class="hljs-string">&quot;SFLBDM&quot;</span>: <span class="hljs-string">&quot;01&quot;</span>,
-        <span class="hljs-string">&quot;XBM&quot;</span>: <span class="hljs-string">&quot;&#x7537;&#x6027;&quot;</span>,
-        <span class="hljs-string">&quot;XM&quot;</span>: <span class="hljs-string">&quot;xxxx&quot;</span>
-        <span class="hljs-string">&quot;SFLBMC&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>
-        },
-    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;20042020&quot;</span>
-}
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>&#x7528;&#x6237;&#x540D;</td>
-</tr>
-<tr>
-<td>attributes</td>
-<td>&#x7528;&#x6237;&#x5C5E;&#x6027;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td>XM</td>
-<td>&#x59D3;&#x540D;</td>
-</tr>
-<tr>
-<td>XBM</td>
-<td>&#x6027;&#x522B;</td>
-</tr>
-<tr>
-<td>SFLBDM</td>
-<td>&#x8EAB;&#x4EFD;&#x7C7B;&#x522B;&#x4EE3;&#x7801;</td>
-</tr>
-<tr>
-<td>GH</td>
-<td>&#x5DE5;&#x53F7;</td>
-</tr>
-<tr>
-<td>PRZWMC</td>
-<td>&#x804C;&#x4F4D;&#x540D;&#x79F0;</td>
-</tr>
-<tr>
-<td>DWM</td>
-<td>&#x5355;&#x4F4D;&#x540D;</td>
-</tr>
-<tr>
-<td>DWH</td>
-<td>&#x5355;&#x4F4D;&#x53F7;</td>
-</tr>
-<tr>
-<td>DQZTM</td>
-<td>&#x5F53;&#x524D;&#x72B6;&#x6001;</td>
-</tr>
-<tr>
-<td>ZWJBMC</td>
-<td>&#x804C;&#x52A1;&#x7EA7;&#x522B;&#x540D;&#x79F0;</td>
-</tr>
-<tr>
-<td>SFLBMC</td>
-<td>&#x8EAB;&#x4EFD;&#x7C7B;&#x522B;&#x540D;&#x79F0;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="3&#x3001;&#x4F7F;&#x7528;&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x83B7;&#x53D6;accesstoken">3&#x3001;&#x4F7F;&#x7528;&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x83B7;&#x53D6;access_token</h4>
-<blockquote>
-<p>&#x901A;&#x8FC7;&#x5237;&#x65B0;&#x4EE4;&#x724C;&#x83B7;&#x53D6;access_token&#x3002;</p>
-</blockquote>
-<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET/POST&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/accessToken" target="_blank">http://{server}/oauth2.0/accessToken</a></p>
-<p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5934;&#xFF08;header&#xFF09;&#xFF1A;</strong> </p>
-<p>Content-Type&#xFF1A;multipart/form-data</p>
-<p>&#x6CE8;&#xFF1A;&#x4F7F;&#x7528;get&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x4E0D;&#x7528;&#x6DFB;&#x52A0;&#x8BF7;&#x6C42;&#x5934;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">{
-    <span class="hljs-string">&quot;grant_type&quot;</span>:<span class="hljs-string">&quot;refresh_token&quot;</span>,
-    <span class="hljs-string">&quot;client_id&quot;</span>:<span class="hljs-string">&quot;test2&quot;</span>,
-    <span class="hljs-string">&quot;client_secret&quot;</span>:<span class="hljs-string">&quot;JXuRHUGzt5TEoKZGof4Dxg-cOPFotpWhu--cujis8JO0Y7qqN4EUhr4kybc7nDPB&quot;</span>,
-    <span class="hljs-string">&quot;refresh_token&quot;</span>:<span class="hljs-string">&quot;RT-7-XuigbD-eb4qSN0LwHBSixvpmv4zCzw21&quot;</span>
-}
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x662F;&#x5426;&#x5FC5;&#x987B;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>grant_type</td>
-<td>&#x662F;</td>
-<td>&#x56FA;&#x5B9A;&#x4E3A;refresh_token</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>&#x662F;</td>
-<td>&#x5E94;&#x7528;id</td>
-</tr>
-<tr>
-<td>client_secret</td>
-<td>&#x662F;</td>
-<td>&#x5E94;&#x7528;&#x79D8;&#x94A5;</td>
-</tr>
-<tr>
-<td>refresh_token</td>
-<td>&#x662F;</td>
-<td>&#x5237;&#x65B0;&#x4EE4;&#x724C;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
-<pre><code class="lang-java">{
-    <span class="hljs-string">&quot;access_token&quot;</span>: <span class="hljs-string">&quot;AT-1-IWyhZhU1hKKvWPddAJpdHRN2ECu08Ypo&quot;</span>,
-    <span class="hljs-string">&quot;token_type&quot;</span>: <span class="hljs-string">&quot;bearer&quot;</span>,
-    <span class="hljs-string">&quot;expires_in&quot;</span>: <span class="hljs-number">28800</span>
-}
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>access_token</td>
-<td>&#x8BBF;&#x95EE;&#x4EE4;&#x724C;</td>
-</tr>
-<tr>
-<td>token_type</td>
-<td>&#x4EE4;&#x724C;&#x7C7B;&#x578B;</td>
-</tr>
-<tr>
-<td>expires_in</td>
-<td>&#x4EE4;&#x724C;&#x6709;&#x6548;&#x671F;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x4E09;&#x3001;&#x5BA2;&#x6237;&#x7AEF;&#x6A21;&#x5F0F;">&#x4E09;&#x3001;&#x5BA2;&#x6237;&#x7AEF;&#x6A21;&#x5F0F;<a id="3"></a></h2>
-<p>&#x8BE5;&#x6A21;&#x5F0F;&#x7684;&#x6388;&#x6743;&#x6D41;&#x7A0B;&#x4E3A;&#xFF1A;</p>
-<p>1&#x3001;&#x83B7;&#x53D6;access_token&#x3002;</p>
-<h4 id="1&#x3001;&#x83B7;&#x53D6;accesstoken">1&#x3001;&#x83B7;&#x53D6;access_token</h4>
-<blockquote>
-<p>&#x83B7;&#x53D6;access_token&#x3002;</p>
-</blockquote>
-<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/accessToken" target="_blank">http://{server}/oauth2.0/accessToken</a></p>
-<p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
-<pre><code class="lang-javascript">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;&#xFF1A;
-http:<span class="hljs-comment">//ljw.sso.rghall.com.cn/oauth2.0/accessToken?grant_type=client_credentials&amp;client_id=test2&amp;client_secret=JXuRHUGzt5TEoKZGof4Dxg-cOPFotpWhu--cujis8JO0Y7qqN4EUhr4kybc7nDPB</span>
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x662F;&#x5426;&#x5FC5;&#x987B;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>grant_type</td>
-<td>&#x662F;</td>
-<td>&#x5BA2;&#x6237;&#x7AEF;&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x91CC;&#x56FA;&#x5B9A;&#x4E3A;client_credentials</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>&#x662F;</td>
-<td>&#x5E94;&#x7528;id</td>
-</tr>
-<tr>
-<td>client_secret</td>
-<td>&#x662F;</td>
-<td>&#x5E94;&#x7528;&#x79D8;&#x94A5;</td>
-</tr>
-<tr>
-<td>scope</td>
-<td>&#x5426;</td>
-<td>&#x6743;&#x9650;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x7A7A;&#x683C;&#x5206;&#x9694;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
-<pre><code class="lang-java">{
-    <span class="hljs-string">&quot;access_token&quot;</span>: <span class="hljs-string">&quot;AT-1-IWyhZhU1hKKvWPddAJpdHRN2ECu08Ypo&quot;</span>,
-    <span class="hljs-string">&quot;token_type&quot;</span>: <span class="hljs-string">&quot;bearer&quot;</span>,
-    <span class="hljs-string">&quot;expires_in&quot;</span>: <span class="hljs-number">28800</span>
-}
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>access_token</td>
-<td>&#x8BBF;&#x95EE;&#x4EE4;&#x724C;</td>
-</tr>
-<tr>
-<td>token_type</td>
-<td>&#x4EE4;&#x724C;&#x7C7B;&#x578B;</td>
-</tr>
-<tr>
-<td>expires_in</td>
-<td>&#x4EE4;&#x724C;&#x6709;&#x6548;&#x671F;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x56DB;&#x3001;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x5BF9;&#x63A5;">&#x56DB;&#x3001;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x5BF9;&#x63A5;<a id="4"></a></h2>
-<h4 id="1&#x3001;&#x8DF3;&#x8F6C;&#x8BA4;&#x8BC1;">1&#x3001;&#x8DF3;&#x8F6C;&#x8BA4;&#x8BC1;</h4>
-<blockquote>
-<p>&#x8DF3;&#x8F6C;&#x5230;SID&#x8BA4;&#x8BC1;&#x4E2D;&#x5FC3;&#x8BA4;&#x8BC1;&#x7528;&#x6237;&#x3002;</p>
-</blockquote>
-<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/oauth2.0/authorize" target="_blank">http://{server}/oauth2.0/authorize</a></p>
-<p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</strong></p>
-<pre><code class="lang-java">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;&#xFF1A;
-http:<span class="hljs-comment">//ljw.sso.rghall.com.cn/oauth2.0/authorize?response_type=code&amp;client_id=test2&amp;redirect_uri=xxx&amp;openid=xxx&amp;from=xxx</span>
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x662F;&#x5426;&#x5FC5;&#x987B;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>response_type</td>
-<td>&#x662F;</td>
-<td>&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;&#xFF0C;&#x503C;&#x4E3A;code</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>&#x662F;</td>
-<td>&#x5E94;&#x7528;id</td>
-</tr>
-<tr>
-<td>redirect_uri</td>
-<td>&#x662F;</td>
-<td>&#x5E94;&#x7528;&#x56DE;&#x8C03;&#x5730;&#x5740;</td>
-</tr>
-<tr>
-<td>openid</td>
-<td>&#x5426;</td>
-<td>&#x7528;&#x6237;&#x7684;&#x5FAE;&#x4FE1;openid, openid&#x548C;unionid&#x53EA;&#x9700;&#x4F20;&#x4E00;&#x4E2A;</td>
-</tr>
-<tr>
-<td>unionid</td>
-<td>&#x5426;</td>
-<td>&#x7528;&#x6237;&#x7684;&#x5FAE;&#x4FE1;unionid, openid&#x548C;unionid&#x53EA;&#x9700;&#x8981;&#x4F20;&#x4E00;&#x4E2A;</td>
-</tr>
-<tr>
-<td>from</td>
-<td>&#x662F;</td>
-<td>&#x8BA4;&#x8BC1;&#x6765;&#x6E90;&#xFF0C; &#x9ED8;&#x8BA4;&#x4E3A;&#x5E94;&#x7528;&#x7684;appid</td>
-</tr>
-<tr>
-<td>scope</td>
-<td>&#x5426;</td>
-<td>&#x6743;&#x9650;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x7A7A;&#x683C;&#x5206;&#x9694;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
-<pre><code>&#x8FD4;&#x56DE;code
-</code></pre><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>code</td>
-<td>&#x6388;&#x6743;&#x7801;&#x3002;SID&#x8DF3;&#x8F6C;&#x5230;redirect_uri&#x65F6;&#xFF0C;code&#x53C2;&#x6570;&#x4F1A;&#x9644;&#x5E26;&#x5728;&#x8BE5;&#x5730;&#x5740;&#x4E2D;</td>
-</tr>
-</tbody>
-</table>
-<p>&#x5B50;&#x5E94;&#x7528;&#x6309;&#x7167;OAuth2.0 &#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;&#x63A5;&#x5165;&#xFF0C;&#x5177;&#x4F53;&#x63A5;&#x53E3;&#x8BF7;&#x53C2;&#x8003;&#xFF1A;<a href="#1">&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;</a></p>
-<h2 id="&#x4E94;&#x3001;&#x5355;&#x70B9;&#x767B;&#x51FA;">&#x4E94;&#x3001;&#x5355;&#x70B9;&#x767B;&#x51FA;<a id="5"></a></h2>
-<blockquote>
-<p>&#x767B;&#x51FA;&#x5730;&#x5740;&#x4E3A;/logout&#x3002;</p>
-</blockquote>
-<p><strong>&#x8BF7;&#x6C42;&#x2F45;&#x5F0F;&#xFF1A;</strong> GET&#xFF08;<strong>HTTPS&#x6216;HTTP</strong>&#xFF09;</p>
-<p><strong>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;</strong> <a href="http://{server}/logout" target="_blank">http://{server}/logout</a></p>
-<p>&#x6CE8;&#xFF1A;https&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x3002;</p>
-<pre><code>&#x8BF7;&#x6C42;&#x793A;&#x4F8B;&#xFF1A;
-http://ljw.sso.rghall.com.cn/logout
-</code></pre><footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-12-08 17:01:41
+<footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-12-24 14:37:07
 </span></footer>
                                 
                                 </section>
@@ -1842,12 +1304,12 @@ http://ljw.sso.rghall.com.cn/logout
 
             
                 
-                <a href="cas-authentication.html" class="navigation navigation-prev " aria-label="Previous page: CAS认证接口">
+                <a href="oauth-authentication.html" class="navigation navigation-prev " aria-label="Previous page: OAuth2.0认证接口">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="application-free-certification.html" class="navigation navigation-next " aria-label="Next page: APP内应用免认证接口">
+                <a href="../../faq/faq.html" class="navigation navigation-next " aria-label="Next page: FAQ">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1858,7 +1320,7 @@ http://ljw.sso.rghall.com.cn/logout
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OAuth2.0认证接口","level":"1.5.3","depth":2,"next":{"title":"APP内应用免认证接口","level":"1.5.4","depth":2,"path":"linkid/authentication/public/interface/application-free-certification.md","ref":"linkid/authentication/public/interface/application-free-certification.md","articles":[]},"previous":{"title":"CAS认证接口","level":"1.5.2","depth":2,"path":"linkid/authentication/public/interface/cas-authentication.md","ref":"linkid/authentication/public/interface/cas-authentication.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"linkid/authentication/public/interface/oauth-authentication.md","mtime":"2020-12-08T09:01:41.841Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-24T06:39:25.974Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"APP内应用免认证接口","level":"1.5.4","depth":2,"next":{"title":"FAQ","level":"1.5.5","depth":2,"path":"linkid/authentication/faq/faq.md","ref":"linkid/authentication/faq/faq.md","articles":[]},"previous":{"title":"OAuth2.0认证接口","level":"1.5.3","depth":2,"path":"linkid/authentication/public/interface/oauth-authentication.md","ref":"linkid/authentication/public/interface/oauth-authentication.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"linkid/authentication/public/interface/application-free-certification.md","mtime":"2020-12-24T06:37:07.915Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-24T06:39:25.974Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>

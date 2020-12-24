@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>开发前须知 · GitBook</title>
+        <title>APP内应用免认证 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -81,8 +81,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../public/interface/userorganizationpost-external-api.html" />
+    <link rel="next" href="../public/interface/cas-authentication.html" />
     
+    
+    <link rel="prev" href="oauth-README.html" />
     
 
     </head>
@@ -339,9 +341,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1.1" data-path="../../authentication/introduction/cas-README.html">
+        <li class="chapter " data-level="1.5.1.1" data-path="cas-README.html">
             
-                <a href="../../authentication/introduction/cas-README.html">
+                <a href="cas-README.html">
             
                     
                     CAS单点对接
@@ -352,9 +354,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.1.2" data-path="../../authentication/introduction/oauth-README.html">
+        <li class="chapter " data-level="1.5.1.2" data-path="oauth-README.html">
             
-                <a href="../../authentication/introduction/oauth-README.html">
+                <a href="oauth-README.html">
             
                     
                     OAuth2.0单点对接
@@ -365,9 +367,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.1.3" data-path="../../authentication/introduction/application-free-certification-README.html">
+        <li class="chapter active" data-level="1.5.1.3" data-path="application-free-certification-README.html">
             
-                <a href="../../authentication/introduction/application-free-certification-README.html">
+                <a href="application-free-certification-README.html">
             
                     
                     APP内应用免认证
@@ -383,9 +385,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../../authentication/public/interface/cas-authentication.html">
+        <li class="chapter " data-level="1.5.2" data-path="../public/interface/cas-authentication.html">
             
-                <a href="../../authentication/public/interface/cas-authentication.html">
+                <a href="../public/interface/cas-authentication.html">
             
                     
                     CAS认证接口
@@ -396,9 +398,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../../authentication/public/interface/oauth-authentication.html">
+        <li class="chapter " data-level="1.5.3" data-path="../public/interface/oauth-authentication.html">
             
-                <a href="../../authentication/public/interface/oauth-authentication.html">
+                <a href="../public/interface/oauth-authentication.html">
             
                     
                     OAuth2.0认证接口
@@ -409,9 +411,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../../authentication/public/interface/application-free-certification.html">
+        <li class="chapter " data-level="1.5.4" data-path="../public/interface/application-free-certification.html">
             
-                <a href="../../authentication/public/interface/application-free-certification.html">
+                <a href="../public/interface/application-free-certification.html">
             
                     
                     APP内应用免认证接口
@@ -422,9 +424,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../../authentication/faq/faq.html">
+        <li class="chapter " data-level="1.5.5" data-path="../faq/faq.html">
             
-                <a href="../../authentication/faq/faq.html">
+                <a href="../faq/faq.html">
             
                     
                     FAQ
@@ -867,9 +869,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.11.1" data-path="./">
+        <li class="chapter " data-level="1.11.1" data-path="../../userorganizationpost/introduction/">
             
-                <a href="./">
+                <a href="../../userorganizationpost/introduction/">
             
                     
                     开发前须知
@@ -880,9 +882,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.2" data-path="../public/interface/userorganizationpost-external-api.html">
+        <li class="chapter " data-level="1.11.2" data-path="../../userorganizationpost/public/interface/userorganizationpost-external-api.html">
             
-                <a href="../public/interface/userorganizationpost-external-api.html">
+                <a href="../../userorganizationpost/public/interface/userorganizationpost-external-api.html">
             
                     
                     三元组对外接口
@@ -893,9 +895,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.3" data-path="../faq/faq.html">
+        <li class="chapter " data-level="1.11.3" data-path="../../userorganizationpost/faq/faq.html">
             
-                <a href="../faq/faq.html">
+                <a href="../../userorganizationpost/faq/faq.html">
             
                     
                     FAQ
@@ -1070,7 +1072,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >开发前须知</a>
+        <a href="../../.." >APP内应用免认证</a>
     </h1>
 </div>
 
@@ -1085,39 +1087,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5F00;&#x53D1;&#x524D;&#x987B;&#x77E5;">&#x5F00;&#x53D1;&#x524D;&#x987B;&#x77E5;</h1>
+                                <h1 id="app&#x5185;&#x5E94;&#x7528;&#x514D;&#x8BA4;&#x8BC1;">APP&#x5185;&#x5E94;&#x7528;&#x514D;&#x8BA4;&#x8BC1;</h1>
 <blockquote>
-<p><a href="#1">&#x4E09;&#x5143;&#x7EC4;&#x63A5;&#x53E3;&#x89C4;&#x8303;&#x8BF4;&#x660E;</a></p>
-<p><a href="#2">&#x4E09;&#x5143;&#x7EC4;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6388;&#x6743;</a></p>
-<p><a href="#3">&#x7EC4;&#x7EC7;&#x6570;&#x636E;&#x6388;&#x6743;</a></p>
-<p><a href="#4">&#x7528;&#x6237;&#x6570;&#x636E;&#x6388;&#x6743;</a></p>
-<p><a href="#5">&#x6807;&#x7B7E;&#x6570;&#x636E;&#x6388;&#x6743;</a></p>
-<p><a href="#6">&#x5C97;&#x4F4D;&#x6570;&#x636E;&#x6388;&#x6743;</a></p>
-</blockquote>
-<h4 id="&#x89D2;&#x8272;&#x63A5;&#x53E3;&#x89C4;&#x8303;&#x8BF4;&#x660E;&#xFF1A;">&#x89D2;&#x8272;&#x63A5;&#x53E3;&#x89C4;&#x8303;&#x8BF4;&#x660E;&#xFF1A;<div id="1"></div></h4>
-<ol>
-<li><p>&#x5404;&#x7C7B;&#x6570;&#x636E;&#x5185;&#x5BB9;&#x8FD4;&#x56DE;&#xFF0C; &#x5C5E;&#x6027;&#x540D;&#x4E3A;&#x9A7C;&#x5CF0;&#x5F0F;&#xFF0C; &#x4EE5;&#x6587;&#x6863;&#x793A;&#x4F8B;&#x4E3A;&#x51C6;</p>
-</li>
-<li><p>&#x5206;&#x9875;&#x63A5;&#x53E3;&#xFF0C; &#x5206;&#x9875;&#x53C2;&#x6570;&#x5C5E;&#x6027;&#x662F;&#x9A7C;&#x5CF0;&#x5F0F;&#xFF0C; &#x4EE5;&#x6587;&#x6863;&#x793A;&#x4F8B;&#x4E3A;&#x51C6;</p>
-</li>
-</ol>
-<h4 id="&#x89D2;&#x8272;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6388;&#x6743;&#xFF1A;">&#x89D2;&#x8272;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x6388;&#x6743;&#xFF1A;<div id="2"></div></h4>
+<p><a href="#0">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></p>
 <ul>
-<li><a href="../../../get-access-token.html">&#x83B7;&#x53D6;accessToken</a></li>
-<li>&#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x5934; Authorization: Bearer {access_token}</li>
+<li><a href="#1">OAuth2.0&#x6388;&#x6743;&#x7801;&#x652F;&#x6301;</a></li>
+<li><a href="#2">&#x63D0;&#x4F9B;appKey&#x548C;secret&#x7ED9;sso</a></li>
+<li><a href="#3">&#x652F;&#x6301;OAuth&#x7684;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;</a></li>
 </ul>
-<p><img src="README.assets/image-20201111115147459.png" alt="image-20201111115147459.png"></p>
-<h4 id="&#x7EC4;&#x7EC7;&#x6570;&#x636E;&#x6388;&#x6743;">&#x7EC4;&#x7EC7;&#x6570;&#x636E;&#x6388;&#x6743;<div id="3"></div></h4>
-<p><a href="../../organization/introduction/">&#x7EC4;&#x7EC7;&#x6570;&#x636E;&#x6388;&#x6743;</a></p>
-<h4 id="&#x7528;&#x6237;&#x6570;&#x636E;&#x6388;&#x6743;">&#x7528;&#x6237;&#x6570;&#x636E;&#x6388;&#x6743;<div id="4"></div></h4>
-<p><a href="../../user/introduction/">&#x7528;&#x6237;&#x6570;&#x636E;&#x6388;&#x6743;</a></p>
-<h4 id="&#x6807;&#x7B7E;&#x6570;&#x636E;&#x6388;&#x6743;">&#x6807;&#x7B7E;&#x6570;&#x636E;&#x6388;&#x6743;<div id="5"></div></h4>
-<p><a href="../../label/introduction/">&#x6807;&#x7B7E;&#x6570;&#x636E;&#x6388;&#x6743;</a></p>
-<h4 id="&#x5C97;&#x4F4D;&#x6570;&#x636E;&#x6388;&#x6743;">&#x5C97;&#x4F4D;&#x6570;&#x636E;&#x6388;&#x6743;<div id="6"></div></h4>
-<p><img src="README.assets/image-20201117140118708.png" alt="image-20201117140118708"></p>
-<p><img src="README.assets/image-20201117140142371.png" alt="image-20201117140142371"> </p>
+<p><a href="#4">&#x5BF9;&#x63A5;&#x539F;&#x7406;</a></p>
+<p><a href="#5">&#x7F13;&#x5B58;&#x65B9;&#x6848;&#x5EFA;&#x8BAE;</a></p>
+</blockquote>
+<h4 id="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;<a id="0"></a></h4>
+<p>&#x5728;&#x5BF9;&#x63A5;&#x4E4B;&#x524D;&#xFF0C;&#x5E94;&#x7528;&#x9700;&#x505A;&#x4EE5;&#x4E0B;3&#x70B9;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+<h5 id="1&#x3001;app&#x652F;&#x6301;&#x6807;&#x51C6;&#x7684;oauth&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;&#x652F;&#x6301;">1&#x3001;APP&#x652F;&#x6301;&#x6807;&#x51C6;&#x7684;OAuth&#x6388;&#x6743;&#x7801;&#x6A21;&#x5F0F;&#x652F;&#x6301;<a id="1"></a></h5>
+<p>  &#x6D41;&#x7A0B;&#x7B80;&#x4ECB;&#xFF1A;</p>
+<ul>
+<li>&#x83B7;&#x53D6;code</li>
+<li>code&#x6362;token</li>
+<li><p>token&#x6362;&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
+<h5 id="2&#x3001;&#x63D0;&#x4F9B;appkey&#x548C;secret&#x7ED9;sso">2&#x3001;&#x63D0;&#x4F9B;appKey&#x548C;secret&#x7ED9;sso<a id="2"></a></h5>
+</li>
+<li><p>&#x5C06;sso&#x57DF;&#x540D;&#x6CE8;&#x518C;&#x5230;APP&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x63D0;&#x4F9B;appKey&#x548C;secret</p>
+</li>
+</ul>
+<h5 id="3&#x3001;&#x652F;&#x6301;oauth&#x7684;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;-">3&#x3001;&#x652F;&#x6301;OAuth&#x7684;&#x4E09;&#x4E2A;&#x63A5;&#x53E3; <a id="3"></a></h5>
+<p>&#x89C1;&#x63A5;&#x53E3;&#x6587;&#x6863;
+<a href="../public/interface/application-free-certification.html">OAuth&#x8BA4;&#x8BC1;&#x63A5;&#x53E3;</a>&#x3002;</p>
+<h4 id="&#x5BF9;&#x63A5;&#x539F;&#x7406;">&#x5BF9;&#x63A5;&#x539F;&#x7406;<a id="4"></a></h4>
+<p><img src="cas-README.assets/image6.jpg" alt="image6"></p>
+<h4 id="&#x7F13;&#x5B58;&#x65B9;&#x6848;&#x5EFA;&#x8BAE;">&#x7F13;&#x5B58;&#x65B9;&#x6848;&#x5EFA;&#x8BAE;<a id="5"></a></h4>
+<p>&#x901A;&#x8FC7;OAuth&#x9A8C;&#x8BC1;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x6210;&#x5458;&#x8EAB;&#x4EFD;&#x4F1A;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x5F00;&#x9500;&#x3002;&#x5BF9;&#x4E8E;&#x9891;&#x7E41;&#x83B7;&#x53D6;&#x6210;&#x5458;&#x8EAB;&#x4EFD;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x5EFA;&#x8BAE;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x6848;&#xFF1A;</p>
+<ul>
+<li>&#x5E94;&#x7528;&#x4E2D;&#x7684;URL&#x94FE;&#x63A5;&#x76F4;&#x63A5;&#x586B;&#x5199;&#x4F01;&#x4E1A;&#x81EA;&#x5DF1;&#x7684;&#x9875;&#x9762;&#x5730;&#x5740;</li>
+<li>&#x6210;&#x5458;&#x64CD;&#x4F5C;&#x8DF3;&#x8F6C;&#x5230;&#x6B65;&#x9AA4;1&#x7684;&#x4F01;&#x4E1A;&#x9875;&#x9762;&#x65F6;&#xFF0C;&#x4F01;&#x4E1A;&#x540E;&#x53F0;&#x6821;&#x9A8C;&#x662F;&#x5426;&#x6709;&#x6807;&#x8BC6;&#x6210;&#x5458;&#x8EAB;&#x4EFD;&#x7684;cookie&#x4FE1;&#x606F;&#xFF0C;&#x6B64;cookie&#x7531;&#x4F01;&#x4E1A;&#x751F;&#x6210;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5339;&#x914D;&#x7684;cookie&#xFF0C;&#x5219;&#x91CD;&#x5B9A;&#x5411;&#x5230;OAuth&#x9A8C;&#x8BC1;&#x94FE;&#x63A5;&#xFF0C;&#x83B7;&#x53D6;&#x6210;&#x5458;&#x7684;&#x8EAB;&#x4EFD;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x7531;&#x4F01;&#x4E1A;&#x540E;&#x53F0;&#x690D;&#x5165;&#x6807;&#x8BC6;&#x6210;&#x5458;&#x8EAB;&#x4EFD;&#x7684;cookie&#x4FE1;&#x606F;</li>
+<li>&#x6839;&#x636E;cookie&#x83B7;&#x53D6;&#x6210;&#x5458;&#x8EAB;&#x4EFD;&#x540E;&#xFF0C;&#x518D;&#x8FDB;&#x5165;&#x76F8;&#x5E94;&#x7684;&#x9875;&#x9762;</li>
+</ul>
 <footer class="page-footer"><span class="copyright">&#xA9;2020 &#x9510;&#x6377;&#x7F51;&#x7EDC;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-11-30 10:33:39
+2020-12-24 14:37:07
 </span></footer>
                                 
                                 </section>
@@ -1145,8 +1153,12 @@
 
             
                 
+                <a href="oauth-README.html" class="navigation navigation-prev " aria-label="Previous page: OAuth2.0单点对接">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="../public/interface/userorganizationpost-external-api.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 三元组对外接口">
+                
+                <a href="../public/interface/cas-authentication.html" class="navigation navigation-next " aria-label="Next page: CAS认证接口">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1157,7 +1169,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"开发前须知","level":"1.11.1","depth":2,"next":{"title":"三元组对外接口","level":"1.11.2","depth":2,"path":"linkid/userorganizationpost/public/interface/userorganizationpost-external-api.md","ref":"linkid/userorganizationpost/public/interface/userorganizationpost-external-api.md","articles":[]},"previous":{"title":"三元组","level":"1.11","depth":1,"ref":"","articles":[{"title":"开发前须知","level":"1.11.1","depth":2,"path":"linkid/userorganizationpost/introduction/README.md","ref":"linkid/userorganizationpost/introduction/README.md","articles":[]},{"title":"三元组对外接口","level":"1.11.2","depth":2,"path":"linkid/userorganizationpost/public/interface/userorganizationpost-external-api.md","ref":"linkid/userorganizationpost/public/interface/userorganizationpost-external-api.md","articles":[]},{"title":"FAQ","level":"1.11.3","depth":2,"path":"linkid/userorganizationpost/faq/faq.md","ref":"linkid/userorganizationpost/faq/faq.md","articles":[]}]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"linkid/userorganizationpost/introduction/README.md","mtime":"2020-11-30T02:33:39.007Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-24T06:39:25.974Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"APP内应用免认证","level":"1.5.1.3","depth":3,"next":{"title":"CAS认证接口","level":"1.5.2","depth":2,"path":"linkid/authentication/public/interface/cas-authentication.md","ref":"linkid/authentication/public/interface/cas-authentication.md","articles":[]},"previous":{"title":"OAuth2.0单点对接","level":"1.5.1.2","depth":3,"path":"linkid/authentication/introduction/oauth-README.md","ref":"linkid/authentication/introduction/oauth-README.md","articles":[]},"dir":"ltr"},"config":{"_comment":"引入css文件进行css样式的修改：隐藏“Published with Gitbook”","plugins":["expandable-chapters","tbfed-pagefooter","insert-logo","splitter","code","-lunr","-search","search-pro","back-to-top-button","-sharing","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"©2020 锐捷网络股份有限公司","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 80; min-height: 300;","url":"https://sid-api.github.io/SID-PUBLIC-API/logo.assets/logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"linkid/authentication/introduction/application-free-certification-README.md","mtime":"2020-12-24T06:37:07.913Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-12-24T06:39:25.974Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
